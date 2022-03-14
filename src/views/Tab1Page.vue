@@ -13,6 +13,7 @@
       </ion-header>
     
       <ExploreContainer name="Tab 1 page" />
+      <ion-button @click="updateNow">Update now</ion-button>
     </ion-content>
   </ion-page>
 </template>
@@ -21,9 +22,23 @@
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import { CapacitorUpdater } from 'capacitor-updater'
+import { SplashScreen } from '@capacitor/splash-screen'
 
+const updateNow = async () => {
+  const version = await CapacitorUpdater.download({
+    url: 'https://github.com/Forgr-ee/Mimesis/releases/download/0.0.1/dist.zip',
+  })
+  // show the splashscreen to let the update happen
+  SplashScreen.show()
+  await CapacitorUpdater.set(version)
+  SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
+}
 export default  defineComponent({
   name: 'Tab1Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  methods: {
+    updateNow
+  }
 });
 </script>
