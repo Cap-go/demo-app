@@ -11,23 +11,21 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
-    
-      <ExploreContainer name="Tab 1 page" />
-      <ion-button @click="updateNow">Update now</ion-button>
+      Version 0.0.1
+      <ion-button expand="block" color="primary" @click="updateNow">Update now</ion-button>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
 import { CapacitorUpdater } from 'capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 
 const updateNow = async () => {
   const version = await CapacitorUpdater.download({
-    url: 'https://github.com/Forgr-ee/Mimesis/releases/download/0.0.1/dist.zip',
+    url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2/dist.zip',
   })
   // show the splashscreen to let the update happen
   SplashScreen.show()
@@ -36,7 +34,7 @@ const updateNow = async () => {
 }
 export default  defineComponent({
   name: 'Tab1Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButton },
   methods: {
     updateNow
   }
