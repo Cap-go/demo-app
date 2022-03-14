@@ -11,7 +11,7 @@ import { defineComponent } from 'vue';
   // import { SplashScreen } from '@capacitor/splash-screen'
   // import { App } from '@capacitor/app'
 
-  let data = {version: ""}
+  // let data = {version: ""}
   // App.addListener('appStateChange', async(state) => {
   //     if (state.isActive) {
   //       // Do the download during user active app time to prevent failed download
