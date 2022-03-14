@@ -11,8 +11,8 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
-      Version 0.0.1
-      <ion-button expand="block" color="primary" @click="updateNow">Update now</ion-button>
+      Version 0.0.3
+      <ion-button expand="block" color="primary" @click="reset">Reset now</ion-button>
     </ion-content>
   </ion-page>
 </template>
@@ -23,20 +23,17 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from 
 import { CapacitorUpdater } from 'capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 
-const updateNow = async () => {
-  const version = await CapacitorUpdater.download({
-    url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2/dist.zip',
-  })
+const reset = async () => {
   // show the splashscreen to let the update happen
   SplashScreen.show()
-  await CapacitorUpdater.set(version)
+  await CapacitorUpdater.reset()
   SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
 }
 export default  defineComponent({
   name: 'Tab1Page',
   components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButton },
   methods: {
-    updateNow
+    reset
   }
 });
 </script>
