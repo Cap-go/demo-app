@@ -19,11 +19,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, isPlatform } from '@ionic/vue';
 import { CapacitorUpdater } from '@capgo/capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 
 const updateNow = async () => {
+  if(!isPlatform('capacitor'))
+    return
   const version = await CapacitorUpdater.download({
     url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2/dist.zip',
   })
