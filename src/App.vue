@@ -16,7 +16,7 @@ import { defineComponent } from 'vue';
   //     if (state.isActive) {
   //       // Do the download during user active app time to prevent failed download
   //       data = await CapacitorUpdater.download({
-  //       url: 'https://github.com/Forgr-ee/Mimesis/releases/download/0.0.1/dist.zip',
+  //       url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.4/dist.zip',
   //       })
   //     }
   //     if (!state.isActive && data.version !== "") {
