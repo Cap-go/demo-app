@@ -26,6 +26,9 @@ import { SplashScreen } from '@capacitor/splash-screen'
 const updateNow = async () => {
   if(!isPlatform('capacitor'))
     return
+  CapacitorUpdater.addListener('download', (res) => {
+    console.log('download', res)
+  })
   const version = await CapacitorUpdater.download({
     url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2/dist.zip',
   })
