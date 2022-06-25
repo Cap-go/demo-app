@@ -19,12 +19,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/vue';
-import { CapacitorUpdater } from 'capacitor-updater'
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, isPlatform } from '@ionic/vue';
+import { CapacitorUpdater } from '@capgo/capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 
 const reset = async () => {
   // show the splashscreen to let the update happen
+  console.log('list', await CapacitorUpdater.list())
   SplashScreen.show()
   await CapacitorUpdater.reset()
   SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
