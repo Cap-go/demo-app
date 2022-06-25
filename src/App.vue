@@ -5,8 +5,10 @@
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet } from '@ionic/vue';
-import { defineComponent } from 'vue';
+  import { IonApp, IonRouterOutlet } from '@ionic/vue';
+  import { defineComponent } from 'vue';
+  import { CapacitorUpdater } from '@capgo/capacitor-updater'
+  CapacitorUpdater.notifyAppReady()
   // import { CapacitorUpdater } from 'capacitor-updater'
   // import { SplashScreen } from '@capacitor/splash-screen'
   // import { App } from '@capacitor/app'

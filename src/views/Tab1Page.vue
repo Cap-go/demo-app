@@ -29,12 +29,15 @@ const updateNow = async () => {
   CapacitorUpdater.addListener('download', (res) => {
     console.log('download', res)
   })
-  const version = await CapacitorUpdater.download({
+  const res = await CapacitorUpdater.download({
     url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2/dist.zip',
+    versionName: '0.0.2',
   })
+  console.log('res download', res)
+  console.log('list', await CapacitorUpdater.list())
   // show the splashscreen to let the update happen
   SplashScreen.show()
-  await CapacitorUpdater.set(version)
+  await CapacitorUpdater.set(res)
   SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
 }
 export default  defineComponent({
