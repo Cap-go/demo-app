@@ -5,18 +5,20 @@
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet } from '@ionic/vue';
-import { defineComponent } from 'vue';
+  import { IonApp, IonRouterOutlet } from '@ionic/vue';
+  import { defineComponent } from 'vue';
+  import { CapacitorUpdater } from '@capgo/capacitor-updater'
+  CapacitorUpdater.notifyAppReady()
   // import { CapacitorUpdater } from 'capacitor-updater'
   // import { SplashScreen } from '@capacitor/splash-screen'
   // import { App } from '@capacitor/app'
 
-  let data = {version: ""}
+  // let data = {version: ""}
   // App.addListener('appStateChange', async(state) => {
   //     if (state.isActive) {
   //       // Do the download during user active app time to prevent failed download
   //       data = await CapacitorUpdater.download({
-  //       url: 'https://github.com/Forgr-ee/Mimesis/releases/download/0.0.1/dist.zip',
+  //       url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.4/dist.zip',
   //       })
   //     }
   //     if (!state.isActive && data.version !== "") {
