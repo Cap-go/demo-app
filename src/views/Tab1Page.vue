@@ -32,7 +32,7 @@ const updateNow = async () => {
     console.log('download', res)
   })
   const res = await CapacitorUpdater.download({
-    url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.3-v4/dist.zip',
+    url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2-v4/dist.zip',
     version: '0.0.2',
   })
   console.log('res download', res)
