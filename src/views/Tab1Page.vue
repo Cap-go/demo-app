@@ -11,8 +11,10 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
-      Version 0.0.1
-      <ion-button expand="block" color="primary" @click="updateNow">Update now</ion-button>
+      Version 0.0.1-v4
+      <!-- <ion-button expand="block" color="warning" @click="resetNow">Reset now</ion-button>
+      <ion-button expand="block" color="warning" @click="updateNowFail">Update now failing v2</ion-button> -->
+      <ion-button expand="block" color="primary" @click="updateNow">Update Now</ion-button>
     </ion-content>
   </ion-page>
 </template>
@@ -30,8 +32,8 @@ const updateNow = async () => {
     console.log('download', res)
   })
   const res = await CapacitorUpdater.download({
-    url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2/dist.zip',
-    versionName: '0.0.2',
+    url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.3-v4/dist.zip',
+    version: '0.0.2',
   })
   console.log('res download', res)
   console.log('list', await CapacitorUpdater.list())
@@ -40,11 +42,36 @@ const updateNow = async () => {
   await CapacitorUpdater.set(res)
   SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
 }
+
+// const updateNowFail = async () => {
+//   if(!isPlatform('capacitor'))
+//     return
+//   CapacitorUpdater.addListener('download', (res) => {
+//     console.log('download', res)
+//   })
+//   const res = await CapacitorUpdater.download({
+//     url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2/dist.zip',
+//     version: '0.0.2',
+//   })
+//   console.log('res download', res)
+//   console.log('list', await CapacitorUpdater.list())
+//   // show the splashscreen to let the update happen
+//   SplashScreen.show()
+//   await CapacitorUpdater.set(res)
+//   SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
+// }
+// const resetNow = async () => {
+//   if(!isPlatform('capacitor'))
+//     return
+//   await CapacitorUpdater.reset()
+// }
 export default  defineComponent({
   name: 'Tab1Page',
   components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButton },
   methods: {
-    updateNow
+    updateNow,
+    // resetNow,
+    // updateNowFail
   }
 });
 </script>

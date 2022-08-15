@@ -4,7 +4,15 @@ const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'demoApp',
   webDir: 'dist',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  plugins: {
+		SplashScreen: {
+			launchAutoHide: false
+		},
+		CapacitorUpdater: {
+			autoUpdate: false
+		}
+	}
 };
 
 export default config;
