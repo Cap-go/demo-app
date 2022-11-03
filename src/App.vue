@@ -15,6 +15,7 @@ CapacitorUpdater.notifyAppReady()
 let data: BundleInfo | null = null
 App.addListener('appStateChange', async(state) => {
     if (state.isActive) {
+      console.log('App is active')
       // Do the download during user active app time to prevent failed download
       data = await CapacitorUpdater.download({
         url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.3-v4/dist.zip',
@@ -22,6 +23,8 @@ App.addListener('appStateChange', async(state) => {
       })
     }
     if (!state.isActive && data) {
+      console.log('App is background')
+
       // Do the switch when user leave app
       SplashScreen.show()
       try {
