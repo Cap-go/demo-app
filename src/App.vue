@@ -17,7 +17,7 @@ App.addListener('appStateChange', async(state) => {
     if (state.isActive) {
       // Do the download during user active app time to prevent failed download
       data = await CapacitorUpdater.download({
-        url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.4/dist.zip',
+        url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.3-v4/dist.zip',
         version: '0.0.4',
       })
     }
