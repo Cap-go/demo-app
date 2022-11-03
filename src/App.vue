@@ -24,11 +24,11 @@ App.addListener('appStateChange', async(state) => {
     }
     if (!state.isActive && data) {
       console.log('App is background')
-
+      console.log('bundle list', await CapacitorUpdater.list())
       // Do the switch when user leave app
       SplashScreen.show()
       try {
-        await CapacitorUpdater.set({id: data.version})
+        await CapacitorUpdater.set({id: data.id})
       } catch (err) {
         console.log(err)
         SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
