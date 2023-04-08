@@ -1,5 +1,6 @@
 # DEMO app
 
+use `pnpm i` to install the dependencies
 
 This is a demo app, you can build it to see how it works.
 
