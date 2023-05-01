@@ -62,7 +62,7 @@ devDependencies:
     version: 5.0.8(@vue/cli-service@5.0.8)(core-js@3.30.0)(vue@3.2.47)
   '@vue/cli-plugin-e2e-cypress':
     specifier: ^5.0.8
-    version: 5.0.8(@vue/cli-service@5.0.8)(cypress@9.6.0)(eslint@8.38.0)
+    version: 5.0.8(@vue/cli-service@5.0.8)(cypress@12.0.0)(eslint@8.38.0)
   '@vue/cli-plugin-eslint':
     specifier: ^5.0.8
     version: 5.0.8(@vue/cli-service@5.0.8)(eslint@8.38.0)
@@ -82,8 +82,8 @@ devDependencies:
     specifier: ^2.3.2
     version: 2.3.2(vue@3.2.47)
   cypress:
-    specifier: ^9.6.0
-    version: 9.6.0
+    specifier: ^12.0.0
+    version: 12.0.0
   eslint:
     specifier: ^8.38.0
     version: 8.38.0
@@ -1938,7 +1938,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 14.18.43
+      '@types/node': 18.16.3
     dev: true
     optional: true
 
@@ -2252,7 +2252,7 @@ packages:
       - webpack-cli
     dev: true
 
-  /@vue/cli-plugin-e2e-cypress@5.0.8(@vue/cli-service@5.0.8)(cypress@9.6.0)(eslint@8.38.0):
+  /@vue/cli-plugin-e2e-cypress@5.0.8(@vue/cli-service@5.0.8)(cypress@12.0.0)(eslint@8.38.0):
     resolution: {integrity: sha512-BasFHQSqDAmFvueaqk/d+s1hJnW0OtWEIgmHZRXg8hYkZJF4pu7kz66DmEAZl6DypfyoSxqwN7WHILYDuKAaEw==}
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0 || ^5.0.0-0
@@ -2260,7 +2260,7 @@ packages:
     dependencies:
       '@vue/cli-service': 5.0.8(@babel/core@7.21.5)(vue@3.2.47)
       '@vue/cli-shared-utils': 5.0.8
-      cypress: 9.6.0
+      cypress: 12.0.0
       eslint-plugin-cypress: 2.13.3(eslint@8.38.0)
     transitivePeerDependencies:
       - encoding
@@ -4000,9 +4000,9 @@ packages:
   /csstype@2.6.21:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
 
-  /cypress@9.6.0:
-    resolution: {integrity: sha512-nNwt9eBQmSENamwa8LxvggXksfyzpyYaQ7lNBLgks3XZ6dPE/6BCQFBzeAyAPt/bNXfH3tKPkAyhiAZPYkWoEg==}
-    engines: {node: '>=12.0.0'}
+  /cypress@12.0.0:
+    resolution: {integrity: sha512-hX/UeaKrL4uiRxJh+eX9t5YFXJconJyqG0hkFkK6CG+4xj2mMmzvJERF3e2h/9TzvLxPAkQ6cGz8eaHfJZeyGg==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     hasBin: true
     requiresBuild: true
     dependencies:
@@ -4025,7 +4025,7 @@ packages:
       dayjs: 1.11.7
       debug: 4.3.4(supports-color@8.1.1)
       enquirer: 2.3.6
-      eventemitter2: 6.4.9
+      eventemitter2: 6.4.7
       execa: 4.1.0
       executable: 4.1.1
       extract-zip: 2.0.1(supports-color@8.1.1)
@@ -4534,8 +4534,8 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: true
 
-  /eventemitter2@6.4.9:
-    resolution: {integrity: sha512-JEPTiaOt9f04oa6NOkc4aH+nVp5I3wEjpHbIPqfgCdD5v5bUzy7xQqwcVO2aDQgOWhI28da57HksMrzK9HlRxg==}
+  /eventemitter2@6.4.7:
+    resolution: {integrity: sha512-tYUSVOGeQPKt/eC1ABfhHy5Xd96N3oIijJvN3O9+TsC28T5V9yX9oEfEK5faP0EFSNVOG97qtAS68GBrQB2hDg==}
     dev: true
 
   /eventemitter3@4.0.7:
