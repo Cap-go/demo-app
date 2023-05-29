@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@capacitor/android':
@@ -17,8 +21,8 @@ dependencies:
     specifier: ^4.4.0
     version: 4.4.0(@capacitor/core@4.4.0)
   '@capacitor/keyboard':
-    specifier: ^4.0.1
-    version: 4.0.1(@capacitor/core@4.4.0)
+    specifier: ^5.0.0
+    version: 5.0.0(@capacitor/core@4.4.0)
   '@capacitor/splash-screen':
     specifier: ^4.1.1
     version: 4.1.1(@capacitor/core@4.4.0)
@@ -1376,10 +1380,10 @@ packages:
       '@capacitor/core': 4.4.0
     dev: false
 
-  /@capacitor/keyboard@4.0.1(@capacitor/core@4.4.0):
-    resolution: {integrity: sha512-JZVci2v9jAKH0sIoNNZzmw/cWGXWf+KneLt0yDr/6YSs/2/tfuH10yOrUOhgrKFkR+fFj/rddTClQXUQ8Rqcrg==}
+  /@capacitor/keyboard@5.0.0(@capacitor/core@4.4.0):
+    resolution: {integrity: sha512-EB69qPYZYm185199Lc4rKc7C6+cOpZuRXCGtsuPKW1OTnoso33frjgEoLZqfkVfrPMRJEAxT5H9vfSlZgCNMTg==}
     peerDependencies:
-      '@capacitor/core': ^4.0.0
+      '@capacitor/core': next
     dependencies:
       '@capacitor/core': 4.4.0
     dev: false
