@@ -8,6 +8,8 @@ const config: CapacitorConfig = {
   plugins: {
     CapacitorUpdater : {
       autoUpdate: true,
+      version: "0.0.1",
+      directUpdate: true
     }
   }
 };

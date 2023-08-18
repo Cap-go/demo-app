@@ -5,7 +5,9 @@
 	"bundledWebRuntime": false,
 	"plugins": {
 		"CapacitorUpdater": {
-			"autoUpdate": true
+			"autoUpdate": true,
+			"version": "0.0.1",
+			"directUpdate": true
 		}
 	}
 }
