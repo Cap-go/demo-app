@@ -18,7 +18,7 @@
     "@capacitor/keyboard": "^5.0.6",
     "@capacitor/splash-screen": "^5.0.6",
     "@capacitor/status-bar": "^5.0.6",
-    "@capgo/capacitor-updater": "^5.0.20",
+    "@capgo/capacitor-updater": "^5.2.14",
     "@ionic/vue": "^6.3.3",
     "@ionic/vue-router": "^6.3.3",
     "core-js": "^3.30.0",

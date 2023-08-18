@@ -30,8 +30,8 @@ dependencies:
     specifier: ^5.0.6
     version: 5.0.6(@capacitor/core@5.0.3)
   '@capgo/capacitor-updater':
-    specifier: ^5.0.20
-    version: 5.0.20(@capacitor/core@5.0.3)
+    specifier: ^5.2.14
+    version: 5.2.14(@capacitor/core@5.0.3)
   '@ionic/vue':
     specifier: ^6.3.3
     version: 6.3.3
@@ -1404,8 +1404,8 @@ packages:
       '@capacitor/core': 5.0.3
     dev: false
 
-  /@capgo/capacitor-updater@5.0.20(@capacitor/core@5.0.3):
-    resolution: {integrity: sha512-JiaOQEDoxShMqtph2oZJJQ3Ycvbcr23/wJkGmhWg+cKJn50K+mMn9BP48rvXN5p+8N5++akaVQrn0G67NFPqSQ==}
+  /@capgo/capacitor-updater@5.2.14(@capacitor/core@5.0.3):
+    resolution: {integrity: sha512-Z5OXc3DfPBkJh5f3NiAHSfVpyICVyiWVeYSFGUGZK6YwJ7MO09Dyi6rG2uVh3AtKvmXteFnHxXAmZuxdQfbuuw==}
     peerDependencies:
       '@capacitor/core': ^5.0.0
     dependencies:
