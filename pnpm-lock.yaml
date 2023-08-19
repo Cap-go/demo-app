@@ -33,8 +33,8 @@ dependencies:
     specifier: ^5.2.14
     version: 5.2.14(@capacitor/core@5.0.3)
   '@ionic/vue':
-    specifier: ^6.3.3
-    version: 6.3.3
+    specifier: ^7.0.0
+    version: 7.0.0
   '@ionic/vue-router':
     specifier: ^6.3.3
     version: 6.3.3
@@ -1543,6 +1543,14 @@ packages:
       tslib: 2.5.0
     dev: false
 
+  /@ionic/core@7.0.0:
+    resolution: {integrity: sha512-pM8qOaea9ZbqZbGnoIswaeeTiHJKNQ9ziSNHSILDpdd4FjpxZjOeMgNUdvYzh5rX9fA6hEM2wodg7McIWHgvZQ==}
+    dependencies:
+      '@stencil/core': 3.4.2
+      ionicons: 7.1.0
+      tslib: 2.5.0
+    dev: false
+
   /@ionic/utils-array@2.1.6:
     resolution: {integrity: sha512-0JZ1Zkp3wURnv8oq6Qt7fMPo5MpjbLoUoa9Bu2Q4PJuSDWM8H8gwF3dQO7VTeUj3/0o1IB1wGkFWZZYgUXZMUg==}
     engines: {node: '>=16.0.0'}
@@ -1643,6 +1651,13 @@ packages:
     dependencies:
       '@ionic/core': 6.7.4
       ionicons: 6.1.3
+    dev: false
+
+  /@ionic/vue@7.0.0:
+    resolution: {integrity: sha512-bikmbUm59EIciZS/Xdm3dhcoeg3PpoiFHl5YsgaydgiZccV7Hu9y7n5zT1ydIPYnJryb2gRaNQ4N8O4JvDll8w==}
+    dependencies:
+      '@ionic/core': 7.0.0
+      ionicons: 7.1.0
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -1756,6 +1771,12 @@ packages:
   /@stencil/core@2.22.3:
     resolution: {integrity: sha512-kmVA0M/HojwsfkeHsifvHVIYe4l5tin7J5+DLgtl8h6WWfiMClND5K3ifCXXI2ETDNKiEk21p6jql3Fx9o2rng==}
     engines: {node: '>=12.10.0', npm: '>=6.0.0'}
+    hasBin: true
+    dev: false
+
+  /@stencil/core@3.4.2:
+    resolution: {integrity: sha512-FAUhUVaakCy29nU2GwO/HQBRV1ihPRvncz3PUc8oR+UJLAxGabTmP8PLY7wvHfbw+Cvi4VXfJFTBvdfDu6iKPQ==}
+    engines: {node: '>=14.10.0', npm: '>=6.0.0'}
     hasBin: true
     dev: false
 
