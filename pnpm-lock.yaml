@@ -53,8 +53,8 @@ dependencies:
 
 devDependencies:
   '@capacitor/cli':
-    specifier: ^4.4.0
-    version: 4.4.0
+    specifier: ^5.0.0
+    version: 5.0.0
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.42.0
     version: 5.42.0(@typescript-eslint/parser@5.42.0)(eslint@8.38.0)(typescript@5.0.4)
@@ -1332,9 +1332,9 @@ packages:
       '@capacitor/core': 5.0.3
     dev: false
 
-  /@capacitor/cli@4.4.0:
-    resolution: {integrity: sha512-BB/gbUtZ2PVrUSoqkQAOCvOtEP/5IDG3aZvlqT53RAzmt/rIbcOi7qimOoLsS9iCtNtAIN+UgCqb+f62GdvV5Q==}
-    engines: {node: '>=12.4.0'}
+  /@capacitor/cli@5.0.0:
+    resolution: {integrity: sha512-d11L9xnnxmjyTHD3vjhOGnr7zN+uIzIeW4QrQC131rovP1cdFYVjG1DrmQa/mx6s49d2Bv7myNLHtl0j+dQIow==}
+    engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
       '@ionic/cli-framework-output': 2.2.6
@@ -1349,11 +1349,11 @@ packages:
       open: 8.4.2
       plist: 3.0.6
       prompts: 2.4.2
-      rimraf: 3.0.2
+      rimraf: 4.4.1
       semver: 7.5.0
       tar: 6.1.13
       tslib: 2.5.0
-      xml2js: 0.4.23
+      xml2js: 0.5.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1942,7 +1942,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 14.18.43
+      '@types/node': 18.16.3
     dev: true
     optional: true
 
@@ -5000,6 +5000,16 @@ packages:
       once: 1.4.0
     dev: true
 
+  /glob@9.3.5:
+    resolution: {integrity: sha512-e1LleDykUz2Iu+MTYdkSsuWX8lvAjAcs0Xef0lNIu0S2wOAzuTxCJtcd9S3cijlwYF18EsU3rzb8jPVobxDh9Q==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      fs.realpath: 1.0.0
+      minimatch: 8.0.4
+      minipass: 4.2.8
+      path-scurry: 1.10.1
+    dev: true
+
   /global-dirs@3.0.1:
     resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
     engines: {node: '>=10'}
@@ -5792,6 +5802,11 @@ packages:
       tslib: 2.5.0
     dev: true
 
+  /lru-cache@10.0.1:
+    resolution: {integrity: sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==}
+    engines: {node: 14 || >=16.14}
+    dev: true
+
   /lru-cache@4.1.5:
     resolution: {integrity: sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==}
     dependencies:
@@ -5927,6 +5942,13 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
+  /minimatch@8.0.4:
+    resolution: {integrity: sha512-W0Wvr9HyFXZRGIDgCicunpQ299OKXs9RgZfaukz4qAW/pJhcpUfupc9c+OObPOFueNy8VSrZgEmDtk6Kh4WzDA==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
@@ -5941,6 +5963,11 @@ packages:
   /minipass@4.2.8:
     resolution: {integrity: sha512-fNzuVyifolSLFL4NzpF+wEF4qrgqaaKX0haXPQEdQ7NKAN+WecoKMHV09YcuL/DHxrUsYQOK3MiuDf7Ip2OXfQ==}
     engines: {node: '>=8'}
+    dev: true
+
+  /minipass@7.0.3:
+    resolution: {integrity: sha512-LhbbwCfz3vsb12j/WkWQPZfKTsgqIe1Nf/ti1pKjYESGLHIVjWU96G9/ljLH4F9mWNVhlQOm0VySdAWzf05dpg==}
+    engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
   /minizlib@2.1.2:
@@ -6362,6 +6389,14 @@ packages:
 
   /path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
+    dev: true
+
+  /path-scurry@1.10.1:
+    resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      lru-cache: 10.0.1
+      minipass: 7.0.3
     dev: true
 
   /path-to-regexp@0.1.7:
@@ -7089,6 +7124,14 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rimraf@4.4.1:
+    resolution: {integrity: sha512-Gk8NlF062+T9CqNGn6h4tls3k6T1+/nXdOcSZVikNVtlRdYpA7wRJJMoXmuvOnLW844rPjdQ7JgXCYM6PPC/og==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      glob: 9.3.5
     dev: true
 
   /run-parallel@1.2.0:
@@ -8339,8 +8382,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /xml2js@0.4.23:
-    resolution: {integrity: sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==}
+  /xml2js@0.5.0:
+    resolution: {integrity: sha512-drPFnkQJik/O+uPKpqSgr22mpuFHqKdbS835iAQrUC73L2F5WkboIRd63ai/2Yg6I1jzifPFKH2NTK+cfglkIA==}
     engines: {node: '>=4.0.0'}
     dependencies:
       sax: 1.2.4
