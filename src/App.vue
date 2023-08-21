@@ -11,8 +11,11 @@ import { BundleInfo, CapacitorUpdater } from '@capgo/capacitor-updater'
 import { SplashScreen } from '@capacitor/splash-screen'
 import { App } from '@capacitor/app'
 
+CapacitorUpdater.addListener('appReady', () => {
+  SplashScreen.hide()
+})
+
 CapacitorUpdater.notifyAppReady()
-SplashScreen.show()
 
 export default defineComponent({
   name: 'App',
