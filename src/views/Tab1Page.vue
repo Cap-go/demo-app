@@ -11,7 +11,7 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
-      Version 0.0.1
+      Version 0.0.2
       <ion-button expand="block" color="primary" @click="updateNow">Update now</ion-button>
     </ion-content>
   </ion-page>
