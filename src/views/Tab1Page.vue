@@ -11,7 +11,7 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
-      Version 0.0.1
+      Version 0.0.2
       <ion-button expand="block" color="primary" @click="updateNow">Update now</ion-button>
     </ion-content>
   </ion-page>
@@ -26,12 +26,15 @@ import { SplashScreen } from '@capacitor/splash-screen'
 const updateNow = async () => {
   if(!isPlatform('capacitor'))
     return
+
+  // show the splashscreen to let the update happen
+  SplashScreen.show()
+
   const version = await CapacitorUpdater.download({
     url: 'https://github.com/Cap-go/demo-app/releases/download/0.0.2-v4/dist.zip',
     version: '0.0.2',
   })
-  // show the splashscreen to let the update happen
-  SplashScreen.show()
+  
   await CapacitorUpdater.set(version)
   SplashScreen.hide() // in case the set fail, otherwise the new app will have to hide it
 }
