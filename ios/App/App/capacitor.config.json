@@ -7,5 +7,14 @@
 		"CapacitorUpdater": {
 			"autoUpdate": true
 		}
-	}
+	},
+	"packageClassList": [
+		"AppPlugin",
+		"HapticsPlugin",
+		"KeyboardPlugin",
+		"SplashScreenPlugin",
+		"StatusBarPlugin",
+		"CapacitorUpdaterPlugin",
+		"CapacitorUpdaterPlugin"
+	]
 }
