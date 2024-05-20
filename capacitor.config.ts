@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'capgoTestApp',
+  appId: 'me.wcaleniewolny.test.ionic.vue',
+  appName: 'capgoTestVueApp',
   webDir: 'dist'
 };
 
