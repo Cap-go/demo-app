@@ -13,16 +13,27 @@
         </ion-toolbar>
       </ion-header>
 
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Capgo Cloud!</p>
-      </div>
+      <ion-grid style="height: 100%">
+        <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
+          <ion-col size="2" style="text-align: center;">
+            <strong>Ready to create an app?</strong>
+            <p>Start with Capgo Cloud!</p>
+            <p>Count: {{ count }}!</p>
+
+            <ion-button @click="() => count += 1">Click me!</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+     
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { ref } from 'vue';
+
+const count = ref(0)
 </script>
 
 <style scoped>
