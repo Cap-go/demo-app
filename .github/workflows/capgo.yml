@@ -33,13 +33,13 @@ jobs:
         working-directory: ./cli
         run: bun install
       - name: Build CLI
-        # env:
-        #   CLI_SECRET_URL: ${{ secrets.CLI_SECRET_URL }}
         working-directory: ./cli
         run: bun run build
 
       - name: Build project
         run: bun run build
-      - name: CLI ver
-        run: node ./cli/dist/index.js --version
+      - name: Upload to capgo
+        env:
+          CAPGO_APIKEY: ${{ secrets.CAPGO_APIKEY }}
+        run: node ./cli/dist/index.js bundle upload -c two_default -a $CAPGO_APIKEY --ignore-checksum-check
 
