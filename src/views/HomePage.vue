@@ -16,6 +16,8 @@
 
             <ion-button @click="() => count += 1">Click me!</ion-button>
             <ion-button @click="() => CapacitorUpdater.reset()">Hard reset!!</ion-button>
+            <ion-button @click="() => questionMark()">??</ion-button>
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -28,6 +30,11 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow } from '@ionic/vue';
 import { ref } from 'vue';
 import { CapacitorUpdater } from '@capgo/capacitor-updater'
+
+function questionMark() {
+
+}
+
 
 const count = ref(0)
 </script>

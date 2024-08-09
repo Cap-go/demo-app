@@ -30,3 +30,5 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+
+.capgo_sign_key.priv
