@@ -32,14 +32,13 @@ jobs:
       - name: Install dependencies (CLI)
         working-directory: ./cli
         run: bun install
+      - name: Build CLI
+        working-directory: ./cli
+        run: bun run build
       - name: "Import capgo's private signature key"
         env:
           CAPGO_SIGN_PRIVATE_KEY: ${{ secrets.CAPGO_SIGN_PRIVATE_KEY }}
         run: node ./cli/dist/index.js sign importPrivateKey --key $CAPGO_SIGN_PRIVATE_KEY
-      - name: Build CLI
-        working-directory: ./cli
-        run: bun run build
-
       - name: Build project
         run: bun run build
       - name: Upload to capgo
