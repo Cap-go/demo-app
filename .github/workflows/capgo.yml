@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Checkout CLI repo
+        uses: actions/checkout@v4
+        with:
+          repository: Cap-go/CLI
+          path: cli
+          ref: bundle_signing
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
       - name: Setup node
@@ -23,13 +29,17 @@ jobs:
           mv capacitor.config.ts.prod capacitor.config.ts
       - name: Install dependencies
         run: bun install
-      - name: Download CLI
-        env:
-          CLI_SECRET_URL: ${{ secrets.CLI_SECRET_URL }}
-        run: curl -o cli.js $CLI_SECRET_URL
+      - name: Install dependencies (CLI)
+        working-directory: ./cli
+        run: bun install
+      - name: Build CLI
+        # env:
+        #   CLI_SECRET_URL: ${{ secrets.CLI_SECRET_URL }}
+        working-directory: ./cli
+        run: bun run build
 
       - name: Build project
         run: bun run build
       - name: CLI ver
-        run: node ./cli.js --version
+        run: node ./cli/dist/index.js --version
 
