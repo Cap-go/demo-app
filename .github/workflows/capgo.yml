@@ -38,6 +38,10 @@ jobs:
 
       - name: Build project
         run: bun run build
+      - name: "Import capgo's private signature key"
+        env:
+          CAPGO_SIGN_PRIVATE_KEY: ${{ secrets.CAPGO_SIGN_PRIVATE_KEY }}
+          run: node ./cli/dist/index.js sign importPrivateKey --key $CAPGO_SIGN_PRIVATE_KEY
       - name: Upload to capgo
         env:
           CAPGO_APIKEY: ${{ secrets.CAPGO_APIKEY }}
