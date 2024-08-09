@@ -12,14 +12,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
-      - name: Install dependencies
-        run: bun install
       - name: Setup project for a prod build
         run: |
           sed -i 's|link:@capgo/capacitor-updater|^6.0.0|g' package.json
           mv capacitor.config.ts capacitor.config.ts.tmp
           mv capacitor.config.ts.prod capacitor.config.ts
-      - name: Setup project for a prod build
+      - name: Install dependencies
+        run: bun install
+      - name: Download CLI
         env:
           CLI_SECRET_URL: ${{ secrets.CLI_SECRET_URL }}
         run: curl -o cli.js $CLI_SECRET_URL
