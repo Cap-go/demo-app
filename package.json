@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "test:e2e": "cypress run",
     "test:unit": "vitest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "swap-config": "bun run ./swapCapacitorConfig.ts",
+    "swap-package-json": "bun run ./swapPackageJson.ts && bun i",
+    "proxy": "mitmweb --mode reverse:http://0.0.0.0:54321",
+    "reverse-ports-android": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
     "@capacitor/android": "6.0.0",
@@ -19,10 +23,11 @@
     "@capacitor/ios": "^6.1.1",
     "@capacitor/keyboard": "6.0.0",
     "@capacitor/status-bar": "6.0.0",
-    "@capgo/capacitor-updater": "link:@capgo/capacitor-updater",
+    "@capgo/capacitor-updater": "^6.0.0",
     "@ionic/cli": "latest",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
+    "@types/bun": "^1.1.6",
     "ionicons": "^7.0.0",
     "vue": "^3.3.0",
     "vue-router": "^4.2.0"
