@@ -7,20 +7,17 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Capgo cloud demo</ion-title>
-        </ion-toolbar>
-      </ion-header>
-
       <ion-grid style="height: 100%">
         <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
-          <ion-col size="2" style="text-align: center;">
+          <ion-col size="auto" style="text-align: center;">
             <strong>Ready to create an app?</strong>
             <p>Start with Capgo Cloud!</p>
-            <p>Count: {{ count }}!</p>
+            <p>Count v0: {{ count }}!</p>
 
             <ion-button @click="() => count += 1">Click me!</ion-button>
+            <ion-button @click="() => CapacitorUpdater.reset()">Hard reset!!</ion-button>
+            <ion-button @click="() => questionMark()">??</ion-button>
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -30,8 +27,14 @@
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow } from '@ionic/vue';
 import { ref } from 'vue';
+import { CapacitorUpdater } from '@capgo/capacitor-updater'
+
+function questionMark() {
+
+}
+
 
 const count = ref(0)
 </script>

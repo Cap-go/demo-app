@@ -1,0 +1,48 @@
+name: Release to capgo
+
+on:
+ - workflow_dispatch
+
+jobs:
+  build-and-release:
+    name: my-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Checkout CLI repo
+        uses: actions/checkout@v4
+        with:
+          repository: Cap-go/CLI
+          path: cli
+          ref: bundle_signing
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup project for a prod build
+        run: |
+          sed -i 's|link:@capgo/capacitor-updater|^6.0.0|g' package.json
+          mv capacitor.config.ts capacitor.config.ts.tmp
+          mv capacitor.config.ts.prod capacitor.config.ts
+      - name: Install dependencies
+        run: bun install
+      - name: Install dependencies (CLI)
+        working-directory: ./cli
+        run: bun install
+      - name: Build CLI
+        working-directory: ./cli
+        run: bun run build
+      - name: Build project
+        run: bun run build
+      - name: "Import capgo's private signature key"
+        env:
+          CAPGO_SIGN_PRIVATE_KEY: ${{ secrets.CAPGO_SIGN_PRIVATE_KEY }}
+        run: node ./cli/dist/index.js sign importPrivateKey --key $CAPGO_SIGN_PRIVATE_KEY
+      - name: Upload to capgo
+        env:
+          CAPGO_APIKEY: ${{ secrets.CAPGO_APIKEY }}
+        run: node ./cli/dist/index.js bundle upload -c two_default -a $CAPGO_APIKEY --ignore-checksum-check
+
