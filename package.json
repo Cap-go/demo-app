@@ -13,6 +13,7 @@
     "swap-config": "bun run ./swapCapacitorConfig.ts",
     "swap-package-json": "bun run ./swapPackageJson.ts && bun i",
     "proxy": "mitmweb --mode reverse:http://0.0.0.0:54321",
+    "proxy-s3": "mitmweb --listen-port 9400 --web-port 9401 --mode reverse:http://0.0.0.0:9000",
     "reverse-ports-android": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
@@ -23,7 +24,7 @@
     "@capacitor/ios": "^6.1.1",
     "@capacitor/keyboard": "6.0.0",
     "@capacitor/status-bar": "6.0.0",
-    "@capgo/capacitor-updater": "^6.0.0",
+    "@capgo/capacitor-updater": "link:@capgo/capacitor-updater",
     "@ionic/cli": "latest",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",

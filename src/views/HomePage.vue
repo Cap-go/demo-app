@@ -31,8 +31,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol
 import { ref } from 'vue';
 import { CapacitorUpdater } from '@capgo/capacitor-updater'
 
-function questionMark() {
-
+async function questionMark() {
 }
 
 
