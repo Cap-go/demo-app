@@ -1,32 +1,28 @@
 PODS:
   - Alamofire (5.9.0)
-  - Capacitor (6.1.1):
+  - Capacitor (6.1.2):
     - CapacitorCordova
   - CapacitorApp (6.0.0):
     - Capacitor
-  - CapacitorCordova (6.1.1)
+  - CapacitorCordova (6.1.2)
   - CapacitorHaptics (6.0.0):
     - Capacitor
   - CapacitorKeyboard (6.0.0):
     - Capacitor
   - CapacitorStatusBar (6.0.0):
     - Capacitor
-  - CapgoCapacitorUpdater (6.0.55):
+  - CapgoCapacitorUpdater (6.0.63):
     - Alamofire
     - Capacitor
     - SSZipArchive
-    - SwiftyRSA
     - Version
   - SSZipArchive (2.4.3)
-  - SwiftyRSA (1.7.0):
-    - SwiftyRSA/ObjC (= 1.7.0)
-  - SwiftyRSA/ObjC (1.7.0)
   - Version (0.8.0)
 
 DEPENDENCIES:
-  - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@6.1.2_@capacitor+core@6.1.2/node_modules/@capacitor/ios`)"
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
-  - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@6.1.2_@capacitor+core@6.1.2/node_modules/@capacitor/ios`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
@@ -36,16 +32,15 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - SSZipArchive
-    - SwiftyRSA
     - Version
 
 EXTERNAL SOURCES:
   Capacitor:
-    :path: "../../node_modules/@capacitor/ios"
+    :path: "../../node_modules/.pnpm/@capacitor+ios@6.1.2_@capacitor+core@6.1.2/node_modules/@capacitor/ios"
   CapacitorApp:
     :path: "../../node_modules/@capacitor/app"
   CapacitorCordova:
-    :path: "../../node_modules/@capacitor/ios"
+    :path: "../../node_modules/.pnpm/@capacitor+ios@6.1.2_@capacitor+core@6.1.2/node_modules/@capacitor/ios"
   CapacitorHaptics:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorKeyboard:
@@ -57,17 +52,16 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
-  Capacitor: 8941aba4364ba9d1b22188569001f2ce45cc2b00
+  Capacitor: 679f9673fdf30597493a6362a5d5bf233d46abc2
   CapacitorApp: 9d53aec7101f7b030a950c5bdc4df8612576b279
-  CapacitorCordova: 8f2cc8d8d3619c566e9418fe8772064a94266106
+  CapacitorCordova: f48c89f96c319101cd2f0ce8a2b7449b5fb8b3dd
   CapacitorHaptics: 9ebc9363f0e9b8eb4295088a0b474530acf1859b
   CapacitorKeyboard: deacbd09d8d1029c3681197fb05d206b721d5f73
   CapacitorStatusBar: 2e4369f99166125435641b1908d05f561eaba6f6
-  CapgoCapacitorUpdater: 3350db511a0b260983328967839eaffab21ab50a
+  CapgoCapacitorUpdater: 317d7eba77605a6371bd99f3b4a3e58cda4a6759
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
-  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: 5745f3bd2fc35d515ef0939399ab53bd985a544e
+PODFILE CHECKSUM: dcb65443f7c32c7527a6109b7dd300ba270afd02
 
 COCOAPODS: 1.15.2

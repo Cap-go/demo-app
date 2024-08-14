@@ -16,7 +16,7 @@
 
             <ion-button @click="() => count += 1">Click me!</ion-button>
             <ion-button @click="() => CapacitorUpdater.reset()">Hard reset!!</ion-button>
-            <ion-button @click="() => questionMark()">??</ion-button>
+            <ion-button @click="() => killTest()">Kill test</ion-button>
 
           </ion-col>
         </ion-row>
@@ -31,7 +31,11 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol
 import { ref } from 'vue';
 import { CapacitorUpdater } from '@capgo/capacitor-updater'
 
-async function questionMark() {
+async function killTest() {
+  console.log('setMultiDelay')
+  await CapacitorUpdater.setMultiDelay({
+    delayConditions: [ { kind: "kill" } ]
+  })
 }
 
 
