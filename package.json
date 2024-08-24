@@ -17,9 +17,11 @@
     "reverse-ports-android": "adb reverse tcp:8080 tcp:8080 && adb reverse tcp:9000 tcp:9000"
   },
   "dependencies": {
-    "@capacitor/android": "6.0.0",
+    "@capacitor/android": "^6.1.1",
     "@capacitor/app": "6.0.0",
-    "@capacitor/core": "6.0.0",
+    "@capacitor/camera": "^6.0.2",
+    "@capacitor/core": "^6.1.1",
+    "@capacitor/dialog": "^6.0.1",
     "@capacitor/haptics": "6.0.0",
     "@capacitor/ios": "^6.1.1",
     "@capacitor/keyboard": "6.0.0",

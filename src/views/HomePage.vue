@@ -17,6 +17,7 @@
             <ion-button @click="() => count += 1">Click me!</ion-button>
             <ion-button @click="() => CapacitorUpdater.reset()">Hard reset!!</ion-button>
             <ion-button @click="() => killTest()">Kill test</ion-button>
+            <ion-button @click="() => cameraTest()">Camera test</ion-button>
 
           </ion-col>
         </ion-row>
@@ -30,7 +31,16 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow } from '@ionic/vue';
 import { ref } from 'vue';
 import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { Camera, CameraResultType } from'@capacitor/camera'
+import {} from'@capacitor/dialog'
 
+async function cameraTest() {
+  Camera.getPhoto({
+    resultType: CameraResultType.Uri,
+  }).then(() => {
+    console.log('Camera.getPhoto')
+  })
+}
 async function killTest() {
   console.log('setMultiDelay')
   await CapacitorUpdater.setMultiDelay({
