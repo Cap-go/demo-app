@@ -18,6 +18,7 @@
             <ion-button @click="() => CapacitorUpdater.reset()">Hard reset!!</ion-button>
             <ion-button @click="() => killTest()">Kill test</ion-button>
             <ion-button @click="() => cameraTest()">Camera test</ion-button>
+            <ion-button @click="() => download()">Updater test download</ion-button>
 
           </ion-col>
         </ion-row>
@@ -46,6 +47,19 @@ async function killTest() {
   await CapacitorUpdater.setMultiDelay({
     delayConditions: [ { kind: "kill" } ]
   })
+}
+async function download() {
+  console.log('download')
+  try {
+    const res = await CapacitorUpdater.download({
+    url: 'https://storage.cloud.google.com/human-app-frontend-dev-cdn-bucket/health.human.app.dev_4.0.0.zip',
+    // url: 'https://github.com/Cap-go/capgo/archive/refs/tags/v11.3.74.zip',
+    version: '0.0.1-beta1',
+  })
+  console.log('download done', res)
+  } catch (e) {
+    console.log('error', e)
+  }
 }
 
 
