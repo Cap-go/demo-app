@@ -10,7 +10,9 @@ import { IonApp, IonRouterOutlet } from '@ionic/vue';
 
 CapacitorUpdater.notifyAppReady()
 
-await CapacitorUpdater.setMultiDelay({
-  delayConditions: [ { kind: "kill" } ]
-})
+// await new Promise(r => setTimeout(r, 2000));
+// await CapacitorUpdater.setMultiDelay({
+//   delayConditions: [ { kind: "kill" } ]
+// })
+// console.log('RESOLVED')
 </script>>

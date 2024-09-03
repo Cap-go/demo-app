@@ -14,21 +14,26 @@
     "swap-package-json": "bun run ./swapPackageJson.ts && bun i",
     "proxy": "mitmweb --mode reverse:http://0.0.0.0:54321",
     "proxy-s3": "mitmweb --listen-port 9400 --web-port 9401 --mode reverse:http://0.0.0.0:9000",
-    "reverse-ports-android": "adb reverse tcp:8081 tcp:8081"
+    "reverse-ports-android": "adb reverse tcp:8080 tcp:8080 && adb reverse tcp:9000 tcp:9000",
+    "macos-replace-count-str": "LC_CTYPE=C find ./dist -type f -exec sed -i '' -E 's/\"Count v[0-9]+: \"/\"Count v5: \"/g' {} \\;"
   },
   "dependencies": {
     "@capacitor/android": "6.0.0",
     "@capacitor/app": "6.0.0",
     "@capacitor/core": "6.0.0",
+    "@capacitor/filesystem": "^6.0.1",
     "@capacitor/haptics": "6.0.0",
     "@capacitor/ios": "^6.1.1",
     "@capacitor/keyboard": "6.0.0",
     "@capacitor/status-bar": "6.0.0",
+    "@capgo/camera-preview": "link:@capgo/camera-preview",
     "@capgo/capacitor-updater": "link:@capgo/capacitor-updater",
+    "@capgo/inappbrowser": "link:@capgo/inappbrowser",
     "@ionic/cli": "latest",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
     "@types/bun": "^1.1.6",
+    "csv-writer": "^1.6.0",
     "ionicons": "^7.0.0",
     "vue": "^3.3.0",
     "vue-router": "^4.2.0"
