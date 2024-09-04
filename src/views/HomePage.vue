@@ -81,7 +81,8 @@ async function openWeb() {
   const script =
   "await import('https://unpkg.com/darkreader@4.9.89/darkreader.js');\n" +
   "DarkReader.enable({ brightness: 100, contrast: 90, sepia: 10 });"
-  InAppBrowser.openWebView({ url: WEB_URL, isPresentAfterPageLoad: true, preShowScript: script, buttonNearDone: { ios: { icon: 'monkey', iconType: 'resource' } } })
+  InAppBrowser.openWebView({ url: WEB_URL, isPresentAfterPageLoad: true, preShowScript: script })
+  // InAppBrowser.openWebView({ url: WEB_URL, isPresentAfterPageLoad: true, preShowScript: script, buttonNearDone: { ios: { icon: 'monkey', iconType: 'resource' } } })
 }
 
 async function openCamera() {
