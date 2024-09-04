@@ -28,6 +28,7 @@
     "@capacitor/status-bar": "6.0.0",
     "@capgo/camera-preview": "link:@capgo/camera-preview",
     "@capgo/capacitor-updater": "link:@capgo/capacitor-updater",
+    "@capgo/capacitor-uploader": "link:@capgo/capacitor-uploader",
     "@capgo/inappbrowser": "link:@capgo/inappbrowser",
     "@ionic/cli": "latest",
     "@ionic/vue": "^8.0.0",
