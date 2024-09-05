@@ -18,6 +18,8 @@
     "macos-replace-count-str": "LC_CTYPE=C find ./dist -type f -exec sed -i '' -E 's/\"Count v[0-9]+: \"/\"Count v5: \"/g' {} \\;"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.645.0",
+    "@aws-sdk/s3-request-presigner": "^3.645.0",
     "@capacitor/android": "6.0.0",
     "@capacitor/app": "6.0.0",
     "@capacitor/core": "6.0.0",
@@ -28,6 +30,7 @@
     "@capacitor/status-bar": "6.0.0",
     "@capgo/camera-preview": "link:@capgo/camera-preview",
     "@capgo/capacitor-updater": "link:@capgo/capacitor-updater",
+    "@capgo/capacitor-uploader": "^0.0.7",
     "@capgo/inappbrowser": "link:@capgo/inappbrowser",
     "@ionic/cli": "latest",
     "@ionic/vue": "^8.0.0",

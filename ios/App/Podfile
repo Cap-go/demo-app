@@ -18,6 +18,7 @@ def capacitor_pods
   pod 'CapacitorStatusBar', :path => '../../node_modules/@capacitor/status-bar'
   pod 'CapgoCameraPreview', :path => '../../../camera-preview'
   pod 'CapgoCapacitorUpdater', :path => '../../../capacitor-updater'
+  pod 'CapgoCapacitorUploader', :path => '../../node_modules/@capgo/capacitor-uploader'
   pod 'CapgoInappbrowser', :path => '../../../capacitor-inappbrowser'
 end
 

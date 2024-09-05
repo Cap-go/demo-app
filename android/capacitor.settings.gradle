@@ -23,5 +23,8 @@ project(':capgo-camera-preview').projectDir = new File('../../camera-preview/and
 include ':capgo-capacitor-updater'
 project(':capgo-capacitor-updater').projectDir = new File('../../capacitor-updater/android')
 
+include ':capgo-capacitor-uploader'
+project(':capgo-capacitor-uploader').projectDir = new File('../node_modules/@capgo/capacitor-uploader/android')
+
 include ':capgo-inappbrowser'
 project(':capgo-inappbrowser').projectDir = new File('../../capacitor-inappbrowser/android')

@@ -15,13 +15,15 @@ PODS:
     - Capacitor
   - CapgoCameraPreview (2.0.0):
     - Capacitor
-  - CapgoCapacitorUpdater (6.1.16):
+  - CapgoCapacitorUpdater (6.1.20):
     - Alamofire
     - Capacitor
     - SSZipArchive
     - SwiftyRSA
     - Version
-  - CapgoInappbrowser (6.6.1):
+  - CapgoCapacitorUploader (0.0.7):
+    - Capacitor
+  - CapgoInappbrowser (6.6.6):
     - Capacitor
   - SSZipArchive (2.4.3)
   - SwiftyRSA (1.7.0):
@@ -39,6 +41,7 @@ DEPENDENCIES:
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
   - CapgoCameraPreview (from `../../../camera-preview`)
   - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
+  - "CapgoCapacitorUploader (from `../../node_modules/@capgo/capacitor-uploader`)"
   - CapgoInappbrowser (from `../../../capacitor-inappbrowser`)
 
 SPEC REPOS:
@@ -67,6 +70,8 @@ EXTERNAL SOURCES:
     :path: "../../../camera-preview"
   CapgoCapacitorUpdater:
     :path: "../../../capacitor-updater"
+  CapgoCapacitorUploader:
+    :path: "../../node_modules/@capgo/capacitor-uploader"
   CapgoInappbrowser:
     :path: "../../../capacitor-inappbrowser"
 
@@ -80,12 +85,13 @@ SPEC CHECKSUMS:
   CapacitorKeyboard: deacbd09d8d1029c3681197fb05d206b721d5f73
   CapacitorStatusBar: 2e4369f99166125435641b1908d05f561eaba6f6
   CapgoCameraPreview: e5ec3ed8998e94e24982c484841d7be48e7c3bbd
-  CapgoCapacitorUpdater: 2f5b6f2dab250967188f09f3d29444c431d25d81
-  CapgoInappbrowser: 619c1ab1b06e0d8d3c6c33a7b01faf553945c877
+  CapgoCapacitorUpdater: e755631dede3264eed58c968ac98c09da771bc26
+  CapgoCapacitorUploader: aeb3534725504af8274f60b24d57054b1a0bc891
+  CapgoInappbrowser: 1e8cc123fa464311b558442564fd6f6aa2b817b4
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: 3e1af8725720305f5b6106905548e836bf08a285
+PODFILE CHECKSUM: 183c7c327da64f80bb5e60b26710ada7f1274789
 
 COCOAPODS: 1.15.2

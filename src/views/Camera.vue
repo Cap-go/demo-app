@@ -8,7 +8,7 @@
         }">
         </div>
       </button>
-      <button @click="handleUpload">Upload</button>
+      <button class="p-2 text-white bg-blue-500 rounded-md" @click="handleUpload">Upload</button>
     </div>
   </ion-page>
 </template>
@@ -17,7 +17,7 @@
   import { onMounted, ref } from 'vue';
   import { IonPage } from '@ionic/vue'
   import { CameraPreview } from '@capgo/camera-preview'
-  import { Filesystem } from '@capacitor/filesystem';
+  // import { Filesystem } from '@capacitor/filesystem';
   import { Uploader } from '@capgo/capacitor-uploader';
 
 
@@ -32,10 +32,6 @@
       isRecording.value = false
       const fileUrl = await CameraPreview.stopRecordVideo()
       console.log(fileUrl.videoFilePath)
-      const contents = await Filesystem.readFile({
-        path: fileUrl.videoFilePath,
-      });
-      console.log(contents.data.length)
       videoUrl.value = fileUrl.videoFilePath
     }
   }
@@ -58,8 +54,8 @@
     try {
       const result = await Uploader.startUpload({
         filePath: videoUrl.value,
-        serverUrl: 'YOUR_UPLOAD_URL_HERE', // Replace with your actual upload URL
-        method: 'POST',
+        serverUrl: '****', // Replace with your actual upload URL
+        method: 'PUT',
         headers: {
           'Content-Type': 'video/mp4',
           // Add any other required headers
