@@ -1,7 +1,15 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
 
+@media (prefers-color-scheme: dark) {
+  .my-custom-class .alert-wrapper {
+    background: #121212;
+  }
+}
 
-:root {
-  --ion-background-color: transparent !important;
+
+@media (prefers-color-scheme: light) {
+  .my-custom-class .alert-wrapper {
+    background: #f9f9f9;
+  }
 }

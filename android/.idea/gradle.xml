@@ -8,12 +8,17 @@
         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
         <option name="modules">
           <set>
+            <option value="$PROJECT_DIR$/../../camera-preview/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-inappbrowser/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-shake/android" />
             <option value="$PROJECT_DIR$/../../capacitor-updater/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-uploader/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/capacitor-cordova-android-plugins" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/app/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capacitor/filesystem/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/haptics/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/keyboard/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/status-bar/android" />
