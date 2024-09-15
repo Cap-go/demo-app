@@ -15,14 +15,30 @@ PODS:
     - Capacitor
   - CapgoCameraPreview (2.0.0):
     - Capacitor
+  - CapgoCapacitorDataStorageSqlite (6.0.7):
+    - Capacitor
+    - SQLite.swift/SQLCipher
+  - CapgoCapacitorShake (6.0.46):
+    - Capacitor
   - CapgoCapacitorUpdater (6.1.18):
     - Alamofire
     - Capacitor
     - SSZipArchive
     - SwiftyRSA
     - Version
-  - CapgoInappbrowser (6.5.1):
+  - CapgoCapacitorUploader (0.0.11):
     - Capacitor
+  - CapgoInappbrowser (6.6.8):
+    - Capacitor
+  - CapgoNativePurchases (0.0.66):
+    - Capacitor
+  - SQLCipher (4.6.1):
+    - SQLCipher/standard (= 4.6.1)
+  - SQLCipher/common (4.6.1)
+  - SQLCipher/standard (4.6.1):
+    - SQLCipher/common
+  - SQLite.swift/SQLCipher (0.15.3):
+    - SQLCipher (>= 4.0.0)
   - SSZipArchive (2.4.3)
   - SwiftyRSA (1.7.0):
     - SwiftyRSA/ObjC (= 1.7.0)
@@ -38,12 +54,18 @@ DEPENDENCIES:
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
   - CapgoCameraPreview (from `../../../camera-preview`)
+  - CapgoCapacitorDataStorageSqlite (from `../../../capacitor-data-storage-sqlite`)
+  - CapgoCapacitorShake (from `../../../capacitor-shake`)
   - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
+  - CapgoCapacitorUploader (from `../../../capacitor-uploader`)
   - CapgoInappbrowser (from `../../../capacitor-inappbrowser`)
+  - CapgoNativePurchases (from `../../../native-purchases`)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - SQLCipher
+    - SQLite.swift
     - SSZipArchive
     - SwiftyRSA
     - Version
@@ -65,10 +87,18 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/status-bar"
   CapgoCameraPreview:
     :path: "../../../camera-preview"
+  CapgoCapacitorDataStorageSqlite:
+    :path: "../../../capacitor-data-storage-sqlite"
+  CapgoCapacitorShake:
+    :path: "../../../capacitor-shake"
   CapgoCapacitorUpdater:
     :path: "../../../capacitor-updater"
+  CapgoCapacitorUploader:
+    :path: "../../../capacitor-uploader"
   CapgoInappbrowser:
     :path: "../../../capacitor-inappbrowser"
+  CapgoNativePurchases:
+    :path: "../../../native-purchases"
 
 SPEC CHECKSUMS:
   Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
@@ -80,12 +110,18 @@ SPEC CHECKSUMS:
   CapacitorKeyboard: deacbd09d8d1029c3681197fb05d206b721d5f73
   CapacitorStatusBar: 2e4369f99166125435641b1908d05f561eaba6f6
   CapgoCameraPreview: e5ec3ed8998e94e24982c484841d7be48e7c3bbd
+  CapgoCapacitorDataStorageSqlite: 4d09ad3405f9f29b10711d8a39a9e124be1b8e46
+  CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
   CapgoCapacitorUpdater: ec5e7fb0c48961c92d8751a936b14f82888dea4e
-  CapgoInappbrowser: dddb6abfbfdb57867095de7c2e0046723aa55027
+  CapgoCapacitorUploader: fc9bb687f6687b89cb62c80b3471b0a5bdf52715
+  CapgoInappbrowser: 9f80d98fa546693b895712b5fba6abc46f65e44a
+  CapgoNativePurchases: 3f3a9235ab7204d882877d297686322a44e43a55
+  SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
+  SQLite.swift: 8d054987f02728cc912b0eb5a9659650573a65a2
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: 3e1af8725720305f5b6106905548e836bf08a285
+PODFILE CHECKSUM: 306ded5a2cf26225a6e03daaf9e12247e349679d
 
 COCOAPODS: 1.15.2

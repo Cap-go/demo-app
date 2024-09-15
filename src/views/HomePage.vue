@@ -17,6 +17,10 @@
             <ion-button router-link="/updater">Updater</ion-button>
             <ion-button router-link="/camera">Camera</ion-button>
             <ion-button router-link="/subscriptions">Subscriptions</ion-button>
+            <ion-button router-link="/web">Web</ion-button>
+            <ion-button router-link="/sql">Sql</ion-button>
+            <ion-button router-link="/screen-recorder">Screen recorder</ion-button>
+            <ion-button router-link="/auth">Auth</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>

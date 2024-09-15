@@ -1,0 +1,126 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "46D2476B",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6DE0C6F5",
+      "localizations" : [
+        {
+          "description" : "Will make you happy in life",
+          "displayName" : "Happines",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "me.wcaleniewolny.testapp.happines",
+      "referenceName" : "Happines",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "1FEA7946",
+      "localizations" : [
+
+      ],
+      "name" : "Main reference group",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "5",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "203AD765",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlocks new ski areas",
+              "displayName" : "Ski pass",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "me.wcaleniewolny.testapp.skipass",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Ski pass",
+          "subscriptionGroupID" : "1FEA7946",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

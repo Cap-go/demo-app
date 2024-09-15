@@ -17,6 +17,7 @@ def capacitor_pods
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
   pod 'CapacitorStatusBar', :path => '../../node_modules/@capacitor/status-bar'
   pod 'CapgoCameraPreview', :path => '../../../camera-preview'
+  pod 'CapgoCapacitorDataStorageSqlite', :path => '../../../capacitor-data-storage-sqlite'
   pod 'CapgoCapacitorShake', :path => '../../../capacitor-shake'
   pod 'CapgoCapacitorUpdater', :path => '../../../capacitor-updater'
   pod 'CapgoCapacitorUploader', :path => '../../../capacitor-uploader'

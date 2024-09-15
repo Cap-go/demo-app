@@ -20,6 +20,9 @@ project(':capacitor-status-bar').projectDir = new File('../node_modules/@capacit
 include ':capgo-camera-preview'
 project(':capgo-camera-preview').projectDir = new File('../../camera-preview/android')
 
+include ':capgo-capacitor-data-storage-sqlite'
+project(':capgo-capacitor-data-storage-sqlite').projectDir = new File('../../capacitor-data-storage-sqlite/android')
+
 include ':capgo-capacitor-shake'
 project(':capgo-capacitor-shake').projectDir = new File('../../capacitor-shake/android')
 
@@ -34,3 +37,9 @@ project(':capgo-inappbrowser').projectDir = new File('../../capacitor-inappbrows
 
 include ':capgo-native-purchases'
 project(':capgo-native-purchases').projectDir = new File('../../native-purchases/android')
+
+include ':capgo-capacitor-screen-recorder'
+project(':capgo-capacitor-screen-recorder').projectDir = new File('../../capacitor-screen-recorder/android')
+
+include ':capgo-capacitor-social-login'
+project(':capgo-capacitor-social-login').projectDir = new File('../../capacitor-social-login/android')
