@@ -15,6 +15,12 @@
           <ion-col size="auto" style="text-align: center;">
             <strong>Ready to auth?</strong>
             <p>Login via the plugin!</p>
+            <template v-if="!!userdataRef">
+              <p>Email: {{ userdataRef.email }}</p>
+              <p>ID: {{ userdataRef.id}}</p>
+              <p>First name: {{ userdataRef.first_name }}</p>
+              <p>Last name: {{ userdataRef.last_name }}</p>
+            </template>
             <p class="mb-6"></p>
 
             <ion-button @click="() => logincapgo()">Login!</ion-button>
@@ -29,9 +35,13 @@
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton } from '@ionic/vue';
-import { onMounted, ref } from 'vue'
+import { onMounted, Ref, ref } from 'vue'
 import { usePopoutStore } from '@/popoutStore';
 import { SocialLogin } from '@capgo/capacitor-social-login';
+
+const userdataRef = ref(null) as Ref<{ id: string, email: string, first_name: string, last_name: string } | null>
+
+const popoutStore = usePopoutStore()
 
 onMounted(async () => {
   await SocialLogin.initialize({
@@ -56,8 +66,22 @@ async function logincapgo() {
 }
 
 async function actBackend() {
-  const authorizationCode = (await SocialLogin.getAuthorizationCode({ provider: 'apple' }))
-  console.log(authorizationCode)
+  const authorizationCode = (await SocialLogin.getAuthorizationCode({ provider: 'apple' })).jwt
+
+  const res = await fetch('https://applelogin.wcaleniewolny.me/userdata', {
+    headers: {
+      'Authorization': `Bearer ${authorizationCode}`
+    }
+  })
+
+  if (res.status != 200) {
+    console.log(await res.text(), res.status)
+    popoutStore.popout("Error while calling backend", "Cannot fetch user data")
+    return
+  }
+
+  const data = await res.json()
+  userdataRef.value = data as any
 }
 
 </script>
