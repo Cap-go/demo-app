@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.9.0)
+  - Alamofire (5.9.1)
   - Capacitor (6.1.2):
     - CapacitorCordova
   - CapacitorApp (6.0.0):
@@ -15,22 +15,26 @@ PODS:
     - Capacitor
   - CapgoCameraPreview (2.0.0):
     - Capacitor
-  - CapgoCapacitorDataStorageSqlite (6.0.7):
+  - CapgoCapacitorDataStorageSqlite (6.0.9):
     - Capacitor
     - SQLite.swift/SQLCipher
+  - CapgoCapacitorScreenRecorder (8.1.58):
+    - Capacitor
   - CapgoCapacitorShake (6.0.46):
     - Capacitor
-  - CapgoCapacitorUpdater (6.1.18):
+  - CapgoCapacitorSocialLogin (0.0.7):
+    - Capacitor
+  - CapgoCapacitorUpdater (6.1.27):
     - Alamofire
     - Capacitor
     - SSZipArchive
     - SwiftyRSA
     - Version
-  - CapgoCapacitorUploader (0.0.11):
+  - CapgoCapacitorUploader (0.0.16):
     - Capacitor
-  - CapgoInappbrowser (6.6.8):
+  - CapgoInappbrowser (6.6.6):
     - Capacitor
-  - CapgoNativePurchases (0.0.66):
+  - CapgoNativePurchases (0.0.69):
     - Capacitor
   - SQLCipher (4.6.1):
     - SQLCipher/standard (= 4.6.1)
@@ -54,8 +58,10 @@ DEPENDENCIES:
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
   - CapgoCameraPreview (from `../../../camera-preview`)
-  - CapgoCapacitorDataStorageSqlite (from `../../../capacitor-data-storage-sqlite`)
-  - CapgoCapacitorShake (from `../../../capacitor-shake`)
+  - "CapgoCapacitorDataStorageSqlite (from `../../node_modules/@capgo/capacitor-data-storage-sqlite`)"
+  - "CapgoCapacitorScreenRecorder (from `../../node_modules/@capgo/capacitor-screen-recorder`)"
+  - "CapgoCapacitorShake (from `../../node_modules/@capgo/capacitor-shake`)"
+  - CapgoCapacitorSocialLogin (from `../../../capacitor-social-login`)
   - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
   - CapgoCapacitorUploader (from `../../../capacitor-uploader`)
   - CapgoInappbrowser (from `../../../capacitor-inappbrowser`)
@@ -88,9 +94,13 @@ EXTERNAL SOURCES:
   CapgoCameraPreview:
     :path: "../../../camera-preview"
   CapgoCapacitorDataStorageSqlite:
-    :path: "../../../capacitor-data-storage-sqlite"
+    :path: "../../node_modules/@capgo/capacitor-data-storage-sqlite"
+  CapgoCapacitorScreenRecorder:
+    :path: "../../node_modules/@capgo/capacitor-screen-recorder"
   CapgoCapacitorShake:
-    :path: "../../../capacitor-shake"
+    :path: "../../node_modules/@capgo/capacitor-shake"
+  CapgoCapacitorSocialLogin:
+    :path: "../../../capacitor-social-login"
   CapgoCapacitorUpdater:
     :path: "../../../capacitor-updater"
   CapgoCapacitorUploader:
@@ -101,7 +111,7 @@ EXTERNAL SOURCES:
     :path: "../../../native-purchases"
 
 SPEC CHECKSUMS:
-  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   Capacitor: 679f9673fdf30597493a6362a5d5bf233d46abc2
   CapacitorApp: 9d53aec7101f7b030a950c5bdc4df8612576b279
   CapacitorCordova: f48c89f96c319101cd2f0ce8a2b7449b5fb8b3dd
@@ -110,18 +120,20 @@ SPEC CHECKSUMS:
   CapacitorKeyboard: deacbd09d8d1029c3681197fb05d206b721d5f73
   CapacitorStatusBar: 2e4369f99166125435641b1908d05f561eaba6f6
   CapgoCameraPreview: e5ec3ed8998e94e24982c484841d7be48e7c3bbd
-  CapgoCapacitorDataStorageSqlite: 4d09ad3405f9f29b10711d8a39a9e124be1b8e46
+  CapgoCapacitorDataStorageSqlite: f50a420386e660eb82f05dd94f5cf62c772ebf36
+  CapgoCapacitorScreenRecorder: 06b1278e43babbb2a82ba909d66e93dc1083f387
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
-  CapgoCapacitorUpdater: ec5e7fb0c48961c92d8751a936b14f82888dea4e
-  CapgoCapacitorUploader: fc9bb687f6687b89cb62c80b3471b0a5bdf52715
-  CapgoInappbrowser: 9f80d98fa546693b895712b5fba6abc46f65e44a
-  CapgoNativePurchases: 3f3a9235ab7204d882877d297686322a44e43a55
+  CapgoCapacitorSocialLogin: de792f9a4dc33d78a64f7e65510a47fc4f638bbc
+  CapgoCapacitorUpdater: 5114ef35003bf8eb55744aa6a18a85dd9085449c
+  CapgoCapacitorUploader: 0ffef6044edd222d392cd0ca86ff3a1c1e5fffec
+  CapgoInappbrowser: 1e8cc123fa464311b558442564fd6f6aa2b817b4
+  CapgoNativePurchases: 02384f340291247543d9919d73c03acc1d6eff88
   SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
   SQLite.swift: 8d054987f02728cc912b0eb5a9659650573a65a2
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: 306ded5a2cf26225a6e03daaf9e12247e349679d
+PODFILE CHECKSUM: ce21cfd120f62550ab338f45e6fc9ba8bd923f70
 
 COCOAPODS: 1.15.2

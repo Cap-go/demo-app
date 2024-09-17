@@ -20,7 +20,7 @@ def capacitor_pods
   pod 'CapgoCapacitorDataStorageSqlite', :path => '../../../capacitor-data-storage-sqlite'
   pod 'CapgoCapacitorShake', :path => '../../../capacitor-shake'
   pod 'CapgoCapacitorUpdater', :path => '../../../capacitor-updater'
-  pod 'CapgoCapacitorUploader', :path => '../../../capacitor-uploader'
+  pod 'CapgoCapacitorUploader', :path => '../../node_modules/@capgo/capacitor-uploader'
   pod 'CapgoInappbrowser', :path => '../../../capacitor-inappbrowser'
   pod 'CapgoNativePurchases', :path => '../../../native-purchases'
 end
