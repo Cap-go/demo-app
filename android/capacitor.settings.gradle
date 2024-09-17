@@ -21,25 +21,25 @@ include ':capgo-camera-preview'
 project(':capgo-camera-preview').projectDir = new File('../../camera-preview/android')
 
 include ':capgo-capacitor-data-storage-sqlite'
-project(':capgo-capacitor-data-storage-sqlite').projectDir = new File('../../capacitor-data-storage-sqlite/android')
+project(':capgo-capacitor-data-storage-sqlite').projectDir = new File('../node_modules/@capgo/capacitor-data-storage-sqlite/android')
+
+include ':capgo-capacitor-screen-recorder'
+project(':capgo-capacitor-screen-recorder').projectDir = new File('../node_modules/@capgo/capacitor-screen-recorder/android')
 
 include ':capgo-capacitor-shake'
-project(':capgo-capacitor-shake').projectDir = new File('../../capacitor-shake/android')
+project(':capgo-capacitor-shake').projectDir = new File('../node_modules/@capgo/capacitor-shake/android')
+
+include ':capgo-capacitor-social-login'
+project(':capgo-capacitor-social-login').projectDir = new File('../../capacitor-social-login/android')
 
 include ':capgo-capacitor-updater'
 project(':capgo-capacitor-updater').projectDir = new File('../../capacitor-updater/android')
 
 include ':capgo-capacitor-uploader'
-project(':capgo-capacitor-uploader').projectDir = new File('../node_modules/@capgo/capacitor-uploader/android')
+project(':capgo-capacitor-uploader').projectDir = new File('../../capacitor-uploader/android')
 
 include ':capgo-inappbrowser'
 project(':capgo-inappbrowser').projectDir = new File('../../capacitor-inappbrowser/android')
 
 include ':capgo-native-purchases'
 project(':capgo-native-purchases').projectDir = new File('../../native-purchases/android')
-
-include ':capgo-capacitor-screen-recorder'
-project(':capgo-capacitor-screen-recorder').projectDir = new File('../../capacitor-screen-recorder/android')
-
-include ':capgo-capacitor-social-login'
-project(':capgo-capacitor-social-login').projectDir = new File('../../capacitor-social-login/android')

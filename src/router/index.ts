@@ -6,8 +6,8 @@ import Clicker from '../views/plugins/Clicker.vue';
 import Updater from '@/views/plugins/Updater.vue';
 import InAppPurchase from '@/views/plugins/InAppPurchase.vue';
 import Web from '@/views/plugins/Web.vue';
-import Sql from '@/views/plugins/Sql.vue';
-import ScreenRecorder from '@/views/plugins/ScreenRecorder.vue';
+// import Sql from '@/views/plugins/Sql.vue';
+// import ScreenRecorder from '@/views/plugins/ScreenRecorder.vue';
 import Auth from '@/views/plugins/Auth.vue';
 
 const routes: Array<RouteRecordRaw> = [
@@ -45,16 +45,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'web',
     component: Web
   },
-  {
-    path: '/sql',
-    name: 'sql',
-    component: Sql
-  },
-  {
-    path: '/screen-recorder',
-    name: 'screen recorder',
-    component: ScreenRecorder
-  },
+  // {
+  //   path: '/sql',
+  //   name: 'sql',
+  //   component: Sql
+  // },
+  // {
+  //   path: '/screen-recorder',
+  //   name: 'screen recorder',
+  //   component: ScreenRecorder
+  // },
   {
     path: '/auth',
     name: 'Auth',
