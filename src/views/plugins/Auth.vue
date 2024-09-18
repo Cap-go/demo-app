@@ -25,6 +25,7 @@
 
             <ion-button @click="() => logincapgo()">Login!</ion-button>
             <ion-button @click="() => actBackend()">Act with backend!</ion-button>
+            <ion-button @click="() => logout()">Logout!</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -48,14 +49,23 @@ onMounted(async () => {
     apple: {
       android: {
         clientId: 'ee.forgr.io.ionic.starter.service',
-        redirectUrl: 'https://applelogin.wcaleniewolny.me/login/callback'
-      }
+          redirectUrl: 'https://applelogin.wcaleniewolny.me/login/callback'
+      },
     }
   })
-
   SocialLogin.addListener('loginResult', (async (result) => {
     console.log(result)
+
+    if (result.status === 'success') {
+      await actBackend()    
+    }
   }))
+
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
+
+  if (isLogged) {
+    await actBackend()
+  }
 })
 
 async function logincapgo() {
@@ -63,6 +73,16 @@ async function logincapgo() {
     provider: 'apple',
     options: {}
   })
+}
+
+async function logout() {
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
+  if (!isLogged) {
+    popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
+    return
+  }
+
+  await SocialLogin.logout({ provider: 'apple' })
 }
 
 async function actBackend() {
