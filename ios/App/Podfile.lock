@@ -24,6 +24,7 @@ PODS:
     - Capacitor
   - CapgoCapacitorSocialLogin (0.0.7):
     - Capacitor
+    - FacebookLogin
   - CapgoCapacitorUpdater (6.1.27):
     - Alamofire
     - Capacitor
@@ -32,10 +33,26 @@ PODS:
     - Version
   - CapgoCapacitorUploader (0.0.16):
     - Capacitor
-  - CapgoInappbrowser (6.6.6):
+  - CapgoInappbrowser (6.7.0):
     - Capacitor
   - CapgoNativePurchases (0.0.69):
     - Capacitor
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookLogin (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKLoginKit (~> 5.0)
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.15.1):
+    - FBSDKLoginKit/Login (= 5.15.1)
+  - FBSDKLoginKit/Login (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
   - SQLCipher (4.6.1):
     - SQLCipher/standard (= 4.6.1)
   - SQLCipher/common (4.6.1)
@@ -70,6 +87,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FacebookCore
+    - FacebookLogin
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - SQLCipher
     - SQLite.swift
     - SSZipArchive
@@ -123,11 +144,15 @@ SPEC CHECKSUMS:
   CapgoCapacitorDataStorageSqlite: f50a420386e660eb82f05dd94f5cf62c772ebf36
   CapgoCapacitorScreenRecorder: 06b1278e43babbb2a82ba909d66e93dc1083f387
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
-  CapgoCapacitorSocialLogin: de792f9a4dc33d78a64f7e65510a47fc4f638bbc
+  CapgoCapacitorSocialLogin: 82a22441b31c75546ed904639cc750e267802370
   CapgoCapacitorUpdater: 5114ef35003bf8eb55744aa6a18a85dd9085449c
   CapgoCapacitorUploader: 0ffef6044edd222d392cd0ca86ff3a1c1e5fffec
-  CapgoInappbrowser: 1e8cc123fa464311b558442564fd6f6aa2b817b4
+  CapgoInappbrowser: b1f3b77801c5f06db814e65894d676df3d6a4085
   CapgoNativePurchases: 02384f340291247543d9919d73c03acc1d6eff88
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
   SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
   SQLite.swift: 8d054987f02728cc912b0eb5a9659650573a65a2
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
