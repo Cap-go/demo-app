@@ -45,7 +45,7 @@
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton } from '@ionic/vue';
 import { onMounted, ref } from 'vue'
-import { usePopoutStore } from '@/popoutStore';
+import { usePopoutStore } from './../../popoutStore';
 import { CapgoCapacitorDataStorageSqlite } from '@capgo/capacitor-data-storage-sqlite';
 
 const popoutStore = usePopoutStore()
