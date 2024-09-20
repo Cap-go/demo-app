@@ -47,13 +47,6 @@ const userdataRef = ref(null) as Ref<{ id: string, email: string, first_name: st
 const popoutStore = usePopoutStore()
 
 onMounted(async () => {
-  SocialLogin.addListener('loginResult', (async (result) => {
-    console.log(result)
-
-    if (result.status === 'success') {
-      await actBackend()    
-    }
-  }))
 
   const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
 
@@ -73,6 +66,12 @@ async function logincapgoApple() {
     provider: 'apple',
     options: {}
   })
+
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
+
+  if (isLogged) {
+    await actBackend()
+  } 
 }
 
 async function logincapgoGoogle() {
@@ -109,12 +108,13 @@ async function logout() {
   }
 
   await SocialLogin.logout({ provider: 'apple' })
+  userdataRef.value = null
 }
 
 async function actBackend() {
   const authorizationCode = (await SocialLogin.getAuthorizationCode({ provider: 'apple' })).jwt
 
-  const res = await fetch('https://applelogin.wcaleniewolny.me/userdata', {
+  const res = await fetch('https://appleloginvps.wcaleniewolny.me/userdata', {
     headers: {
       'Authorization': `Bearer ${authorizationCode}`
     }

@@ -19,7 +19,7 @@ def capacitor_pods
   pod 'CapgoCameraPreview', :path => '../../../camera-preview'
   pod 'CapgoCapacitorDataStorageSqlite', :path => '../../node_modules/@capgo/capacitor-data-storage-sqlite'
   pod 'CapgoCapacitorScreenRecorder', :path => '../../node_modules/@capgo/capacitor-screen-recorder'
-  pod 'CapgoCapacitorShake', :path => '../../node_modules/@capgo/capacitor-shake'
+  pod 'CapgoCapacitorShake', :path => '../../../capacitor-shake'
   pod 'CapgoCapacitorSocialLogin', :path => '../../../capacitor-social-login'
   pod 'CapgoCapacitorUpdater', :path => '../../../capacitor-updater'
   pod 'CapgoCapacitorUploader', :path => '../../../capacitor-uploader'
