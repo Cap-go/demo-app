@@ -23,7 +23,9 @@
             </template>
             <p class="mb-6"></p>
 
-            <ion-button @click="() => logincapgo()">Login!</ion-button>
+            <ion-button @click="() => logincapgoApple()">Login Apple!</ion-button>
+            <ion-button @click="() => logincapgoGoogle()">Login Google!</ion-button>
+            <ion-button @click="() => logincapgoFacebook()">Login Facebook!</ion-button>
             <ion-button @click="() => actBackend()">Act with backend!</ion-button>
             <ion-button @click="() => logout()">Logout!</ion-button>
           </ion-col>
@@ -45,14 +47,6 @@ const userdataRef = ref(null) as Ref<{ id: string, email: string, first_name: st
 const popoutStore = usePopoutStore()
 
 onMounted(async () => {
-  await SocialLogin.initialize({
-    apple: {
-      android: {
-        clientId: 'ee.forgr.io.ionic.starter.service',
-          redirectUrl: 'https://applelogin.wcaleniewolny.me/login/callback'
-      },
-    }
-  })
   SocialLogin.addListener('loginResult', (async (result) => {
     console.log(result)
 
@@ -68,12 +62,44 @@ onMounted(async () => {
   }
 })
 
-async function logincapgo() {
+async function logincapgoApple() {
+  await SocialLogin.initialize({
+    apple: {
+        clientId: 'ee.forgr.io.ionic.starter.service',
+          redirectUrl: 'https://applelogin.wcaleniewolny.me/login/callback'
+    }
+  })
   await SocialLogin.login({
     provider: 'apple',
     options: {}
   })
 }
+
+async function logincapgoGoogle() {
+  await SocialLogin.initialize({
+    google: {
+      clientId: 'ee.forgr.io.ionic.starter.service',
+    }
+  })
+  await SocialLogin.login({
+    provider: 'google',
+    options: {}
+  })
+}
+
+async function logincapgoFacebook() {
+  await SocialLogin.initialize({
+    facebook: {
+      appId: '145053606307062',
+      
+    }
+  })
+  await SocialLogin.login({
+    provider: 'facebook',
+    options: {}
+  })
+}
+
 
 async function logout() {
   const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
