@@ -1,5 +1,11 @@
 PODS:
   - Alamofire (5.9.1)
+  - AppAuth (1.7.5):
+    - AppAuth/Core (= 1.7.5)
+    - AppAuth/ExternalUserAgent (= 1.7.5)
+  - AppAuth/Core (1.7.5)
+  - AppAuth/ExternalUserAgent (1.7.5):
+    - AppAuth/Core
   - Capacitor (6.1.2):
     - CapacitorCordova
   - CapacitorApp (6.0.0):
@@ -23,36 +29,39 @@ PODS:
   - CapgoCapacitorShake (6.0.46):
     - Capacitor
   - CapgoCapacitorSocialLogin (0.0.7):
+    - Alamofire
     - Capacitor
-    - FacebookLogin
-  - CapgoCapacitorUpdater (6.1.27):
+    - FBSDKCoreKit (= 17.0.0)
+    - FBSDKLoginKit (= 17.0.0)
+    - GoogleSignIn (~> 6.2.4)
+  - CapgoCapacitorUpdater (6.1.32):
     - Alamofire
     - Capacitor
     - SSZipArchive
     - SwiftyRSA
     - Version
-  - CapgoCapacitorUploader (0.0.16):
+  - CapgoCapacitorUploader (0.0.11):
     - Capacitor
-  - CapgoInappbrowser (6.7.0):
+  - CapgoInappbrowser (6.6.8):
     - Capacitor
-  - CapgoNativePurchases (0.0.69):
+  - CapgoNativePurchases (0.0.66):
     - Capacitor
-  - FacebookCore (0.9.0):
-    - FBSDKCoreKit (~> 5.0)
-  - FacebookLogin (0.9.0):
-    - FacebookCore (~> 0.9.0)
-    - FBSDKCoreKit (~> 5.0)
-    - FBSDKLoginKit (~> 5.0)
-  - FBSDKCoreKit (5.15.1):
-    - FBSDKCoreKit/Basics (= 5.15.1)
-    - FBSDKCoreKit/Core (= 5.15.1)
-  - FBSDKCoreKit/Basics (5.15.1)
-  - FBSDKCoreKit/Core (5.15.1):
-    - FBSDKCoreKit/Basics
-  - FBSDKLoginKit (5.15.1):
-    - FBSDKLoginKit/Login (= 5.15.1)
-  - FBSDKLoginKit/Login (5.15.1):
-    - FBSDKCoreKit (~> 5.0)
+  - FBAEMKit (17.0.0):
+    - FBSDKCoreKit_Basics (= 17.0.0)
+  - FBSDKCoreKit (17.0.0):
+    - FBAEMKit (= 17.0.0)
+    - FBSDKCoreKit_Basics (= 17.0.0)
+  - FBSDKCoreKit_Basics (17.0.0)
+  - FBSDKLoginKit (17.0.0):
+    - FBSDKCoreKit (= 17.0.0)
+  - GoogleSignIn (6.2.4):
+    - AppAuth (~> 1.5)
+    - GTMAppAuth (~> 1.3)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+  - GTMAppAuth (1.3.1):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.5)
+  - GTMSessionFetcher/Core (2.3.0)
   - SQLCipher (4.6.1):
     - SQLCipher/standard (= 4.6.1)
   - SQLCipher/common (4.6.1)
@@ -77,9 +86,9 @@ DEPENDENCIES:
   - CapgoCameraPreview (from `../../../camera-preview`)
   - "CapgoCapacitorDataStorageSqlite (from `../../node_modules/@capgo/capacitor-data-storage-sqlite`)"
   - "CapgoCapacitorScreenRecorder (from `../../node_modules/@capgo/capacitor-screen-recorder`)"
-  - "CapgoCapacitorShake (from `../../node_modules/@capgo/capacitor-shake`)"
+  - CapgoCapacitorShake (from `../../../capacitor-shake`)
   - CapgoCapacitorSocialLogin (from `../../../capacitor-social-login`)
-  - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
+  - "CapgoCapacitorUpdater (from `../../node_modules/@capgo/capacitor-updater`)"
   - CapgoCapacitorUploader (from `../../../capacitor-uploader`)
   - CapgoInappbrowser (from `../../../capacitor-inappbrowser`)
   - CapgoNativePurchases (from `../../../native-purchases`)
@@ -87,10 +96,14 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - FacebookCore
-    - FacebookLogin
+    - AppAuth
+    - FBAEMKit
     - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
     - FBSDKLoginKit
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
     - SQLCipher
     - SQLite.swift
     - SSZipArchive
@@ -119,11 +132,11 @@ EXTERNAL SOURCES:
   CapgoCapacitorScreenRecorder:
     :path: "../../node_modules/@capgo/capacitor-screen-recorder"
   CapgoCapacitorShake:
-    :path: "../../node_modules/@capgo/capacitor-shake"
+    :path: "../../../capacitor-shake"
   CapgoCapacitorSocialLogin:
     :path: "../../../capacitor-social-login"
   CapgoCapacitorUpdater:
-    :path: "../../../capacitor-updater"
+    :path: "../../node_modules/@capgo/capacitor-updater"
   CapgoCapacitorUploader:
     :path: "../../../capacitor-uploader"
   CapgoInappbrowser:
@@ -133,6 +146,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
   Capacitor: 679f9673fdf30597493a6362a5d5bf233d46abc2
   CapacitorApp: 9d53aec7101f7b030a950c5bdc4df8612576b279
   CapacitorCordova: f48c89f96c319101cd2f0ce8a2b7449b5fb8b3dd
@@ -144,21 +158,24 @@ SPEC CHECKSUMS:
   CapgoCapacitorDataStorageSqlite: f50a420386e660eb82f05dd94f5cf62c772ebf36
   CapgoCapacitorScreenRecorder: 06b1278e43babbb2a82ba909d66e93dc1083f387
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
-  CapgoCapacitorSocialLogin: 82a22441b31c75546ed904639cc750e267802370
-  CapgoCapacitorUpdater: 5114ef35003bf8eb55744aa6a18a85dd9085449c
-  CapgoCapacitorUploader: 0ffef6044edd222d392cd0ca86ff3a1c1e5fffec
-  CapgoInappbrowser: b1f3b77801c5f06db814e65894d676df3d6a4085
-  CapgoNativePurchases: 02384f340291247543d9919d73c03acc1d6eff88
-  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
-  FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
-  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
-  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
+  CapgoCapacitorSocialLogin: 3cb4233726eb306eb217eeaead95df995867d0e6
+  CapgoCapacitorUpdater: f286378946eae7e06e54bd135815f3c5d939dfcc
+  CapgoCapacitorUploader: fc9bb687f6687b89cb62c80b3471b0a5bdf52715
+  CapgoInappbrowser: 9f80d98fa546693b895712b5fba6abc46f65e44a
+  CapgoNativePurchases: 3f3a9235ab7204d882877d297686322a44e43a55
+  FBAEMKit: 31a20c2d8744d8c57d3a5b7ae4e27b4fdd819193
+  FBSDKCoreKit: dac911b656816f8d0b06e5fa4bac60e89505bb3b
+  FBSDKCoreKit_Basics: 92b7b7458d57091370b0b6cc197578874c3b4b16
+  FBSDKLoginKit: 5d5271ebfd1e39c6b071de8db5c4bd6255be3561
+  GoogleSignIn: 5651ce3a61e56ca864160e79b484cd9ed3f49b7a
+  GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
+  GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
   SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
   SQLite.swift: 8d054987f02728cc912b0eb5a9659650573a65a2
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: ce21cfd120f62550ab338f45e6fc9ba8bd923f70
+PODFILE CHECKSUM: be7fdb2db7c95b89727aeb489d6491363c2da10e
 
 COCOAPODS: 1.15.2

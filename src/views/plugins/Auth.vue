@@ -14,7 +14,7 @@
         <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
           <ion-col size="auto" style="text-align: center;">
             <strong>Ready to auth?</strong>
-            <p>Login via the plugin!</p>
+            <p>Login via the plugin! (Provider: {{ currentProvider }})</p>
             <template v-if="!!userdataRef">
               <p>Email: {{ userdataRef.email }}</p>
               <p>ID: {{ userdataRef.id}}</p>
@@ -28,6 +28,7 @@
             <ion-button @click="() => logincapgoFacebook()">Login Facebook!</ion-button>
             <ion-button @click="() => actBackend()">Act with backend!</ion-button>
             <ion-button @click="() => logout()">Logout!</ion-button>
+            <ion-button @click="() => swapProviders()">Change providers</ion-button> 
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -43,8 +44,10 @@ import { usePopoutStore } from '@/popoutStore';
 import { SocialLogin } from '@capgo/capacitor-social-login';
 
 const userdataRef = ref(null) as Ref<{ id: string, email: string, first_name: string, last_name: string } | null>
-
 const popoutStore = usePopoutStore()
+const currentProvider = ref<'apple' | 'google'>('apple') 
+
+const possibleProviders = ['apple', 'google'] as ('apple' | 'google')[]
 
 onMounted(async () => {
 
@@ -59,7 +62,7 @@ async function logincapgoApple() {
   await SocialLogin.initialize({
     apple: {
         clientId: 'ee.forgr.io.ionic.starter.service',
-          redirectUrl: 'https://applelogin.wcaleniewolny.me/login/callback'
+        redirectUrl: 'https://appleloginvps.wcaleniewolny.me/login/callback'
     }
   })
   await SocialLogin.login({
@@ -74,10 +77,19 @@ async function logincapgoApple() {
   } 
 }
 
+function swapProviders() {
+  const currentIndex = possibleProviders.findIndex(val => val === currentProvider.value)
+  if (currentIndex + 1 === possibleProviders.length) {
+    currentProvider.value = possibleProviders[0]
+  } else {
+    currentProvider.value = possibleProviders[currentIndex + 1]
+  }
+}
+
 async function logincapgoGoogle() {
   await SocialLogin.initialize({
     google: {
-      clientId: 'ee.forgr.io.ionic.starter.service',
+      clientId: '1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o.apps.googleusercontent.com',
     }
   })
   await SocialLogin.login({
@@ -101,13 +113,13 @@ async function logincapgoFacebook() {
 
 
 async function logout() {
-  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: currentProvider.value })).isLoggedIn
   if (!isLogged) {
     popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
     return
   }
 
-  await SocialLogin.logout({ provider: 'apple' })
+  await SocialLogin.logout({ provider: currentProvider.value })
   userdataRef.value = null
 }
 
