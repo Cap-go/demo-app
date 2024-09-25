@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
-
+//
 android {
-    namespace "io.ionic.starter"
+    namespace "me.wcaleniewolny.io.ionic.starter.capgo.google.login"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.ionic.starter"
+        applicationId "me.wcaleniewolny.io.ionic.starter.capgo.google.login"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

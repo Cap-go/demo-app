@@ -10,7 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$/../../camera-preview/android" />
             <option value="$PROJECT_DIR$/../../capacitor-inappbrowser/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-updater/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-shake/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-social-login/android" />
             <option value="$PROJECT_DIR$/../../capacitor-uploader/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
@@ -21,7 +22,11 @@
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/haptics/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/keyboard/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/status-bar/android" />
-            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-uploader/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-data-storage-sqlite/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-screen-recorder/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-updater/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@codetrix-studio/capacitor-google-auth/android" />
+            <option value="$PROJECT_DIR$/../../native-purchases/android" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

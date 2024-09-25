@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package me.wcaleniewolny.io.ionic.starter.capgo.google.login;
 
 import com.getcapacitor.BridgeActivity;
 

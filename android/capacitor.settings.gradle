@@ -43,3 +43,6 @@ project(':capgo-inappbrowser').projectDir = new File('../../capacitor-inappbrows
 
 include ':capgo-native-purchases'
 project(':capgo-native-purchases').projectDir = new File('../../native-purchases/android')
+
+include ':codetrix-studio-capacitor-google-auth'
+project(':codetrix-studio-capacitor-google-auth').projectDir = new File('../node_modules/@codetrix-studio/capacitor-google-auth/android')

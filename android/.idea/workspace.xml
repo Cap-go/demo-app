@@ -28,13 +28,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="444d086f-6c54-41bb-8276-e60e4feb3523" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/debug/output-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/output-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rename.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../camera-preview/ios/Plugin/CameraController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../camera-preview/ios/Plugin/CameraController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/WKWebViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/WKWebViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-shake/android/src/main/java/ee/forgr/capacitor/shake/CapacitorShakePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-shake/android/src/main/java/ee/forgr/capacitor/shake/CapacitorShakePlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/Plugin/CapacitorUpdaterPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/Plugin/CapacitorUpdaterPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/capacitor.build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/io/ionic/starter/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/me/wcaleniewolny/io/ionic/starter/capgo/google/login/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/../bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/views/plugins/Auth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/plugins/Auth.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/views/plugins/Web.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/plugins/Web.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../native-purchases/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../native-purchases/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +61,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=ede6be21)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/michaltremblay/.android/avd/Medium_Phone_API_33.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -53,6 +70,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -74,6 +97,12 @@
       </list>
     </option>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../../capgoTestApp/android/test-keystore" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -88,9 +117,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Android App.app.executor": "Run",
+    "ApkExportedModule": "android.app",
+    "BundleExportedModule": "android.app",
     "DEBUGGABLE_DEVICE": "Medium_Phone_API_33 [emulator-5554]",
     "DEBUGGABLE_PROCESS": "io.ionic.starter",
     "DEBUGGER_ID": "Auto",
+    "ExportApk.ApkPathForandroid.app": "/Users/michaltremblay/Developer/capgo-test-app/android/app",
+    "ExportBundle.BundlePathForandroid.app": "/Users/michaltremblay/Developer/capgo-test-app/android/app",
     "Gradle.Load Gradle Dependencies.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -106,6 +139,14 @@
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  },
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
+    ],
+    "kotlin-gradle-user-dirs": [
+      "/Users/michaltremblay/.gradle"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -307,9 +348,34 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../../capacitor-shake/android/src/main/java/ee/forgr/capacitor/shake/CapacitorShakePlugin.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="69" />
+          <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
+          <line>387</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/helpers/FutureFunctionResult.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/GoogleProvider.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/SocialLoginPlugin.java</url>
+          <line>191</line>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

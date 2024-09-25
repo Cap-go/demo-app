@@ -23,6 +23,7 @@ dependencies {
     implementation project(':capgo-capacitor-uploader')
     implementation project(':capgo-inappbrowser')
     implementation project(':capgo-native-purchases')
+    implementation project(':codetrix-studio-capacitor-google-auth')
 
 }
 

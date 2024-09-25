@@ -41,6 +41,7 @@
     "@ionic/cli": "latest",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
+    "@trapezedev/configure": "^7.0.10",
     "@types/bun": "^1.1.6",
     "csv-writer": "^1.6.0",
     "ionicons": "^7.0.0",
