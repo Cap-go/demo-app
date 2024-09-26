@@ -118,34 +118,34 @@ async function logincapgoFacebook() {
 
 
 async function logoutApple() {
-  const isLogged = (await SocialLogin.isLoggedIn({ provider: currentProvider.value })).isLoggedIn
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
   if (!isLogged) {
     popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
     return
   }
 
-  await SocialLogin.logout({ provider: currentProvider.value })
+  await SocialLogin.logout({ provider: 'apple' })
   userdataRef.value = null
 }
 
 async function logoutGoogle() {
-  const isLogged = (await SocialLogin.isLoggedIn({ provider: currentProvider.value })).isLoggedIn
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'google' })).isLoggedIn
   if (!isLogged) {
     popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
     return
   }
 
-  await SocialLogin.logout({ provider: currentProvider.value })
+  await SocialLogin.logout({ provider: 'google' })
 }
 
 async function logoutFacebook() {
-  const isLogged = (await SocialLogin.isLoggedIn({ provider: currentProvider.value })).isLoggedIn
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'facebook' })).isLoggedIn
   if (!isLogged) {
     popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
     return
   }
 
-  await SocialLogin.logout({ provider: currentProvider.value })
+  await SocialLogin.logout({ provider: 'facebook' })
 }
 
 async function actBackend() {
