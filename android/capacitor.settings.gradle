@@ -27,7 +27,7 @@ include ':capgo-capacitor-screen-recorder'
 project(':capgo-capacitor-screen-recorder').projectDir = new File('../node_modules/@capgo/capacitor-screen-recorder/android')
 
 include ':capgo-capacitor-shake'
-project(':capgo-capacitor-shake').projectDir = new File('../../capacitor-shake/android')
+project(':capgo-capacitor-shake').projectDir = new File('../node_modules/@capgo/capacitor-shake/android')
 
 include ':capgo-capacitor-social-login'
 project(':capgo-capacitor-social-login').projectDir = new File('../../capacitor-social-login/android')
@@ -43,6 +43,3 @@ project(':capgo-inappbrowser').projectDir = new File('../../capacitor-inappbrows
 
 include ':capgo-native-purchases'
 project(':capgo-native-purchases').projectDir = new File('../../native-purchases/android')
-
-include ':codetrix-studio-capacitor-google-auth'
-project(':codetrix-studio-capacitor-google-auth').projectDir = new File('../node_modules/@codetrix-studio/capacitor-google-auth/android')

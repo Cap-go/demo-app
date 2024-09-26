@@ -25,7 +25,6 @@
 
             <ion-button @click="() => logincapgoApple()">Login Apple!</ion-button>
             <ion-button @click="() => logincapgoGoogle()">Login Google!</ion-button>
-            <ion-button @click="() => loginGoogleTwo()">Login Google (2)!</ion-button>
             <ion-button @click="() => logincapgoFacebook()">Login Facebook!</ion-button>
             <ion-button @click="() => actBackend()">Act with backend!</ion-button>
             <ion-button @click="() => logout()">Logout!</ion-button>
@@ -43,7 +42,6 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol
 import { onMounted, Ref, ref } from 'vue'
 import { usePopoutStore } from '@/popoutStore';
 import { SocialLogin } from '@capgo/capacitor-social-login';
-import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 
 const userdataRef = ref(null) as Ref<{ id: string, email: string, first_name: string, last_name: string } | null>
 const popoutStore = usePopoutStore()
@@ -94,20 +92,11 @@ async function logincapgoGoogle() {
       clientId: '1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o.apps.googleusercontent.com',
     }
   })
-  await SocialLogin.login({
+  const response =await SocialLogin.login({
     provider: 'google',
     options: {}
   })
-}
-
-async function loginGoogleTwo() {
-  await GoogleAuth.initialize({
-    clientId: '1038081411966-63r6lsm5og90o5t04hl5i0loopqt7m47.apps.googleusercontent.com',
-    scopes: ['profile', 'email']
-  });
-  const response = await GoogleAuth.signIn();
-  console.log(response);
-
+  console.log('logincapgoGoogle', response)
 }
 
 async function logincapgoFacebook() {

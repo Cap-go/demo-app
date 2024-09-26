@@ -37,7 +37,6 @@
     "@capgo/capacitor-uploader": "link:@capgo/capacitor-uploader",
     "@capgo/inappbrowser": "link:@capgo/inappbrowser",
     "@capgo/native-purchases": "link:@capgo/native-purchases",
-    "@codetrix-studio/capacitor-google-auth": "^3.4.0-rc.4",
     "@ionic/cli": "latest",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
