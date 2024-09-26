@@ -12,7 +12,7 @@ PODS:
     - PromisesObjC (~> 2.4)
   - Capacitor (6.1.2):
     - CapacitorCordova
-  - CapacitorApp (6.0.0):
+  - CapacitorApp (6.0.1):
     - Capacitor
   - CapacitorCordova (6.1.2)
   - CapacitorFilesystem (6.0.1):
@@ -35,8 +35,8 @@ PODS:
   - CapgoCapacitorSocialLogin (0.0.7):
     - Alamofire
     - Capacitor
-    - FBSDKCoreKit (= 17.0.0)
-    - FBSDKLoginKit (= 17.0.0)
+    - FBSDKCoreKit (= 17.1.0)
+    - FBSDKLoginKit (= 17.1.0)
     - GoogleSignIn (~> 8.0.0)
   - CapgoCapacitorUpdater (6.1.32):
     - Alamofire
@@ -50,14 +50,14 @@ PODS:
     - Capacitor
   - CapgoNativePurchases (6.0.3):
     - Capacitor
-  - FBAEMKit (17.0.0):
-    - FBSDKCoreKit_Basics (= 17.0.0)
-  - FBSDKCoreKit (17.0.0):
-    - FBAEMKit (= 17.0.0)
-    - FBSDKCoreKit_Basics (= 17.0.0)
-  - FBSDKCoreKit_Basics (17.0.0)
-  - FBSDKLoginKit (17.0.0):
-    - FBSDKCoreKit (= 17.0.0)
+  - FBAEMKit (17.1.0):
+    - FBSDKCoreKit_Basics (= 17.1.0)
+  - FBSDKCoreKit (17.1.0):
+    - FBAEMKit (= 17.1.0)
+    - FBSDKCoreKit_Basics (= 17.1.0)
+  - FBSDKCoreKit_Basics (17.1.0)
+  - FBSDKLoginKit (17.1.0):
+    - FBSDKCoreKit (= 17.1.0)
   - GoogleSignIn (8.0.0):
     - AppAuth (< 2.0, >= 1.7.3)
     - AppCheckCore (~> 11.0)
@@ -167,7 +167,7 @@ SPEC CHECKSUMS:
   AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
   AppCheckCore: e25aaaac234b333320b0bebb8fc21ed3576819ba
   Capacitor: 679f9673fdf30597493a6362a5d5bf233d46abc2
-  CapacitorApp: 9d53aec7101f7b030a950c5bdc4df8612576b279
+  CapacitorApp: 0bc633b4eae40a1f32cd2834788fad3bc42da6a1
   CapacitorCordova: f48c89f96c319101cd2f0ce8a2b7449b5fb8b3dd
   CapacitorFilesystem: 37fb3aa5c945b4539ab11c74a5c57925a302bf24
   CapacitorHaptics: 9ebc9363f0e9b8eb4295088a0b474530acf1859b
@@ -177,15 +177,15 @@ SPEC CHECKSUMS:
   CapgoCapacitorDataStorageSqlite: f50a420386e660eb82f05dd94f5cf62c772ebf36
   CapgoCapacitorScreenRecorder: 06b1278e43babbb2a82ba909d66e93dc1083f387
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
-  CapgoCapacitorSocialLogin: 3ef14e85536d9ad9af700c1ce7538b4ef702ca9e
+  CapgoCapacitorSocialLogin: 1d305a457c393f890cda06b52e1b8130a07dc1d8
   CapgoCapacitorUpdater: f286378946eae7e06e54bd135815f3c5d939dfcc
   CapgoCapacitorUploader: 0ffef6044edd222d392cd0ca86ff3a1c1e5fffec
   CapgoInappbrowser: b1f3b77801c5f06db814e65894d676df3d6a4085
   CapgoNativePurchases: f681e23c7d09d77fb90ce984bf504cc294d4a679
-  FBAEMKit: 31a20c2d8744d8c57d3a5b7ae4e27b4fdd819193
-  FBSDKCoreKit: dac911b656816f8d0b06e5fa4bac60e89505bb3b
-  FBSDKCoreKit_Basics: 92b7b7458d57091370b0b6cc197578874c3b4b16
-  FBSDKLoginKit: 5d5271ebfd1e39c6b071de8db5c4bd6255be3561
+  FBAEMKit: cb719c53575a3be86ea873279f30d6a2c4e15881
+  FBSDKCoreKit: ecdb980a24633ccb012700299ceb16d0235e14d2
+  FBSDKCoreKit_Basics: 045101c4a9ef10c845347424d73a29aae02c3e43
+  FBSDKLoginKit: 69eb59b2f839aba635616df6e422acd0ca88030a
   GoogleSignIn: ce8c89bb9b37fb624b92e7514cc67335d1e277e4
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
