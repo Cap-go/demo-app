@@ -27,7 +27,9 @@
             <ion-button @click="() => logincapgoGoogle()">Login Google!</ion-button>
             <ion-button @click="() => logincapgoFacebook()">Login Facebook!</ion-button>
             <ion-button @click="() => actBackend()">Act with backend!</ion-button>
-            <ion-button @click="() => logout()">Logout!</ion-button>
+            <ion-button @click="() => logoutApple()">Logout Apple!</ion-button>
+            <ion-button @click="() => logoutGoogle()">Logout Google!</ion-button>
+            <ion-button @click="() => logoutFacebook()">Logout Facebook!</ion-button>
             <ion-button @click="() => swapProviders()">Change providers</ion-button> 
           </ion-col>
         </ion-row>
@@ -113,7 +115,7 @@ async function logincapgoFacebook() {
 }
 
 
-async function logout() {
+async function logoutApple() {
   const isLogged = (await SocialLogin.isLoggedIn({ provider: currentProvider.value })).isLoggedIn
   if (!isLogged) {
     popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
@@ -122,6 +124,26 @@ async function logout() {
 
   await SocialLogin.logout({ provider: currentProvider.value })
   userdataRef.value = null
+}
+
+async function logoutGoogle() {
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: currentProvider.value })).isLoggedIn
+  if (!isLogged) {
+    popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
+    return
+  }
+
+  await SocialLogin.logout({ provider: currentProvider.value })
+}
+
+async function logoutFacebook() {
+  const isLogged = (await SocialLogin.isLoggedIn({ provider: currentProvider.value })).isLoggedIn
+  if (!isLogged) {
+    popoutStore.popout("Not logged in", "Cannot logout if you are not logged in")
+    return
+  }
+
+  await SocialLogin.logout({ provider: currentProvider.value })
 }
 
 async function actBackend() {
