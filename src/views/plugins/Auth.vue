@@ -91,7 +91,7 @@ function swapProviders() {
 async function logincapgoGoogle() {
   await SocialLogin.initialize({
     google: {
-      clientId: '1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o.apps.googleusercontent.com',
+      clientId: '1038081411966-8q4qgeam3d4itku0r43qkginl9cljc5a.apps.googleusercontent.com',
     }
   })
   const response =await SocialLogin.login({
