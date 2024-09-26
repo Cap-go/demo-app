@@ -47,9 +47,9 @@ import { SocialLogin } from '@capgo/capacitor-social-login';
 
 const userdataRef = ref(null) as Ref<{ id: string, email: string, first_name: string, last_name: string } | null>
 const popoutStore = usePopoutStore()
-const currentProvider = ref<'apple' | 'google'>('apple') 
+const currentProvider = ref<'apple' | 'google' | 'facebook'>('apple') 
 
-const possibleProviders = ['apple', 'google'] as ('apple' | 'google')[]
+const possibleProviders = ['apple', 'google', 'facebook'] as ('apple' | 'google' | 'facebook')[]
 
 onMounted(async () => {
 
