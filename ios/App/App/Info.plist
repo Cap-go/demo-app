@@ -22,6 +22,30 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>FacebookAppID</key>
+	<string>1640177526775785</string>
+	<key>FacebookClientToken</key>
+	<string>621ef94157c7a8e58a0343918e9b6615</string>
+	<key>FacebookDisplayName</key>
+	<string>Capgo demo</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+			<string>fbapi</string>
+			<string>fbapi20130214</string>
+			<string>fbapi20130410</string>
+			<string>fbapi20130702</string>
+			<string>fbapi20131010</string>
+			<string>fbapi20131219</string>
+			<string>fbapi20140410</string>
+			<string>fbapi20140116</string>
+			<string>fbapi20150313</string>
+			<string>fbapi20150629</string>
+			<string>fbapi20160328</string>
+			<string>fbauth</string>
+			<string>fb-messenger-share-api</string>
+			<string>fbauth2</string>
+			<string>fbshareextension</string>
+	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -65,6 +89,12 @@
           <string>com.googleusercontent.apps.1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o</string>
         </array>
       </dict>
+				<dict>
+					<key>CFBundleURLSchemes</key>
+					<array>
+							<string>fb1640177526775785</string>
+					</array>
+			</dict>
     </array>
 </dict>
 </plist>

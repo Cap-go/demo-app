@@ -104,13 +104,15 @@ async function logincapgoGoogle() {
 async function logincapgoFacebook() {
   await SocialLogin.initialize({
     facebook: {
-      appId: '145053606307062',
+      appId: '1640177526775785',
       
     }
   })
   await SocialLogin.login({
     provider: 'facebook',
-    options: {}
+    options: {
+      permissions: ['email', 'public_profile']
+    }
   })
 }
 
