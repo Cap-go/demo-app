@@ -9,6 +9,7 @@ import Web from '@/views/plugins/Web.vue';
 import Sql from '@/views/plugins/Sql.vue';
 import ScreenRecorder from '@/views/plugins/ScreenRecorder.vue';
 import Auth from '@/views/plugins/Auth.vue';
+import InMarket from '@/views/plugins/InMarket.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -60,6 +61,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Auth',
     component: Auth
   },
+  {
+    path: '/inmarket',
+    name: 'InMarket',
+    component: InMarket
+  }
 ]
 
 const router = createRouter({

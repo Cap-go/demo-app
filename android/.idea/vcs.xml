@@ -7,6 +7,7 @@
     <mapping directory="$PROJECT_DIR$/../../capacitor-updater" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../capacitor-uploader" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../inmarket" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../native-purchases" vcs="Git" />
   </component>
 </project>

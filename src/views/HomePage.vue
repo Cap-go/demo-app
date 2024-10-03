@@ -21,22 +21,19 @@
             <ion-button router-link="/sql">Sql</ion-button>
             <ion-button router-link="/screen-recorder">Screen recorder</ion-button>
             <ion-button router-link="/auth">Auth</ion-button>
+            <ion-button router-link="/inmarket">InMarket</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
-     
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow } from '@ionic/vue';
-import { ref, onMounted } from 'vue';
-import { CapacitorUpdater } from '@capgo/capacitor-updater'
+import { onMounted } from 'vue';
 import { InAppBrowser } from '@capgo/inappbrowser'
-import { useIonRouter } from '@ionic/vue';
 
-const ionRouter = useIonRouter();
 
 // const WEB_URL = "https://capacitor-inappbrowser-test-webapp.wcaleniewolny.me/"
 const WEB_URL = "https://capgo.app"
@@ -66,32 +63,6 @@ onMounted(async () => {
     }
   })
 })
-
-async function questionMark() {
-  const bundles = await CapacitorUpdater.list()
-  for (const bundle of bundles.bundles) {
-    await CapacitorUpdater.delete({id: bundle.id })
-  }
-}
-
-async function hardrestet() {
-  await CapacitorUpdater.reset()
-}
-
-async function openWeb() {
-  // InAppBrowser.open({ url: WEB_URL, isInspectable: true } as any);
-  const script =
-  "await import('https://unpkg.com/darkreader@4.9.89/darkreader.js');\n" +
-  "DarkReader.enable({ brightness: 100, contrast: 90, sepia: 10 });"
-  InAppBrowser.openWebView({ url: WEB_URL, isPresentAfterPageLoad: true, preShowScript: script })
-  // InAppBrowser.openWebView({ url: WEB_URL, isPresentAfterPageLoad: true, preShowScript: script, buttonNearDone: { ios: { icon: 'monkey', iconType: 'resource' } } })
-}
-
-async function openCamera() {
-  ionRouter.push('/camera')
-}
-
-const count = ref(0)
 </script>
 
 <style scoped>

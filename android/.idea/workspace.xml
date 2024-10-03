@@ -28,10 +28,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="444d086f-6c54-41bb-8276-e60e4feb3523" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/SocialLoginPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/SocialLoginPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-social-login/docs/setup_google.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-social-login/docs/setup_google.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-uploader/.github/FUNDING.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-uploader/.github/FUNDING.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/capacitor.build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/views/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/HomePage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +93,7 @@
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../capacitor-social-login" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../inmarket" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -94,41 +103,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "ApkExportedModule": "android.app",
-    "BundleExportedModule": "android.app",
-    "DEBUGGABLE_DEVICE": "Medium_Phone_API_33 [emulator-5554]",
-    "DEBUGGABLE_PROCESS": "io.ionic.starter",
-    "DEBUGGER_ID": "Auto",
-    "ExportApk.ApkPathForandroid.app": "/Users/michaltremblay/Developer/capgo-test-app/android/app",
-    "ExportBundle.BundlePathForandroid.app": "/Users/michaltremblay/Developer/capgo-test-app/android/app",
-    "Gradle.Load Gradle Dependencies.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SHOW_ALL_PROCESSES": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/michaltremblay/Developer/capgo-test-app/android",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;ApkExportedModule&quot;: &quot;android.app&quot;,
+    &quot;BundleExportedModule&quot;: &quot;android.app&quot;,
+    &quot;DEBUGGABLE_DEVICE&quot;: &quot;Medium_Phone_API_33 [emulator-5554]&quot;,
+    &quot;DEBUGGABLE_PROCESS&quot;: &quot;io.ionic.starter&quot;,
+    &quot;DEBUGGER_ID&quot;: &quot;Auto&quot;,
+    &quot;ExportApk.ApkPathForandroid.app&quot;: &quot;/Users/michaltremblay/Developer/capgo-test-app/android/app&quot;,
+    &quot;ExportBundle.BundlePathForandroid.app&quot;: &quot;/Users/michaltremblay/Developer/capgo-test-app/android/app&quot;,
+    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHOW_ALL_PROCESSES&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaltremblay/Developer/capgo-test-app/android&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   },
-  "keyToStringList": {
-    "ExportApk.BuildVariants": [
-      "release"
+  &quot;keyToStringList&quot;: {
+    &quot;ExportApk.BuildVariants&quot;: [
+      &quot;release&quot;
     ],
-    "kotlin-gradle-user-dirs": [
-      "/Users/martindonadieu/.gradle"
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/Users/martindonadieu/.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="android.app.main" />
@@ -329,12 +338,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
-          <line>304</line>
+          <line>333</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
-          <line>183</line>
+          <line>265</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
