@@ -28,25 +28,27 @@ PODS:
   - CapgoCapacitorDataStorageSqlite (6.0.9):
     - Capacitor
     - SQLite.swift/SQLCipher
+  - CapgoCapacitorDownloader (0.0.1):
+    - Capacitor
+    - MZDownloadManager
   - CapgoCapacitorScreenRecorder (8.1.58):
     - Capacitor
   - CapgoCapacitorShake (6.0.46):
     - Capacitor
-  - CapgoCapacitorSocialLogin (0.0.19):
+  - CapgoCapacitorSocialLogin (0.0.50):
     - Alamofire
     - Capacitor
     - FBSDKCoreKit (= 17.1.0)
     - FBSDKLoginKit (= 17.1.0)
     - GoogleSignIn (~> 8.0.0)
-  - CapgoCapacitorUpdater (6.1.32):
+  - CapgoCapacitorUpdater (6.3.9):
     - Alamofire
     - Capacitor
     - SSZipArchive
-    - SwiftyRSA
     - Version
-  - CapgoCapacitorUploader (0.0.16):
+  - CapgoCapacitorUploader (0.0.20):
     - Capacitor
-  - CapgoInappbrowser (6.7.0):
+  - CapgoInappbrowser (6.8.12):
     - Capacitor
   - CapgoNativePurchases (6.0.3):
     - Capacitor
@@ -76,6 +78,7 @@ PODS:
     - AppAuth/Core (~> 1.7)
     - GTMSessionFetcher/Core (< 4.0, >= 3.3)
   - GTMSessionFetcher/Core (3.5.0)
+  - MZDownloadManager (3.6)
   - PromisesObjC (2.4.0)
   - SQLCipher (4.6.1):
     - SQLCipher/standard (= 4.6.1)
@@ -85,9 +88,6 @@ PODS:
   - SQLite.swift/SQLCipher (0.15.3):
     - SQLCipher (>= 4.0.0)
   - SSZipArchive (2.4.3)
-  - SwiftyRSA (1.7.0):
-    - SwiftyRSA/ObjC (= 1.7.0)
-  - SwiftyRSA/ObjC (1.7.0)
   - Version (0.8.0)
 
 DEPENDENCIES:
@@ -100,10 +100,11 @@ DEPENDENCIES:
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
   - CapgoCameraPreview (from `../../../camera-preview`)
   - "CapgoCapacitorDataStorageSqlite (from `../../node_modules/@capgo/capacitor-data-storage-sqlite`)"
+  - CapgoCapacitorDownloader (from `../../../capacitor-downloader`)
   - "CapgoCapacitorScreenRecorder (from `../../node_modules/@capgo/capacitor-screen-recorder`)"
   - "CapgoCapacitorShake (from `../../node_modules/@capgo/capacitor-shake`)"
   - CapgoCapacitorSocialLogin (from `../../../capacitor-social-login`)
-  - "CapgoCapacitorUpdater (from `../../node_modules/@capgo/capacitor-updater`)"
+  - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
   - CapgoCapacitorUploader (from `../../../capacitor-uploader`)
   - CapgoInappbrowser (from `../../../capacitor-inappbrowser`)
   - CapgoNativePurchases (from `../../../native-purchases`)
@@ -121,11 +122,11 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - MZDownloadManager
     - PromisesObjC
     - SQLCipher
     - SQLite.swift
     - SSZipArchive
-    - SwiftyRSA
     - Version
 
 EXTERNAL SOURCES:
@@ -147,6 +148,8 @@ EXTERNAL SOURCES:
     :path: "../../../camera-preview"
   CapgoCapacitorDataStorageSqlite:
     :path: "../../node_modules/@capgo/capacitor-data-storage-sqlite"
+  CapgoCapacitorDownloader:
+    :path: "../../../capacitor-downloader"
   CapgoCapacitorScreenRecorder:
     :path: "../../node_modules/@capgo/capacitor-screen-recorder"
   CapgoCapacitorShake:
@@ -154,7 +157,7 @@ EXTERNAL SOURCES:
   CapgoCapacitorSocialLogin:
     :path: "../../../capacitor-social-login"
   CapgoCapacitorUpdater:
-    :path: "../../node_modules/@capgo/capacitor-updater"
+    :path: "../../../capacitor-updater"
   CapgoCapacitorUploader:
     :path: "../../../capacitor-uploader"
   CapgoInappbrowser:
@@ -175,12 +178,13 @@ SPEC CHECKSUMS:
   CapacitorStatusBar: 2e4369f99166125435641b1908d05f561eaba6f6
   CapgoCameraPreview: e5ec3ed8998e94e24982c484841d7be48e7c3bbd
   CapgoCapacitorDataStorageSqlite: f50a420386e660eb82f05dd94f5cf62c772ebf36
+  CapgoCapacitorDownloader: 84d271af63f0f5a9cd7f8b1a7f4f53328fb8b720
   CapgoCapacitorScreenRecorder: 06b1278e43babbb2a82ba909d66e93dc1083f387
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
-  CapgoCapacitorSocialLogin: 03342544ed846215866eb841eb145233cce9dd61
-  CapgoCapacitorUpdater: f286378946eae7e06e54bd135815f3c5d939dfcc
-  CapgoCapacitorUploader: 0ffef6044edd222d392cd0ca86ff3a1c1e5fffec
-  CapgoInappbrowser: b1f3b77801c5f06db814e65894d676df3d6a4085
+  CapgoCapacitorSocialLogin: 5886f394886f968a26ba26fc2499b9c6884253fc
+  CapgoCapacitorUpdater: 586fe11975f5642c80f7b724c19af55a15ab59c7
+  CapgoCapacitorUploader: 77d7e8b018d2692f5e1ee959024734512cfcec9e
+  CapgoInappbrowser: b3cd825b1244d4048626025c540100b917d1a2ca
   CapgoNativePurchases: f681e23c7d09d77fb90ce984bf504cc294d4a679
   FBAEMKit: cb719c53575a3be86ea873279f30d6a2c4e15881
   FBSDKCoreKit: ecdb980a24633ccb012700299ceb16d0235e14d2
@@ -190,13 +194,13 @@ SPEC CHECKSUMS:
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
+  MZDownloadManager: 13a3bdf2dbb4866526d30f454e8061b8571bdf7d
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   SQLCipher: 77fbe633cd84db04b07876dd50766b4924b57d61
   SQLite.swift: 8d054987f02728cc912b0eb5a9659650573a65a2
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
-  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: 8c2798cb0c51f1b082faa24c5db0534c15596f28
+PODFILE CHECKSUM: 5d6ebb5b16c36da44261754baaa57f5a4234a7ef
 
 COCOAPODS: 1.15.2

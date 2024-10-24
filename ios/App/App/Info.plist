@@ -18,29 +18,46 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1640177526775785</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
 	<key>FacebookAppID</key>
-	<string>1954598607889653</string>
-	<key>FacebookClientToken</key>
-	<string>0fb8532b9e796e52d90dd09694bdc55c</string>
+	<string>1640177526775785</string>
 	<key>FacebookDisplayName</key>
 	<string>Capgo demo</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-			<string>fbapi</string>
-			<string>fbauth</string>
-			<string>fb-messenger-share-api</string>
-			<string>fbauth2</string>
-			<string>fbshareextension</string>
+		<string>fbapi</string>
+		<string>fbauth</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
 	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs it</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs it</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -55,10 +72,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>This app needs it</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>This app needs it</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -68,20 +81,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o</string>
-			</array>
-		</dict>
-			<dict>
-				<key>CFBundleURLSchemes</key>
-				<array>
-						<string>fb1954598607889653</string>
-				</array>
-		</dict>
-	</array>
 </dict>
 </plist>

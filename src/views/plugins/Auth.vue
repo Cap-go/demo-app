@@ -64,19 +64,19 @@ async function logincapgoApple() {
   await SocialLogin.initialize({
     apple: {
         clientId: 'ee.forgr.io.ionic.starter.service',
-        redirectUrl: 'https://appleloginvps.wcaleniewolny.me/login/callback'
+        // redirectUrl: 'https://appleloginvps.wcaleniewolny.me/login/callback'
     }
   })
-  await SocialLogin.login({
+  const response = await SocialLogin.login({
     provider: 'apple',
     options: {}
   })
+  console.log('logincapgoApple', response)
+  // const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
 
-  const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
-
-  if (isLogged) {
-    await actBackend()
-  } 
+  // if (isLogged) {
+  //   await actBackend()
+  // } 
 }
 
 function swapProviders() {
@@ -92,7 +92,7 @@ async function logincapgoGoogle() {
   await SocialLogin.initialize({
     google: {
       iOSClientId: '1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o.apps.googleusercontent.com',
-      androidClientId: '1038081411966-8q4qgeam3d4itku0r43qkginl9cljc5a.apps.googleusercontent.com',
+      webClientId: '1038081411966-8q4qgeam3d4itku0r43qkginl9cljc5a.apps.googleusercontent.com',
     }
   })
   const response =await SocialLogin.login({
@@ -106,7 +106,7 @@ async function logincapgoFacebook() {
   await SocialLogin.initialize({
     facebook: {
       appId: '1640177526775785',
-      
+      clientToken: '621ef94157c7a8e58a0343918e9b6615'
     }
   })
   await SocialLogin.login({

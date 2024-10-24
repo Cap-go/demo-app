@@ -21,6 +21,7 @@ dependencies {
     implementation project(':capgo-capacitor-social-login')
     implementation project(':capgo-capacitor-updater')
     implementation project(':capgo-capacitor-uploader')
+    implementation project(':capgo-capacitor-downloader')
     implementation project(':capgo-inappbrowser')
     implementation project(':capgo-native-purchases')
 

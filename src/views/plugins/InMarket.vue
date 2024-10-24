@@ -24,13 +24,13 @@
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton } from '@ionic/vue';
-// import { CapacitorInMarket } from '@primeinsightsgroupllc/capacitor-inmarket';
+import { CapacitorInMarket } from '@primeinsightsgroupllc/capacitor-inmarket';
 
 
 function setUserID() {
-  // CapacitorInMarket.setUserId({
-  //   userId: '1234567890'
-  // })
+  CapacitorInMarket.setUserId({
+    userId: '1234567890'
+  })
 }
 
 

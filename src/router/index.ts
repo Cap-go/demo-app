@@ -10,6 +10,7 @@ import Sql from '@/views/plugins/Sql.vue';
 import ScreenRecorder from '@/views/plugins/ScreenRecorder.vue';
 import Auth from '@/views/plugins/Auth.vue';
 import InMarket from '@/views/plugins/InMarket.vue';
+import Downloader from '@/views/Downloader.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -65,6 +66,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/inmarket',
     name: 'InMarket',
     component: InMarket
+  },
+  {
+    path: '/downloader',
+    name: 'Downloader',
+    component: Downloader
   }
 ]
 
