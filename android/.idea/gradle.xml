@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/../../camera-preview/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-downloader/android" />
             <option value="$PROJECT_DIR$/../../capacitor-inappbrowser/android" />
             <option value="$PROJECT_DIR$/../../capacitor-social-login/android" />
             <option value="$PROJECT_DIR$/../../capacitor-updater/android" />
