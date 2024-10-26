@@ -28,10 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="444d086f-6c54-41bb-8276-e60e4feb3523" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/GoogleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/GoogleProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/App/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile.lock" afterDir="false" />
     </list>
@@ -43,7 +40,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=ede6be21)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/martindonadieu/.android/avd/Medium_Phone_API_31.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -306,12 +303,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
-          <line>380</line>
+          <line>381</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
-          <line>288</line>
+          <line>289</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>

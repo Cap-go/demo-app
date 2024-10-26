@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid } from '@ionic/vue';
 import { onMounted, Ref, ref } from 'vue'
 import { usePopoutStore } from '@/popoutStore';
 import { SocialLogin } from '@capgo/capacitor-social-login';

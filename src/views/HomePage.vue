@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonGrid } from '@ionic/vue';
 import { onMounted } from 'vue';
 import { InAppBrowser } from '@capgo/inappbrowser'
 

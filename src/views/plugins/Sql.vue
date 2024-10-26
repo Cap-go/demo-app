@@ -22,14 +22,14 @@
             <table class="mx-auto mt-8" v-if="items.length > 0">
               <thead>
                   <tr class="border border-blue-500">
-                      <th class="border border-blue-500 px-2 py-z">Name</th>
-                      <th class="border border-blue-500 px-2 py-2">Age</th>
+                      <th class="px-2 border border-blue-500 py-z">Name</th>
+                      <th class="px-2 py-2 border border-blue-500">Age</th>
                   </tr>
               </thead>
               <tbody>
-                  <tr v-for="(person, index) in items" :key="index" class="border border-blue-500 px-2 py-2s">
-                    <td class="border border-blue-500 px-2 py-2">{{ person.name }}</td>
-                    <td class="border border-blue-500 px-2 py-2">{{ person.age }}</td>
+                  <tr v-for="(person, index) in items" :key="index" class="px-2 border border-blue-500 py-2s">
+                    <td class="px-2 py-2 border border-blue-500">{{ person.name }}</td>
+                    <td class="px-2 py-2 border border-blue-500">{{ person.age }}</td>
                   </tr>
               </tbody>
             </table>
@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid } from '@ionic/vue';
 import { onMounted, ref } from 'vue'
 import { usePopoutStore } from './../../popoutStore';
 import { CapgoCapacitorDataStorageSqlite } from '@capgo/capacitor-data-storage-sqlite';

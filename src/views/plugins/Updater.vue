@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid } from '@ionic/vue';
 
 async function hardrestet() {
   await CapacitorUpdater.reset()
