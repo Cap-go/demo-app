@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import { InAppBrowser } from '@capgo/inappbrowser';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid, IonButtons } from '@ionic/vue';
 import { onMounted } from 'vue';
 
 const WEB_URL = "https://capgo.app"
