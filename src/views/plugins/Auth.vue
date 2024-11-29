@@ -71,7 +71,14 @@ async function logincapgoApple() {
     provider: 'apple',
     options: {}
   })
+  currentProvider.value = 'apple'
   console.log('logincapgoApple', response)
+  userdataRef.value = {
+    id: response.result.profile.user,
+    email: response.result.profile.email ?? '',
+    first_name: response.result.profile.givenName ?? '',
+    last_name: response.result.profile.familyName ?? ''
+  }
   // const isLogged = (await SocialLogin.isLoggedIn({ provider: 'apple' })).isLoggedIn
 
   // if (isLogged) {
@@ -95,10 +102,22 @@ async function logincapgoGoogle() {
       webClientId: '1038081411966-8q4qgeam3d4itku0r43qkginl9cljc5a.apps.googleusercontent.com',
     }
   })
-  const response =await SocialLogin.login({
+  const response = await SocialLogin.login({
     provider: 'google',
-    options: {}
+    options: { 
+      grantOfflineAccess: true,
+      // newUI: true,
+      scopes: ['email', 'profile'] 
+    }
   })
+  currentProvider.value = 'google'
+  userdataRef.value = {
+    id: response.result.profile.id ?? '',
+    email: response.result.profile.email ?? '',
+    first_name: response.result.profile.givenName ?? '',
+    last_name: response.result.profile.familyName ?? ''
+  }
+
   console.log('logincapgoGoogle', response)
 }
 
@@ -109,12 +128,19 @@ async function logincapgoFacebook() {
       clientToken: '621ef94157c7a8e58a0343918e9b6615'
     }
   })
-  await SocialLogin.login({
+  currentProvider.value = 'facebook'
+  const response = await SocialLogin.login({
     provider: 'facebook',
     options: {
       permissions: ['email', 'public_profile']
     }
   })
+  userdataRef.value = {
+    id: response.result.profile.userID,
+    email: response.result.profile.email ?? '',
+    first_name: response.result.profile.name ?? '',
+    last_name: ''
+  }
 }
 
 

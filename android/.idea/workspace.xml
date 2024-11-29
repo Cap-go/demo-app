@@ -28,9 +28,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="444d086f-6c54-41bb-8276-e60e4feb3523" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/GoogleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/GoogleProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-uploader/android/src/main/java/ee/forgr/capacitor/uploader/Uploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-uploader/android/src/main/java/ee/forgr/capacitor/uploader/Uploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-uploader/android/src/main/java/ee/forgr/capacitor/uploader/UploaderPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-uploader/android/src/main/java/ee/forgr/capacitor/uploader/UploaderPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-uploader/src/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-uploader/src/definitions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/views/plugins/Auth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/plugins/Auth.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/views/plugins/Camera.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/plugins/Camera.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +46,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/martindonadieu/.android/avd/Medium_Phone_API_31.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=emulator-5554;connection=7c31e77f)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -93,39 +99,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;ApkExportedModule&quot;: &quot;android.app&quot;,
-    &quot;BundleExportedModule&quot;: &quot;android.app&quot;,
-    &quot;DEBUGGABLE_DEVICE&quot;: &quot;Medium_Phone_API_33 [emulator-5554]&quot;,
-    &quot;DEBUGGABLE_PROCESS&quot;: &quot;io.ionic.starter&quot;,
-    &quot;DEBUGGER_ID&quot;: &quot;Auto&quot;,
-    &quot;ExportApk.ApkPathForandroid.app&quot;: &quot;/Users/michaltremblay/Developer/capgo-test-app/android/app&quot;,
-    &quot;ExportBundle.BundlePathForandroid.app&quot;: &quot;/Users/michaltremblay/Developer/capgo-test-app/android/app&quot;,
-    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SHOW_ALL_PROCESSES&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaltremblay/Developer/capgo-test-app/android&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Dependencies&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "ApkExportedModule": "android.app",
+    "BundleExportedModule": "android.app",
+    "DEBUGGABLE_DEVICE": "Medium_Phone_API_33 [emulator-5554]",
+    "DEBUGGABLE_PROCESS": "io.ionic.starter",
+    "DEBUGGER_ID": "Auto",
+    "ExportApk.ApkPathForandroid.app": "/Users/michaltremblay/Developer/capgo-test-app/android/app",
+    "ExportBundle.BundlePathForandroid.app": "/Users/michaltremblay/Developer/capgo-test-app/android/app",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHOW_ALL_PROCESSES": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "auth0-web",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/michaltremblay/Developer/capgo-test-app/android",
+    "project.structure.last.edited": "Dependencies",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ExportApk.BuildVariants&quot;: [
-      &quot;release&quot;
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="android.app.main" />
@@ -238,77 +244,77 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java</url>
-          <line>252</line>
+          <line>254</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java</url>
-          <line>331</line>
+          <line>333</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java</url>
-          <line>65</line>
+          <line>67</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>212</line>
+          <line>243</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>114</line>
+          <line>145</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>113</line>
+          <line>144</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>572</line>
+          <line>688</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>781</line>
+          <line>998</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-uploader/android/src/main/java/ee/forgr/capacitor/uploader/Uploader.java</url>
-          <line>72</line>
+          <line>99</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-uploader/android/src/main/java/ee/forgr/capacitor/uploader/Uploader.java</url>
-          <line>69</line>
+          <line>97</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>302</line>
+          <line>333</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>510</line>
+          <line>541</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java</url>
-          <line>497</line>
+          <line>528</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
-          <line>381</line>
+          <line>394</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../capacitor-social-login/android/src/main/java/ee/forgr/capacitor/social/login/AppleProvider.java</url>
-          <line>289</line>
+          <line>302</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>

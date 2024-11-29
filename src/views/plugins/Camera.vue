@@ -1,7 +1,7 @@
 <template>
   <ion-page>
-      <div id="cam-prev" class="flex w-full h-screen bg-transparent flex-row">
-      <button @click="goBack" class="w-16 h-16 bg-blue-500 my-auto"></button>
+      <div id="cam-prev" class="flex flex-row w-full h-screen bg-transparent">
+      <button @click="goBack" class="w-16 h-16 my-auto bg-blue-500"></button>
       <button @click="record">
         <div class="w-16 h-16" :class="{
           'bg-orange-600': isRecording,
@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
   import { onMounted, onUnmounted, ref } from 'vue';
-  import { IonPage, IonBackButton, useIonRouter } from '@ionic/vue'
+  import { IonPage, useIonRouter } from '@ionic/vue'
   import { CameraPreview } from '@capgo/camera-preview'
   import { Uploader } from '@capgo/capacitor-uploader';
 
