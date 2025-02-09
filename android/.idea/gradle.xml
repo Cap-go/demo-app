@@ -27,6 +27,7 @@
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-data-storage-sqlite/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-screen-recorder/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-shake/android" />
+            <option value="$PROJECT_DIR$/../../inmarket/android" />
             <option value="$PROJECT_DIR$/../../native-purchases/android" />
           </set>
         </option>

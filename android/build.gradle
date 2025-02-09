@@ -21,6 +21,13 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+                maven {
+            credentials{
+              username 'm2m_pub'
+              password 'Cpts1350!'
+            }
+            url 'https://artifacts.inmarket.com/artifactory/sun'
+        }
     }
 }
 

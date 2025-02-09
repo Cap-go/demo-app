@@ -18,6 +18,7 @@
 
             <ion-button @click="() => hardrestet()">Hard reset!!</ion-button>
             <ion-button @click="() => questionMark()">??</ion-button>
+            <ion-button @click="() => getLatest()">Get latest</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -39,4 +40,18 @@ async function questionMark() {
     await CapacitorUpdater.delete({id: bundle.id })
   }
 }
+
+async function getLatest() {
+  const latest = await CapacitorUpdater.getLatest()
+  console.log('latest', latest)
+  if (latest.url) {
+    const download = await CapacitorUpdater.download({
+      url: latest.url,
+      version: latest.version,
+    })
+    console.log('download', download)
+    await CapacitorUpdater.set({ id: download.id }).catch(e => console.error(e))
+  }
+}
+
 </script>

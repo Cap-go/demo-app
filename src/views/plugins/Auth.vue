@@ -43,7 +43,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid, IonButtons } from '@ionic/vue';
 import { onMounted, Ref, ref } from 'vue'
 import { usePopoutStore } from '@/popoutStore';
-import { SocialLogin } from '@capgo/capacitor-social-login';
+import { SocialLogin, GoogleLoginResponseOnline } from '@capgo/capacitor-social-login';
 
 const userdataRef = ref(null) as Ref<{ id: string, email: string, first_name: string, last_name: string } | null>
 const popoutStore = usePopoutStore()
@@ -100,22 +100,23 @@ async function logincapgoGoogle() {
     google: {
       iOSClientId: '1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o.apps.googleusercontent.com',
       webClientId: '1038081411966-8q4qgeam3d4itku0r43qkginl9cljc5a.apps.googleusercontent.com',
+      // mode: 'offline',
     }
   })
   const response = await SocialLogin.login({
     provider: 'google',
     options: { 
-      grantOfflineAccess: true,
       // newUI: true,
       scopes: ['email', 'profile'] 
     }
   })
+  const res = response.result as GoogleLoginResponseOnline
   currentProvider.value = 'google'
   userdataRef.value = {
-    id: response.result.profile.id ?? '',
-    email: response.result.profile.email ?? '',
-    first_name: response.result.profile.givenName ?? '',
-    last_name: response.result.profile.familyName ?? ''
+    id: res.profile.id ?? '',
+    email: res.profile.email ?? '',
+    first_name: res.profile.givenName ?? '',
+    last_name: res.profile.familyName ?? ''
   }
 
   console.log('logincapgoGoogle', response)

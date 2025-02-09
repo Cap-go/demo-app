@@ -17,6 +17,7 @@ dependencies {
     implementation project(':capgo-camera-preview')
     implementation project(':capgo-capacitor-data-storage-sqlite')
     implementation project(':capgo-capacitor-screen-recorder')
+    implementation project(':primeinsightsgroupllc-inmarket-capacitor-inmarket')
     implementation project(':capgo-capacitor-shake')
     implementation project(':capgo-capacitor-social-login')
     implementation project(':capgo-capacitor-updater')

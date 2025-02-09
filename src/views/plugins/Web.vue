@@ -17,6 +17,7 @@
             <p>Start with Capgo Cloud!</p>
 
             <ion-button @click="() => openWeb()">web</ion-button>
+            <ion-button @click="() => openWebWithPicker()">web</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -31,6 +32,13 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol
 import { onMounted } from 'vue';
 
 const WEB_URL = "https://capgo.app"
+
+async function openWebWithPicker() {
+  const picker = await InAppBrowser.openWebView({
+    url: 'https://show-picker.glitch.me/demo.html',
+  })
+  console.log('picker', picker)
+}
 
 async function openWeb() {
   // InAppBrowser.open({ url: WEB_URL, isInspectable: true } as any);

@@ -26,6 +26,9 @@ project(':capgo-capacitor-data-storage-sqlite').projectDir = new File('../node_m
 include ':capgo-capacitor-screen-recorder'
 project(':capgo-capacitor-screen-recorder').projectDir = new File('../node_modules/@capgo/capacitor-screen-recorder/android')
 
+include ':primeinsightsgroupllc-inmarket-capacitor-inmarket'
+project(':primeinsightsgroupllc-inmarket-capacitor-inmarket').projectDir = new File('../../inmarket/android')
+
 include ':capgo-capacitor-shake'
 project(':capgo-capacitor-shake').projectDir = new File('../node_modules/@capgo/capacitor-shake/android')
 

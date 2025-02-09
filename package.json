@@ -31,6 +31,7 @@
     "@capgo/camera-preview": "link:@capgo/camera-preview",
     "@capgo/capacitor-data-storage-sqlite": "^6.0.9",
     "@capgo/capacitor-screen-recorder": "^8.1.58",
+    "@primeinsightsgroupllc-inmarket/capacitor-inmarket": "link:@primeinsightsgroupllc-inmarket/capacitor-inmarket",
     "@capgo/capacitor-shake": "^6.0.46",
     "@capgo/capacitor-social-login": "link:@capgo/capacitor-social-login",
     "@capgo/capacitor-updater": "link:@capgo/capacitor-updater",
