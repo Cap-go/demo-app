@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -9,9 +8,13 @@
         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../../camera-preview/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-downloader/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-camera-preview/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-data-storage-sqlite/android" />
             <option value="$PROJECT_DIR$/../../capacitor-inappbrowser/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-native-audio/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-native-purchases/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-screen-recorder/android" />
+            <option value="$PROJECT_DIR$/../../capacitor-shake/android" />
             <option value="$PROJECT_DIR$/../../capacitor-social-login/android" />
             <option value="$PROJECT_DIR$/../../capacitor-updater/android" />
             <option value="$PROJECT_DIR$/../../capacitor-uploader/android" />
@@ -24,11 +27,6 @@
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/haptics/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/keyboard/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/status-bar/android" />
-            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-data-storage-sqlite/android" />
-            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-screen-recorder/android" />
-            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-shake/android" />
-            <option value="$PROJECT_DIR$/../../inmarket/android" />
-            <option value="$PROJECT_DIR$/../../native-purchases/android" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
