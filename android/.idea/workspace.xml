@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioAsset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioDispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/NativeAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/NativeAudio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/RemoteAudioAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/RemoteAudioAsset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/views/plugins/ScreenRecorder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/plugins/ScreenRecorder.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

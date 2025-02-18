@@ -47,7 +47,7 @@ PODS:
     - Capacitor
   - CapgoInappbrowser (7.2.13):
     - Capacitor
-  - CapgoNativeAudio (7.2.0):
+  - CapgoNativeAudio (7.3.0):
     - Capacitor
   - CapgoNativePurchases (7.1.13):
     - Capacitor
@@ -181,7 +181,7 @@ SPEC CHECKSUMS:
   CapgoCapacitorUpdater: 55cc4531edd867586ec6729a0a9e0c35f0556fed
   CapgoCapacitorUploader: 04d9f411164288f4e286a322c44e99590cc67fd1
   CapgoInappbrowser: bc6dfbfeb949a85a7260e6f4d56f1c445c16da31
-  CapgoNativeAudio: 28bbdfd3601f6c5ce995fbe74d52d42f9c2b2596
+  CapgoNativeAudio: 910eca2589040e4a2dd23f9305475d0f59ccde44
   CapgoNativePurchases: 9e6b1ec705983d8d4eb9c090eeb70746e2799493
   FBAEMKit: cb719c53575a3be86ea873279f30d6a2c4e15881
   FBSDKCoreKit: ecdb980a24633ccb012700299ceb16d0235e14d2
