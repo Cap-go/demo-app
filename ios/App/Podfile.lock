@@ -25,12 +25,12 @@ PODS:
     - Capacitor
   - CapgoCameraPreview (2.0.0):
     - Capacitor
-  - CapgoCapacitorDataStorageSqlite (6.0.59):
+  - CapgoCapacitorDataStorageSqlite (7.0.0):
     - Capacitor
     - SQLite.swift/SQLCipher
-  - CapgoCapacitorScreenRecorder (8.1.105):
+  - CapgoCapacitorScreenRecorder (7.1.1):
     - Capacitor
-  - CapgoCapacitorShake (6.0.46):
+  - CapgoCapacitorShake (7.1.3):
     - Capacitor
   - CapgoCapacitorSocialLogin (1.2.5):
     - Alamofire
@@ -97,9 +97,9 @@ DEPENDENCIES:
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
   - CapgoCameraPreview (from `../../../capacitor-camera-preview`)
-  - "CapgoCapacitorDataStorageSqlite (from `../../node_modules/@capgo/capacitor-data-storage-sqlite`)"
-  - "CapgoCapacitorScreenRecorder (from `../../node_modules/@capgo/capacitor-screen-recorder`)"
-  - "CapgoCapacitorShake (from `../../node_modules/@capgo/capacitor-shake`)"
+  - CapgoCapacitorDataStorageSqlite (from `../../../capacitor-data-storage-sqlite`)
+  - CapgoCapacitorScreenRecorder (from `../../../capacitor-screen-recorder`)
+  - CapgoCapacitorShake (from `../../../capacitor-shake`)
   - CapgoCapacitorSocialLogin (from `../../../capacitor-social-login`)
   - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
   - CapgoCapacitorUploader (from `../../../capacitor-uploader`)
@@ -144,11 +144,11 @@ EXTERNAL SOURCES:
   CapgoCameraPreview:
     :path: "../../../capacitor-camera-preview"
   CapgoCapacitorDataStorageSqlite:
-    :path: "../../node_modules/@capgo/capacitor-data-storage-sqlite"
+    :path: "../../../capacitor-data-storage-sqlite"
   CapgoCapacitorScreenRecorder:
-    :path: "../../node_modules/@capgo/capacitor-screen-recorder"
+    :path: "../../../capacitor-screen-recorder"
   CapgoCapacitorShake:
-    :path: "../../node_modules/@capgo/capacitor-shake"
+    :path: "../../../capacitor-shake"
   CapgoCapacitorSocialLogin:
     :path: "../../../capacitor-social-login"
   CapgoCapacitorUpdater:
@@ -174,9 +174,9 @@ SPEC CHECKSUMS:
   CapacitorKeyboard: 2c26c6fccde35023c579fc37d4cae6326d5e6343
   CapacitorStatusBar: 438e90beeeefa8276b24e6c5991cb02dd13e51bf
   CapgoCameraPreview: e3d09793af2c662dfc78d48f53e8c57e8d7bd504
-  CapgoCapacitorDataStorageSqlite: 582d111ddfea683bbfbff9ea29effd1814e7ec01
-  CapgoCapacitorScreenRecorder: 98041f6c7031ba07d74a1254a2b22e8247610baf
-  CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
+  CapgoCapacitorDataStorageSqlite: 064c775f7fc5741dd06fd5323e84c3d7e0bbbc55
+  CapgoCapacitorScreenRecorder: 06148ea49f3d6ec68266f5b9d28cfa14d34aada1
+  CapgoCapacitorShake: 122c19ab6b6dbac1ec704806303f8151ceca95b1
   CapgoCapacitorSocialLogin: 97abcd303e33c0e5f370b46f1afc762cee39a1f5
   CapgoCapacitorUpdater: 55cc4531edd867586ec6729a0a9e0c35f0556fed
   CapgoCapacitorUploader: 04d9f411164288f4e286a322c44e99590cc67fd1
@@ -197,6 +197,6 @@ SPEC CHECKSUMS:
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: fe4d1ad4d5b2b72175c372e090b8560312031b9f
+PODFILE CHECKSUM: 9823f952474a3019df7e77b087e15197da5bc3cc
 
 COCOAPODS: 1.16.2
