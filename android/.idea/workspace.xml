@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioAsset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/AudioDispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/NativeAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/NativeAudio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/RemoteAudioAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/src/main/java/ee/forgr/audio/RemoteAudioAsset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/debug/output-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/me/wcaleniewolny/io/ionic/starter/capgo/google/login/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/views/plugins/Audio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/plugins/Audio.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

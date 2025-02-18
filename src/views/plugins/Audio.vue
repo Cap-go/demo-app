@@ -10,17 +10,24 @@ const currentRate = ref(1)
 const currentTime = ref(0)
 const duration = ref(0)
 let completeListener: PluginListenerHandle | null = null
+let currentTimeListener: PluginListenerHandle | null = null
 
 onMounted(async () => {
   await configureAudio()
   completeListener = await NativeAudio.addListener('complete', (event) => {
     audioStatus.value = `Audio ${event.assetId} completed`
   })
+  currentTimeListener = await NativeAudio.addListener('currentTime', (event) => {
+    currentTime.value = event.currentTime
+  })
 })
 
 onUnmounted(async () => {
   if (completeListener) {
     await completeListener.remove()
+  }
+  if (currentTimeListener) {
+    await currentTimeListener.remove()
   }
 })
 
@@ -96,7 +103,6 @@ const playAudio = async (id: string) => {
       delay: 0
     })
     duration.value = (await NativeAudio.getDuration({ assetId: id })).duration
-    updateCurrentTime(id)
     audioStatus.value = `Playing ${id} audio`
   } catch (error) {
     audioStatus.value = `Error playing ${id}: ${error}`
@@ -115,7 +121,6 @@ const pauseAudio = async (id: string) => {
 const resumeAudio = async (id: string) => {
   try {
     await NativeAudio.resume({ assetId: id })
-    updateCurrentTime(id)
     audioStatus.value = `${id} audio resumed`
   } catch (error) {
     audioStatus.value = `Error resuming ${id}: ${error}`
@@ -167,19 +172,6 @@ const setRate = async (id: string) => {
   }
 }
 
-const updateCurrentTime = async (id: string) => {
-  try {
-    const isPlaying = await NativeAudio.isPlaying({ assetId: id })
-    if (isPlaying.isPlaying) {
-      const time = await NativeAudio.getCurrentTime({ assetId: id })
-      currentTime.value = time.currentTime
-      setTimeout(() => updateCurrentTime(id), 1000)
-    }
-  } catch (error) {
-    console.error(`Error updating time for ${id}: ${error}`)
-  }
-}
-
 const setCurrentTime = async (id: string) => {
   try {
     await NativeAudio.setCurrentTime({ assetId: id, time: currentTime.value })
@@ -211,6 +203,7 @@ const clearAudioCache = async () => {
     </ion-header>
 
     <ion-content :fullscreen="true">
+      <p class="text-gray-700">{{ audioStatus }}</p>
       <ion-grid style="height: 100%">
         <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
           <ion-col size="auto" style="text-align: center;">
@@ -290,7 +283,6 @@ const clearAudioCache = async () => {
                 </div>
               </div>
 
-              <p class="text-gray-700">{{ audioStatus }}</p>
             </div>
           </ion-col>
         </ion-row>
