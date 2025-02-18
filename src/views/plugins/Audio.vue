@@ -53,8 +53,8 @@ const preloadLocalAudio = async () => {
       volume: currentVolume.value,
       isUrl: false
     })
-    const duration = await NativeAudio.getDuration({ assetId: "local" })
-    audioStatus.value = `Local audio preloaded ${duration.duration}`
+    duration.value = (await NativeAudio.getDuration({ assetId: "local" })).duration
+    audioStatus.value = `Local audio preloaded`
   } catch (error) {
     audioStatus.value = `Error preloading local: ${error}`
   }
@@ -69,6 +69,7 @@ const preloadRemoteAudio = async () => {
       volume: currentVolume.value,
       isUrl: true
     })
+    duration.value = (await NativeAudio.getDuration({ assetId: "remote" })).duration
     audioStatus.value = 'Remote audio preloaded'
   } catch (error) {
     audioStatus.value = `Error preloading remote: ${error}`
@@ -84,6 +85,7 @@ const preloadStreamAudio = async () => {
       volume: currentVolume.value,
       isUrl: true
     })
+    duration.value = (await NativeAudio.getDuration({ assetId: "stream" })).duration
     audioStatus.value = 'Stream audio preloaded'
   } catch (error) {
     audioStatus.value = `Error preloading stream: ${error}`
@@ -102,7 +104,6 @@ const playAudio = async (id: string) => {
       time: 0,
       delay: 0
     })
-    duration.value = (await NativeAudio.getDuration({ assetId: id })).duration
     audioStatus.value = `Playing ${id} audio`
   } catch (error) {
     audioStatus.value = `Error playing ${id}: ${error}`
