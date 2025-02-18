@@ -11,6 +11,7 @@ import ScreenRecorder from '@/views/plugins/ScreenRecorder.vue';
 import Auth from '@/views/plugins/Auth.vue';
 import InMarket from '@/views/plugins/InMarket.vue';
 import Downloader from '@/views/Downloader.vue';
+import Audio from '@/views/plugins/Audio.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -71,6 +72,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/downloader',
     name: 'Downloader',
     component: Downloader
+  },
+  {
+    path: '/audio',
+    name: 'Audio',
+    component: Audio
   }
 ]
 

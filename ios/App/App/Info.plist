@@ -83,8 +83,6 @@
 	<true/>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>We would like to identify your device to show you targeted surveys</string>
-  <key>NSLocationAlwaysUsageDescription</key>
-  <string>Message for always location permission.</string>
   <key>NSLocationWhenInUseUsageDescription</key>
   <string>Message for whenInUse location permission dialog (iOS 11.0 or greater).</string>
   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>

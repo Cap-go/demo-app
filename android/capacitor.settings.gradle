@@ -18,19 +18,16 @@ include ':capacitor-status-bar'
 project(':capacitor-status-bar').projectDir = new File('../node_modules/@capacitor/status-bar/android')
 
 include ':capgo-camera-preview'
-project(':capgo-camera-preview').projectDir = new File('../../camera-preview/android')
+project(':capgo-camera-preview').projectDir = new File('../../capacitor-camera-preview/android')
 
 include ':capgo-capacitor-data-storage-sqlite'
-project(':capgo-capacitor-data-storage-sqlite').projectDir = new File('../node_modules/@capgo/capacitor-data-storage-sqlite/android')
+project(':capgo-capacitor-data-storage-sqlite').projectDir = new File('../../capacitor-data-storage-sqlite/android')
 
 include ':capgo-capacitor-screen-recorder'
-project(':capgo-capacitor-screen-recorder').projectDir = new File('../node_modules/@capgo/capacitor-screen-recorder/android')
-
-include ':primeinsightsgroupllc-inmarket-capacitor-inmarket'
-project(':primeinsightsgroupllc-inmarket-capacitor-inmarket').projectDir = new File('../../inmarket/android')
+project(':capgo-capacitor-screen-recorder').projectDir = new File('../../capacitor-screen-recorder/android')
 
 include ':capgo-capacitor-shake'
-project(':capgo-capacitor-shake').projectDir = new File('../node_modules/@capgo/capacitor-shake/android')
+project(':capgo-capacitor-shake').projectDir = new File('../../capacitor-shake/android')
 
 include ':capgo-capacitor-social-login'
 project(':capgo-capacitor-social-login').projectDir = new File('../../capacitor-social-login/android')
@@ -41,11 +38,11 @@ project(':capgo-capacitor-updater').projectDir = new File('../../capacitor-updat
 include ':capgo-capacitor-uploader'
 project(':capgo-capacitor-uploader').projectDir = new File('../../capacitor-uploader/android')
 
-include ':capgo-capacitor-downloader'
-project(':capgo-capacitor-downloader').projectDir = new File('../../capacitor-downloader/android')
-
 include ':capgo-inappbrowser'
 project(':capgo-inappbrowser').projectDir = new File('../../capacitor-inappbrowser/android')
 
+include ':capgo-native-audio'
+project(':capgo-native-audio').projectDir = new File('../../capacitor-native-audio/android')
+
 include ':capgo-native-purchases'
-project(':capgo-native-purchases').projectDir = new File('../../native-purchases/android')
+project(':capgo-native-purchases').projectDir = new File('../../capacitor-native-purchases/android')

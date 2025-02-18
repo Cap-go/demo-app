@@ -1,6 +1,6 @@
 require_relative '../../node_modules/@capacitor/ios/scripts/pods_helpers'
-source 'https://inmarket-pod-user:****@github.com/ThinkNear/m2mPods.git'
-platform :ios, '13.0'
+# source 'https://inmarket-pod-user:****@github.com/ThinkNear/m2mPods.git'
+platform :ios, '14.0'
 use_frameworks!
 
 # workaround to avoid Xcode caching of Pods that requires
@@ -16,17 +16,16 @@ def capacitor_pods
   pod 'CapacitorHaptics', :path => '../../node_modules/@capacitor/haptics'
   pod 'CapacitorKeyboard', :path => '../../node_modules/@capacitor/keyboard'
   pod 'CapacitorStatusBar', :path => '../../node_modules/@capacitor/status-bar'
-  pod 'CapgoCameraPreview', :path => '../../../camera-preview'
-  pod 'CapgoCapacitorDataStorageSqlite', :path => '../../node_modules/@capgo/capacitor-data-storage-sqlite'
-  pod 'CapgoCapacitorScreenRecorder', :path => '../../node_modules/@capgo/capacitor-screen-recorder'
-  pod 'PrimeinsightsgroupllcInmarketCapacitorInmarket', :path => '../../../inmarket'
-  pod 'CapgoCapacitorShake', :path => '../../node_modules/@capgo/capacitor-shake'
+  pod 'CapgoCameraPreview', :path => '../../../capacitor-camera-preview'
+  pod 'CapgoCapacitorDataStorageSqlite', :path => '../../../capacitor-data-storage-sqlite'
+  pod 'CapgoCapacitorScreenRecorder', :path => '../../../capacitor-screen-recorder'
+  pod 'CapgoCapacitorShake', :path => '../../../capacitor-shake'
   pod 'CapgoCapacitorSocialLogin', :path => '../../../capacitor-social-login'
   pod 'CapgoCapacitorUpdater', :path => '../../../capacitor-updater'
   pod 'CapgoCapacitorUploader', :path => '../../../capacitor-uploader'
-  pod 'CapgoCapacitorDownloader', :path => '../../../capacitor-downloader'
   pod 'CapgoInappbrowser', :path => '../../../capacitor-inappbrowser'
-  pod 'CapgoNativePurchases', :path => '../../../native-purchases'
+  pod 'CapgoNativeAudio', :path => '../../../capacitor-native-audio'
+  pod 'CapgoNativePurchases', :path => '../../../capacitor-native-purchases'
 end
 
 target 'App' do
