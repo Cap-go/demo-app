@@ -26,6 +26,8 @@
             <ion-button @click="() => openWebWithReload()">web with reload</ion-button>
             <ion-button @click="() => openWebWithCloseModal()">web with close modal</ion-button>
             <ion-button @click="() => openWebWithCustomButton()">web with custom button</ion-button>
+            <ion-button @click="() => openWebWithMediaCapture()">web with media capture</ion-button>
+            <ion-button @click="() => openWebWithMicrophone()">web with microphone</ion-button>
 
           </ion-col>
         </ion-row>
@@ -149,6 +151,20 @@ async function openWebWithCustomButton() {
         height: 24
       }
     }
+  })
+}
+
+async function openWebWithMediaCapture() {
+  await InAppBrowser.openWebView({
+    url: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/capture',
+    title: 'Camera Test'
+  });
+}
+
+async function openWebWithMicrophone() {
+  InAppBrowser.openWebView({
+    url: 'https://webcammictest.com/check-mic.html',
+    title: 'Microphone Test'
   })
 }
 
