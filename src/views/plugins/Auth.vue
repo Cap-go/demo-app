@@ -25,6 +25,7 @@
 
             <ion-button @click="() => logincapgoApple()">Login Apple!</ion-button>
             <ion-button @click="() => logincapgoGoogle()">Login Google!</ion-button>
+            <ion-button @click="() => logincapgoStandardGoogle()">Login Standard Google!</ion-button>
             <ion-button @click="() => logincapgoFacebook()">Login Facebook!</ion-button>
             <ion-button @click="() => actBackend()">Act with backend!</ion-button>
             <ion-button @click="() => logoutApple()">Logout Apple!</ion-button>
@@ -107,6 +108,33 @@ async function logincapgoGoogle() {
     provider: 'google',
     options: { 
       // newUI: true,
+      style: 'bottom',
+      // scopes: ['email', 'profile'] 
+    }
+  })
+  const res = response.result as GoogleLoginResponseOnline
+  currentProvider.value = 'google'
+  userdataRef.value = {
+    id: res.profile.id ?? '',
+    email: res.profile.email ?? '',
+    first_name: res.profile.givenName ?? '',
+    last_name: res.profile.familyName ?? ''
+  }
+
+  console.log('logincapgoGoogle', response)
+}
+
+async function logincapgoStandardGoogle() {
+  await SocialLogin.initialize({
+    google: {
+      iOSClientId: '1038081411966-cnlcoi2u208vhucriodt8g2ouctja62o.apps.googleusercontent.com',
+      webClientId: '1038081411966-8q4qgeam3d4itku0r43qkginl9cljc5a.apps.googleusercontent.com',
+      // mode: 'offline',
+    }
+  })
+  const response = await SocialLogin.login({
+    provider: 'google',
+    options: { 
       scopes: ['email', 'profile'] 
     }
   })

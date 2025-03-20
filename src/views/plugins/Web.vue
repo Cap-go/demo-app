@@ -16,8 +16,17 @@
             <strong>Ready to create an app?</strong>
             <p>Start with Capgo Cloud!</p>
 
-            <ion-button @click="() => openWeb()">web</ion-button>
-            <ion-button @click="() => openWebWithPicker()">web</ion-button>
+            <ion-button @click="() => openWeb()">web with script</ion-button>
+            <ion-button @click="() => openWebWithPicker()">web with picker</ion-button>
+            <ion-button @click="() => openWebWithHeaders()">web with headers</ion-button>
+            <ion-button @click="() => openWebWithCredentials()">web with credentials</ion-button>
+            <ion-button @click="() => openWebWithDisclaimer()">web with disclaimer</ion-button>
+            <ion-button @click="() => openWebWithCustomToolbar()">web with custom toolbar</ion-button>
+            <ion-button @click="() => openWebWithNativeNav()">web with native nav</ion-button>
+            <ion-button @click="() => openWebWithReload()">web with reload</ion-button>
+            <ion-button @click="() => openWebWithCloseModal()">web with close modal</ion-button>
+            <ion-button @click="() => openWebWithCustomButton()">web with custom button</ion-button>
+
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -30,6 +39,7 @@
 import { InAppBrowser } from '@capgo/inappbrowser';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid, IonButtons } from '@ionic/vue';
 import { onMounted } from 'vue';
+import { ToolBarType } from '@capgo/inappbrowser';
 
 const WEB_URL = "https://capgo.app"
 
@@ -39,6 +49,7 @@ async function openWebWithPicker() {
   })
   console.log('picker', picker)
 }
+
 
 async function openWeb() {
   // InAppBrowser.open({ url: WEB_URL, isInspectable: true } as any);
@@ -53,6 +64,91 @@ async function openWeb() {
       ios: { icon: 'monkey', iconType: 'asset' },
       android: { icon: 'public/monkey.svg', iconType: 'asset' }
     } 
+  })
+}
+
+async function openWebWithHeaders() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    headers: {
+      'Custom-Header': 'test-value',
+      'Authorization': 'Bearer test-token'
+    }
+  })
+}
+
+async function openWebWithCredentials() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    credentials: {
+      username: 'test-user',
+      password: 'test-pass'
+    }
+  })
+}
+
+async function openWebWithDisclaimer() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    shareDisclaimer: {
+      title: 'Disclaimer',
+      message: 'This is a test disclaimer',
+      confirmBtn: 'Accept',
+      cancelBtn: 'Decline'
+    }
+  })
+}
+
+async function openWebWithCustomToolbar() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.ACTIVITY,
+    toolbarColor: '#FF5733',
+    showArrow: true
+  })
+}
+
+async function openWebWithNativeNav() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    activeNativeNavigationForWebview: true,
+    disableGoBackOnNativeApplication: true
+  })
+}
+
+async function openWebWithReload() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    showReloadButton: true
+  })
+}
+
+async function openWebWithCloseModal() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    closeModal: true,
+    closeModalTitle: 'Close Window',
+    closeModalDescription: 'Are you sure you want to close?',
+    closeModalOk: 'Yes, close',
+    closeModalCancel: 'No, stay'
+  })
+}
+
+async function openWebWithCustomButton() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    buttonNearDone: {
+      ios: {
+        iconType: 'sf-symbol',
+        icon: 'star.fill'
+      },
+      android: {
+        iconType: 'asset',
+        icon: 'public/star.svg',
+        width: 24,
+        height: 24
+      }
+    }
   })
 }
 
@@ -82,6 +178,22 @@ onMounted(async () => {
   })
   InAppBrowser.addListener('buttonNearDoneClick', async (msg) => {
     await InAppBrowser.setUrl({ url: 'https://web.capgo.app/login' })
+  })
+
+  InAppBrowser.addListener('urlChangeEvent', (event) => {
+    console.log('URL changed:', event.url)
+  })
+
+  InAppBrowser.addListener('browserPageLoaded', () => {
+    console.log('Page loaded')
+  })
+
+  InAppBrowser.addListener('pageLoadError', () => {
+    console.log('Page load error')
+  })
+
+  InAppBrowser.addListener('confirmBtnClicked', (event) => {
+    console.log('Confirm button clicked:', event.url)
   })
 })
 </script>
