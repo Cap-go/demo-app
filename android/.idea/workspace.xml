@@ -10,6 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/layout/tool_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/layout/tool_bar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" afterDir="false" />
@@ -19,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

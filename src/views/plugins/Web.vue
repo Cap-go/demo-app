@@ -17,6 +17,7 @@
             <p>Start with Capgo Cloud!</p>
 
             <ion-button @click="() => openWeb()">web with script</ion-button>
+            <ion-button @click="() => openWebDarkMode()">web with script dark reader</ion-button>
             <ion-button @click="() => openWebWithPicker()">web with picker</ion-button>
             <ion-button @click="() => openWebWithHeaders()">web with headers</ion-button>
             <ion-button @click="() => openWebWithCredentials()">web with credentials</ion-button>
@@ -31,6 +32,10 @@
             <ion-button @click="() => openWebWithMultipleUpload()">web with multiple upload</ion-button>
             <ion-button @click="() => openWebWithSingleUpload()">web with single upload</ion-button>
             <ion-button @click="() => openWebWithWebcam()">web with webcam test</ion-button>
+            <ion-button @click="() => openWebWithActivityToolbar()">web with activity toolbar</ion-button>
+            <ion-button @click="() => openWebWithNavigationToolbar()">web with navigation toolbar</ion-button>
+            <ion-button @click="() => openWebWithBlankToolbar()">web with blank toolbar</ion-button>
+            <ion-button @click="() => openWebWithDefaultToolbar()">web with default toolbar</ion-button>
 
           </ion-col>
         </ion-row>
@@ -57,6 +62,12 @@ async function openWebWithPicker() {
 
 
 async function openWeb() {
+  InAppBrowser.openWebView({ 
+    url: WEB_URL, 
+  })
+}
+
+async function openWebDarkMode() {
   // InAppBrowser.open({ url: WEB_URL, isInspectable: true } as any);
   const script =
   "await import('https://unpkg.com/darkreader@4.9.89/darkreader.js');\n" +
@@ -65,16 +76,12 @@ async function openWeb() {
     url: WEB_URL, 
     isPresentAfterPageLoad: true, 
     preShowScript: script, 
-    buttonNearDone: { 
-      ios: { icon: 'monkey', iconType: 'asset' },
-      android: { icon: 'public/monkey.svg', iconType: 'asset' }
-    } 
   })
 }
 
 async function openWebWithHeaders() {
   InAppBrowser.openWebView({
-    url: WEB_URL,
+    url: 'https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending/',
     headers: {
       'Custom-Header': 'test-value',
       'Authorization': 'Bearer test-token'
@@ -84,7 +91,7 @@ async function openWebWithHeaders() {
 
 async function openWebWithCredentials() {
   InAppBrowser.openWebView({
-    url: WEB_URL,
+    url: 'https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending/',
     credentials: {
       username: 'test-user',
       password: 'test-pass'
@@ -140,6 +147,10 @@ async function openWebWithCloseModal() {
 }
 
 async function openWebWithCustomButton() {
+  InAppBrowser.addListener('buttonNearDoneClick', async (msg) => {
+    console.log('buttonNearDoneClick', msg)
+    await InAppBrowser.setUrl({ url: 'https://google.com' })
+  })
   InAppBrowser.openWebView({
     url: WEB_URL,
     buttonNearDone: {
@@ -149,7 +160,7 @@ async function openWebWithCustomButton() {
       },
       android: {
         iconType: 'asset',
-        icon: 'public/star.svg',
+        icon: 'public/monkey.svg',
         width: 24,
         height: 24
       }
@@ -189,6 +200,38 @@ async function openWebWithWebcam() {
   InAppBrowser.openWebView({
     url: 'https://webcamtests.com',
     title: 'Webcam Test'
+  })
+}
+
+async function openWebWithActivityToolbar() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.ACTIVITY,
+    title: 'Activity Toolbar Test'
+  })
+}
+
+async function openWebWithNavigationToolbar() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.NAVIGATION,
+    title: 'Navigation Toolbar Test'
+  })
+}
+
+async function openWebWithBlankToolbar() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.BLANK,
+    title: 'Blank Toolbar Test'
+  })
+}
+
+async function openWebWithDefaultToolbar() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.DEFAULT,
+    title: 'Default Toolbar Test'
   })
 }
 
