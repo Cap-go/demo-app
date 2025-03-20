@@ -18,6 +18,8 @@
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/PluginTests/CapacitorUpdaterTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/PluginTests/CapacitorUpdaterTests.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../capacitor-inappbrowser" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -200,5 +202,21 @@
       <updated>1739845971567</updated>
     </task>
     <servers />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.demo.app">
+          <value>
+            <CheckInfo lastCheckTimestamp="1742480270735" />
+          </value>
+        </entry>
+        <entry key="com.demo.app.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1742480270735" />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

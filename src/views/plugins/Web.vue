@@ -28,6 +28,9 @@
             <ion-button @click="() => openWebWithCustomButton()">web with custom button</ion-button>
             <ion-button @click="() => openWebWithMediaCapture()">web with media capture</ion-button>
             <ion-button @click="() => openWebWithMicrophone()">web with microphone</ion-button>
+            <ion-button @click="() => openWebWithMultipleUpload()">web with multiple upload</ion-button>
+            <ion-button @click="() => openWebWithSingleUpload()">web with single upload</ion-button>
+            <ion-button @click="() => openWebWithWebcam()">web with webcam test</ion-button>
 
           </ion-col>
         </ion-row>
@@ -165,6 +168,27 @@ async function openWebWithMicrophone() {
   InAppBrowser.openWebView({
     url: 'https://webcammictest.com/check-mic.html',
     title: 'Microphone Test'
+  })
+}
+
+async function openWebWithMultipleUpload() {
+  InAppBrowser.openWebView({
+    url: 'https://www.patternfly.org/components/file-upload/multiple-file-upload',
+    title: 'Multiple File Upload Test'
+  })
+}
+
+async function openWebWithSingleUpload() {
+  InAppBrowser.openWebView({
+    url: 'https://www.patternfly.org/components/file-upload/simple-file-upload',
+    title: 'Single File Upload Test'
+  })
+}
+
+async function openWebWithWebcam() {
+  InAppBrowser.openWebView({
+    url: 'https://webcamtests.com',
+    title: 'Webcam Test'
   })
 }
 
