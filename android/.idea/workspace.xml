@@ -37,7 +37,6 @@
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/PluginTests/CapacitorUpdaterTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/PluginTests/CapacitorUpdaterTests.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

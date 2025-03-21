@@ -41,6 +41,7 @@
             <ion-button @click="() => openSimple()">open simple</ion-button>
             <ion-button @click="() => openWithOptions()">open with options</ion-button>
             <ion-button @click="() => openWithInspectable()">open inspectable</ion-button>
+            <ion-button @click="() => openWithShowArrow()">web with just arrow</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -204,7 +205,7 @@ async function openWebWithSingleUpload() {
 
 async function openWebWithWebcam() {
   InAppBrowser.openWebView({
-    url: 'https://webcamtests.com',
+    url: 'https://webcammictest.com/',
     title: 'Webcam Test'
   })
 }
@@ -293,6 +294,14 @@ async function openWithInspectable() {
     url: WEB_URL,
     isPresentAfterPageLoad: true
   } as any)
+}
+
+async function openWithShowArrow() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    showArrow: true,
+    title: 'Show Arrow Only Test'
+  })
 }
 
 onMounted(async () => {
