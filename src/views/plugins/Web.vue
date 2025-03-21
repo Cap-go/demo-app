@@ -35,6 +35,7 @@
             <ion-button @click="() => openWebWithNavigationToolbar()">web with navigation toolbar</ion-button>
             <ion-button @click="() => openBlankWithCloseButton()">blank with floating close button</ion-button>
             <ion-button @click="() => openWebWithDefaultToolbar()">web with default toolbar</ion-button>
+            <ion-button @click="() => openBlankWithCloseButtonAndColor()">blank with floating close button and color</ion-button>
             <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
             <ion-button @click="() => openWebWithDisclaimer()">web share with disclaimer</ion-button>
             <ion-button @click="() => openWebWithAllOptions()">web with all options</ion-button>
@@ -296,19 +297,8 @@ async function openWithShowArrow() {
   })
 }
 
-async function openBlankWithCloseButton() {
-  await InAppBrowser.openWebView({
-    url: WEB_URL,
-    toolbarType: ToolBarType.BLANK,
-    title: 'Blank With Close Button'
-  })
-  
-  // Wait for page to load before injecting the button
-  const listener = await InAppBrowser.addListener('browserPageLoaded', async () => {
-    // Inject a floating close button in the top right corner
-    await InAppBrowser.executeScript({
-      code: `
-        // Create the button element
+const scriptfloatButton = `
+       // Create the button element
         const closeBtn = document.createElement('div');
         closeBtn.id = 'capgo-close-btn';
         
@@ -350,7 +340,38 @@ async function openBlankWithCloseButton() {
           childList: true, 
           subtree: true 
         });
-      `
+`
+async function openBlankWithCloseButton() {
+  await InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.BLANK,
+    title: 'Blank With Close Button'
+  })
+  
+  // Wait for page to load before injecting the button
+  const listener = await InAppBrowser.addListener('browserPageLoaded', async () => {
+    // Inject a floating close button in the top right corner
+    await InAppBrowser.executeScript({
+      code:scriptfloatButton
+    });
+    listener.remove()
+  });
+}
+
+async function openBlankWithCloseButtonAndColor() {
+  await InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.BLANK,
+    toolbarColor: '#FF5733',
+    toolbarTextColor: '#B9FFC6',
+    title: 'Blank With Close Button'
+  })
+  
+  // Wait for page to load before injecting the button
+  const listener = await InAppBrowser.addListener('browserPageLoaded', async () => {
+    // Inject a floating close button in the top right corner
+    await InAppBrowser.executeScript({
+      code:scriptfloatButton
     });
     listener.remove()
   });
