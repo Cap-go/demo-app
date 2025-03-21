@@ -363,7 +363,6 @@ async function openBlankWithCloseButtonAndColor() {
     url: WEB_URL,
     toolbarType: ToolBarType.BLANK,
     toolbarColor: '#FF5733',
-    toolbarTextColor: '#B9FFC6',
     title: 'Blank With Close Button'
   })
   
