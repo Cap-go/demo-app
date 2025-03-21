@@ -21,9 +21,8 @@
             <ion-button @click="() => openWebWithPicker()">web with picker</ion-button>
             <ion-button @click="() => openWebWithHeaders()">web with headers</ion-button>
             <ion-button @click="() => openWebWithCredentials()">web with credentials</ion-button>
-            <ion-button @click="() => openWebWithDisclaimer()">web with disclaimer</ion-button>
             <ion-button @click="() => openWebWithCustomToolbar()">web with custom toolbar</ion-button>
-            <ion-button @click="() => openWebWithNativeNav()">web with native nav</ion-button>
+            <ion-button @click="() => openWebWithoutNativeNav()">web without native nav</ion-button>
             <ion-button @click="() => openWebWithReload()">web with reload</ion-button>
             <ion-button @click="() => openWebWithCloseModal()">web with close modal</ion-button>
             <ion-button @click="() => openWebWithCustomButton()">web with custom button</ion-button>
@@ -37,7 +36,7 @@
             <ion-button @click="() => openWebWithBlankToolbar()">web with blank toolbar</ion-button>
             <ion-button @click="() => openWebWithDefaultToolbar()">web with default toolbar</ion-button>
             <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
-
+            <ion-button @click="() => openWebWithDisclaimer()">web share with disclaimer</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -122,10 +121,10 @@ async function openWebWithCustomToolbar() {
   })
 }
 
-async function openWebWithNativeNav() {
+async function openWebWithoutNativeNav() {
   InAppBrowser.openWebView({
     url: WEB_URL,
-    activeNativeNavigationForWebview: true,
+    activeNativeNavigationForWebview: false,
     disableGoBackOnNativeApplication: true
   })
 }
