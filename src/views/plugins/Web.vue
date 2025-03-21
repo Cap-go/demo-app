@@ -33,8 +33,8 @@
             <ion-button @click="() => openWebWithWebcam()">web with webcam test</ion-button>
             <ion-button @click="() => openWebWithActivityToolbar()">web with activity toolbar</ion-button>
             <ion-button @click="() => openWebWithNavigationToolbar()">web with navigation toolbar</ion-button>
-            <ion-button @click="() => openBlankWithCloseButton()">blank with floating close button</ion-button>
             <ion-button @click="() => openWebWithDefaultToolbar()">web with default toolbar</ion-button>
+            <ion-button @click="() => openBlankWithCloseButton()">blank with floating close button</ion-button>
             <ion-button @click="() => openBlankWithCloseButtonAndColor()">blank with floating close button and color</ion-button>
             <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
             <ion-button @click="() => openWebWithDisclaimer()">web share with disclaimer</ion-button>
