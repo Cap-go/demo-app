@@ -38,6 +38,9 @@
             <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
             <ion-button @click="() => openWebWithDisclaimer()">web share with disclaimer</ion-button>
             <ion-button @click="() => openWebWithAllOptions()">web with all options</ion-button>
+            <ion-button @click="() => openSimple()">open simple</ion-button>
+            <ion-button @click="() => openWithOptions()">open with options</ion-button>
+            <ion-button @click="() => openWithInspectable()">open inspectable</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -257,7 +260,6 @@ async function openWebWithAllOptions() {
     closeModalDescription: 'Are you sure you want to close?',
     closeModalOk: 'Yes, close',
     closeModalCancel: 'No, stay',
-    shareSubject: 'Check out Capgo!',
     buttonNearDone: {
       ios: {
         iconType: 'sf-symbol',
@@ -271,6 +273,25 @@ async function openWebWithAllOptions() {
       }
     }
   })
+}
+
+async function openSimple() {
+  InAppBrowser.open({ url: WEB_URL })
+}
+
+async function openWithOptions() {
+  InAppBrowser.open({ 
+    url: WEB_URL,
+    isPresentAfterPageLoad: true,
+    preShowScript: "console.log('pre show script')"
+  } as any)
+}
+
+async function openWithInspectable() {
+  InAppBrowser.open({ 
+    url: WEB_URL,
+    isPresentAfterPageLoad: true
+  } as any)
 }
 
 onMounted(async () => {
