@@ -42,6 +42,7 @@
             <ion-button @click="() => openWithOptions()">open with options</ion-button>
             <ion-button @click="() => openWithInspectable()">open inspectable</ion-button>
             <ion-button @click="() => openWithShowArrow()">web with just arrow</ion-button>
+            <ion-button @click="() => openBlankWithCloseButton()">blank with floating close button</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -302,6 +303,101 @@ async function openWithShowArrow() {
     showArrow: true,
     title: 'Show Arrow Only Test'
   })
+}
+
+async function openBlankWithCloseButton() {
+  await InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.BLANK,
+    title: 'Blank With Close Button'
+  })
+  
+  // Wait for page to load before injecting the button
+  const listener = await InAppBrowser.addListener('browserPageLoaded', async () => {
+    // Inject a floating close button in the top right corner
+    await InAppBrowser.executeScript({
+      code: `
+        // Create the button element
+        const closeBtn = document.createElement('div');
+        closeBtn.id = 'capgo-close-btn';
+        
+        // Style it as a round red button with white cross
+        closeBtn.style.position = 'fixed';
+        closeBtn.style.top = '20px';
+        closeBtn.style.right = '20px';
+        closeBtn.style.width = '40px';
+        closeBtn.style.height = '40px';
+        closeBtn.style.borderRadius = '50%';
+        closeBtn.style.backgroundColor = 'red';
+        closeBtn.style.display = 'flex';
+        closeBtn.style.justifyContent = 'center';
+        closeBtn.style.alignItems = 'center';
+        closeBtn.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+        closeBtn.style.zIndex = '2147483647'; // Maximum z-index value
+        closeBtn.style.cursor = 'pointer';
+        
+        // Add the cross icon
+        closeBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+        
+        // Add click event to close the webview
+        closeBtn.addEventListener('click', () => {
+          window.mobileApp.close();
+        });
+        
+        // Add the button to the document root to ensure highest level
+        document.documentElement.appendChild(closeBtn);
+        
+        // Create a MutationObserver to ensure the button isn't removed
+        const observer = new MutationObserver(() => {
+          if (!document.getElementById('capgo-close-btn')) {
+            document.documentElement.appendChild(closeBtn);
+          }
+        });
+        
+        // Start observing the document for changes
+        observer.observe(document.documentElement, { 
+          childList: true, 
+          subtree: true 
+        });
+      `
+    });
+    listener.remove()
+  });
+  
+  // Also inject immediately in case the page is already loaded
+  await InAppBrowser.executeScript({
+    code: `
+      // Create the button element
+      const closeBtn = document.createElement('div');
+      closeBtn.id = 'capgo-close-btn';
+      
+      // Style it as a round red button with white cross
+      closeBtn.style.position = 'fixed';
+      closeBtn.style.top = '20px';
+      closeBtn.style.right = '20px';
+      closeBtn.style.width = '40px';
+      closeBtn.style.height = '40px';
+      closeBtn.style.borderRadius = '50%';
+      closeBtn.style.backgroundColor = 'red';
+      closeBtn.style.display = 'flex';
+      closeBtn.style.justifyContent = 'center';
+      closeBtn.style.alignItems = 'center';
+      closeBtn.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+      closeBtn.style.zIndex = '2147483647'; // Maximum z-index value
+      closeBtn.style.cursor = 'pointer';
+      
+      // Add the cross icon
+      closeBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+      
+      // Add click event to close the webview
+      closeBtn.addEventListener('click', () => {
+        window.mobileApp.close();
+      });
+      
+      // Add the button to the document root to ensure highest level
+      document.documentElement.appendChild(closeBtn);
+    `
+  });
 }
 
 onMounted(async () => {
