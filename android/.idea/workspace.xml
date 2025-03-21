@@ -13,10 +13,19 @@
       <change afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/drawable/ic_share.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/Options.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewCallbacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewCallbacks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/layout/tool_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/layout/tool_bar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Back.imageset/Back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Back.imageset/Back@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Back.imageset/Back@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Back.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Forward.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Forward.imageset/Forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Forward.imageset/Forward@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/Assets.xcassets/Forward.imageset/Forward@3x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/InAppBrowserPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/InAppBrowserPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/WKWebViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/WKWebViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" afterDir="false" />
@@ -29,7 +38,6 @@
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/views/plugins/Web.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/views/plugins/Web.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

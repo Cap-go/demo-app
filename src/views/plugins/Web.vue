@@ -121,6 +121,7 @@ async function openWebWithCustomToolbar() {
     url: WEB_URL,
     toolbarType: ToolBarType.ACTIVITY,
     toolbarColor: '#FF5733',
+    toolbarTextColor: '#B9FFC6',
     showArrow: true
   })
 }
@@ -251,8 +252,8 @@ async function openWebWithShareSubject() {
 async function openWebWithAllOptions() {
   InAppBrowser.openWebView({
     url: WEB_URL,
-    toolbarType: ToolBarType.ACTIVITY,
     toolbarColor: '#FF5733',
+    toolbarTextColor: '#B9FFC6',
     showArrow: true,
     showReloadButton: true,
     closeModal: true,
