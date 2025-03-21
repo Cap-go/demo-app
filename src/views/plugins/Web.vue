@@ -16,7 +16,7 @@
             <strong>Ready to create an app?</strong>
             <p>Start with Capgo Cloud!</p>
 
-            <ion-button @click="() => openWeb()">web with script</ion-button>
+            <ion-button @click="() => openWeb()">web simple open</ion-button>
             <ion-button @click="() => openWebDarkMode()">web with script dark reader</ion-button>
             <ion-button @click="() => openWebWithPicker()">web with picker</ion-button>
             <ion-button @click="() => openWebWithHeaders()">web with headers</ion-button>
@@ -36,6 +36,7 @@
             <ion-button @click="() => openWebWithNavigationToolbar()">web with navigation toolbar</ion-button>
             <ion-button @click="() => openWebWithBlankToolbar()">web with blank toolbar</ion-button>
             <ion-button @click="() => openWebWithDefaultToolbar()">web with default toolbar</ion-button>
+            <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
 
           </ion-col>
         </ion-row>
@@ -102,6 +103,7 @@ async function openWebWithCredentials() {
 async function openWebWithDisclaimer() {
   InAppBrowser.openWebView({
     url: WEB_URL,
+    shareSubject: 'Share this website',
     shareDisclaimer: {
       title: 'Disclaimer',
       message: 'This is a test disclaimer',
@@ -232,6 +234,14 @@ async function openWebWithDefaultToolbar() {
     url: WEB_URL,
     toolbarType: ToolBarType.DEFAULT,
     title: 'Default Toolbar Test'
+  })
+}
+
+async function openWebWithShareSubject() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    shareSubject: 'Check out Capgo!',
+    title: 'Share Subject Test'
   })
 }
 
