@@ -37,6 +37,7 @@
             <ion-button @click="() => openWebWithDefaultToolbar()">web with default toolbar</ion-button>
             <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
             <ion-button @click="() => openWebWithDisclaimer()">web share with disclaimer</ion-button>
+            <ion-button @click="() => openWebWithAllOptions()">web with all options</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -241,6 +242,34 @@ async function openWebWithShareSubject() {
     url: WEB_URL,
     shareSubject: 'Check out Capgo!',
     title: 'Share Subject Test'
+  })
+}
+
+async function openWebWithAllOptions() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.ACTIVITY,
+    toolbarColor: '#FF5733',
+    showArrow: true,
+    showReloadButton: true,
+    closeModal: true,
+    closeModalTitle: 'Close Window',
+    closeModalDescription: 'Are you sure you want to close?',
+    closeModalOk: 'Yes, close',
+    closeModalCancel: 'No, stay',
+    shareSubject: 'Check out Capgo!',
+    buttonNearDone: {
+      ios: {
+        iconType: 'sf-symbol',
+        icon: 'star.fill'
+      },
+      android: {
+        iconType: 'asset',
+        icon: 'public/monkey.svg',
+        width: 24,
+        height: 24
+      }
+    }
   })
 }
 
