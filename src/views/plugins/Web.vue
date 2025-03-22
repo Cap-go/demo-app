@@ -26,6 +26,7 @@
             <ion-button @click="() => openWebWithReload()">web with reload</ion-button>
             <ion-button @click="() => openWebWithCloseModal()">web with close modal</ion-button>
             <ion-button @click="() => openWebWithCustomButton()">web with custom button</ion-button>
+            <ion-button @click="() => openWebWithCustomButtonSVG()">web with custom button svg</ion-button>
             <ion-button @click="() => openWebWithMediaCapture()">web with media capture</ion-button>
             <ion-button @click="() => openWebWithMicrophone()">web with microphone</ion-button>
             <ion-button @click="() => openWebWithMultipleUpload()">web with multiple upload</ion-button>
@@ -165,6 +166,28 @@ async function openWebWithCustomButton() {
       ios: {
         iconType: 'sf-symbol',
         icon: 'star.fill'
+      },
+      android: {
+        iconType: 'vector',
+        icon: 'ic_menu_share',
+        width: 24,
+        height: 24
+      }
+    }
+  })
+}
+
+async function openWebWithCustomButtonSVG() {
+  InAppBrowser.addListener('buttonNearDoneClick', async (msg) => {
+    console.log('buttonNearDoneClick', msg)
+    await InAppBrowser.setUrl({ url: 'https://google.com' })
+  })
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    buttonNearDone: {
+      ios: {
+        iconType: 'asset',
+        icon: 'public/monkey.svg',
       },
       android: {
         iconType: 'asset',
