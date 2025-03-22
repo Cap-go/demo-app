@@ -18,7 +18,8 @@
 
             <ion-button @click="() => openWeb()">web simple open</ion-button>
             <ion-button @click="() => openWebDarkMode()">web with script dark reader</ion-button>
-            <ion-button @click="() => openWebWithPicker()">web with picker</ion-button>
+            <ion-button @click="() => openWebWithPickerMaterial()">web with picker material</ion-button>
+            <ion-button @click="() => openWebWithPickerOld()">web with picker old</ion-button>
             <ion-button @click="() => openWebWithHeaders()">web with headers</ion-button>
             <ion-button @click="() => openWebWithCredentials()">web with credentials</ion-button>
             <ion-button @click="() => openWebWithCustomToolbar()">web with custom toolbar</ion-button>
@@ -60,7 +61,15 @@ import { ToolBarType } from '@capgo/inappbrowser';
 
 const WEB_URL = "https://capgo.app"
 
-async function openWebWithPicker() {
+async function openWebWithPickerMaterial() {
+  const picker = await InAppBrowser.openWebView({
+    url: 'https://show-picker.glitch.me/demo.html',
+    materialPicker: true,
+  })
+  console.log('picker', picker)
+}
+
+async function openWebWithPickerOld() {
   const picker = await InAppBrowser.openWebView({
     url: 'https://show-picker.glitch.me/demo.html',
   })
