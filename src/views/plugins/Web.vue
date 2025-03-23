@@ -42,11 +42,12 @@
             <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
             <ion-button @click="() => openWebWithDisclaimer()">web share with disclaimer</ion-button>
             <ion-button @click="() => openWebWithAllOptions()">web with all options</ion-button>
+            <ion-button @click="() => openWithShowArrow()">web with just arrow</ion-button>
+            <ion-button @click="() => openFlohkids()">open flohkids.de</ion-button>
+            <ion-button @click="() => openBlankWithBidirectionalCommunication()">blank with bidirectional communication</ion-button>
             <ion-button @click="() => openSimple()">open simple</ion-button>
             <ion-button @click="() => openWithOptions()">open with options</ion-button>
             <ion-button @click="() => openWithInspectable()">open inspectable</ion-button>
-            <ion-button @click="() => openWithShowArrow()">web with just arrow</ion-button>
-            <ion-button @click="() => openFlohkids()">open flohkids.de</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -430,6 +431,150 @@ async function openBlankWithCloseButtonAndColor() {
   });
 }
 
+async function openBlankWithBidirectionalCommunication() {
+  // Open the webview with BLANK toolbar
+  await InAppBrowser.openWebView({
+    url: WEB_URL,
+    toolbarType: ToolBarType.BLANK,
+    title: 'Bidirectional Communication Test'
+  });
+  // Wait for the page to load, then inject the script for the floating button
+  const loadListener = await InAppBrowser.addListener('browserPageLoaded', async () => {
+    // Inject the script for bidirectional communication
+    await InAppBrowser.executeScript({
+      code: `
+        // Create the button element
+        const closeBtn = document.createElement('div');
+        closeBtn.id = 'capgo-close-btn';
+        
+        // Style it as a round red button with white cross
+        closeBtn.style.position = 'fixed';
+        closeBtn.style.top = '20px';
+        closeBtn.style.right = '20px';
+        closeBtn.style.width = '40px';
+        closeBtn.style.height = '40px';
+        closeBtn.style.borderRadius = '50%';
+        closeBtn.style.backgroundColor = 'red';
+        closeBtn.style.display = 'flex';
+        closeBtn.style.justifyContent = 'center';
+        closeBtn.style.alignItems = 'center';
+        closeBtn.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+        closeBtn.style.zIndex = '2147483647'; // Maximum z-index value
+        closeBtn.style.cursor = 'pointer';
+        
+        // Add the cross icon
+        closeBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+        
+        // Add click event to send close message to the app
+        closeBtn.addEventListener('click', () => {
+          window.mobileApp.postMessage({ detail: { message: 'close' } });
+        });
+        
+        // Add the button to the document root
+        document.documentElement.appendChild(closeBtn);
+        
+        // Function to create and show the confirmation dialog
+        function showConfirmDialog(message) {
+          // Create modal container
+          const modal = document.createElement('div');
+          modal.id = 'confirmation-modal';
+          modal.style.position = 'fixed';
+          modal.style.top = '0';
+          modal.style.left = '0';
+          modal.style.width = '100%';
+          modal.style.height = '100%';
+          modal.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+          modal.style.display = 'flex';
+          modal.style.justifyContent = 'center';
+          modal.style.alignItems = 'center';
+          modal.style.zIndex = '2147483646';
+          
+          // Create modal content
+          const modalContent = document.createElement('div');
+          modalContent.style.backgroundColor = 'white';
+          modalContent.style.padding = '20px';
+          modalContent.style.borderRadius = '8px';
+          modalContent.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+          modalContent.style.maxWidth = '300px';
+          modalContent.style.textAlign = 'center';
+          
+          // Add message
+          const messageEl = document.createElement('p');
+          messageEl.textContent = message;
+          messageEl.style.marginBottom = '20px';
+          
+          // Create buttons container
+          const buttonContainer = document.createElement('div');
+          buttonContainer.style.display = 'flex';
+          buttonContainer.style.justifyContent = 'center';
+          buttonContainer.style.gap = '10px';
+          
+          // Create Yes button
+          const yesButton = document.createElement('button');
+          yesButton.textContent = 'Yes';
+          yesButton.style.padding = '8px 16px';
+          yesButton.style.backgroundColor = 'red';
+          yesButton.style.color = 'white';
+          yesButton.style.border = 'none';
+          yesButton.style.borderRadius = '4px';
+          yesButton.style.cursor = 'pointer';
+          
+          // Create No button
+          const noButton = document.createElement('button');
+          noButton.textContent = 'No';
+          noButton.style.padding = '8px 16px';
+          noButton.style.backgroundColor = '#ccc';
+          noButton.style.color = 'black';
+          noButton.style.border = 'none';
+          noButton.style.borderRadius = '4px';
+          noButton.style.cursor = 'pointer';
+          
+          // Add event listeners to buttons
+          yesButton.addEventListener('click', () => {
+            document.body.removeChild(modal);
+            window.mobileApp.postMessage({ detail: { message: 'closeConfirmed' } });
+          });
+          
+          noButton.addEventListener('click', () => {
+            document.body.removeChild(modal);
+          });
+          
+          // Assemble the modal
+          buttonContainer.appendChild(noButton);
+          buttonContainer.appendChild(yesButton);
+          modalContent.appendChild(messageEl);
+          modalContent.appendChild(buttonContainer);
+          modal.appendChild(modalContent);
+          
+          // Add to document
+          document.body.appendChild(modal);
+        }
+        
+        // Create a MutationObserver to ensure the button isn't removed
+        const observer = new MutationObserver(() => {
+          if (!document.getElementById('capgo-close-btn')) {
+            document.documentElement.appendChild(closeBtn);
+          }
+        });
+        
+        // Start observing the document for changes
+        observer.observe(document.documentElement, { 
+          childList: true, 
+          subtree: true 
+        });
+        
+        // Listen for messages from the native app - FIXED
+        window.addEventListener("messageFromNative", (event) => {
+          if (event && event.detail && event.detail.action === 'confirmClose') {
+            showConfirmDialog(event.detail.message);
+          }
+        });
+      `
+    });
+    loadListener.remove();
+  });
+}
+
 onMounted(async () => {
   console.log('mounted')
   
@@ -437,6 +582,21 @@ onMounted(async () => {
     console.log('MESSAGE FROM WEB VIEW', msg)
 
     const message = (msg.detail.message) as string ?? ''
+    if (message === 'close') {
+      // Send a message back to the webview asking for confirmation
+      await InAppBrowser.postMessage({
+        detail: {
+          action: 'confirmClose',
+          message: 'Are you sure you want to close?'
+        }
+      });
+      console.log('confirmClose send')
+    }
+    // If the message confirms the close action, close the webview
+    else if (message === 'closeConfirmed') {
+      await InAppBrowser.close();
+      console.log('close confirmed')
+    }
     if (message === 'clear-specific') {
       console.log('magic')
       const cookies = await InAppBrowser.getCookies({ url: WEB_URL })

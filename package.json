@@ -31,6 +31,7 @@
     "@capawesome/capacitor-android-edge-to-edge-support": "^7.1.0",
     "@capgo/camera-preview": "link:@capgo/camera-preview",
     "@capgo/capacitor-data-storage-sqlite": "link:@capgo/capacitor-data-storage-sqlite",
+    "@capgo/capacitor-downloader": "^0.0.12",
     "@capgo/capacitor-screen-recorder": "link:@capgo/capacitor-screen-recorder",
     "@capgo/capacitor-shake": "link:@capgo/capacitor-shake",
     "@capgo/capacitor-social-login": "link:@capgo/capacitor-social-login",

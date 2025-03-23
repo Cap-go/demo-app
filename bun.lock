@@ -17,6 +17,7 @@
         "@capawesome/capacitor-android-edge-to-edge-support": "^7.1.0",
         "@capgo/camera-preview": "link:@capgo/camera-preview",
         "@capgo/capacitor-data-storage-sqlite": "link:@capgo/capacitor-data-storage-sqlite",
+        "@capgo/capacitor-downloader": "^0.0.12",
         "@capgo/capacitor-screen-recorder": "link:@capgo/capacitor-screen-recorder",
         "@capgo/capacitor-shake": "link:@capgo/capacitor-shake",
         "@capgo/capacitor-social-login": "link:@capgo/capacitor-social-login",
@@ -174,6 +175,8 @@
     "@capgo/camera-preview": ["@capgo/camera-preview@link:@capgo/camera-preview", {}],
 
     "@capgo/capacitor-data-storage-sqlite": ["@capgo/capacitor-data-storage-sqlite@link:@capgo/capacitor-data-storage-sqlite", {}],
+
+    "@capgo/capacitor-downloader": ["@capgo/capacitor-downloader@0.0.12", "", { "peerDependencies": { "@capacitor/core": "^6.0.0" } }, "sha512-/4gCwxra9C8aO05A758tAO/NHXcKInIRCX7bDMrxODm9xJigw/pnq7wBSrb8RKlBx+yWxaCl0kdBLhYobaBYaQ=="],
 
     "@capgo/capacitor-screen-recorder": ["@capgo/capacitor-screen-recorder@link:@capgo/capacitor-screen-recorder", {}],
 
