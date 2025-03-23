@@ -10,13 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/Options.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/renovate.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/renovate.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" afterDir="false" />
@@ -25,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/PluginTests/CapacitorUpdaterTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/PluginTests/CapacitorUpdaterTests.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-updater/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +30,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=ede6be21)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/martindonadieu/.android/avd/Medium_Phone_API_35.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -78,21 +73,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.android [signingReport].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;v6.10&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "Gradle.android [signingReport].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle signingReport" />
@@ -214,12 +209,12 @@
       <map>
         <entry key="com.demo.app">
           <value>
-            <CheckInfo lastCheckTimestamp="1742480270735" />
+            <CheckInfo lastCheckTimestamp="1742611993584" />
           </value>
         </entry>
         <entry key="com.demo.app.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1742480270735" />
+            <CheckInfo lastCheckTimestamp="1742611993583" />
           </value>
         </entry>
       </map>

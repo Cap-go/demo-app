@@ -36,6 +36,7 @@
             <ion-button @click="() => openWebWithActivityToolbar()">web with activity toolbar</ion-button>
             <ion-button @click="() => openWebWithNavigationToolbar()">web with navigation toolbar</ion-button>
             <ion-button @click="() => openWebWithDefaultToolbar()">web with default toolbar</ion-button>
+            <ion-button @click="() => openWebWithTextZoom()">web with text zoom</ion-button>
             <ion-button @click="() => openBlankWithCloseButton()">blank with floating close button</ion-button>
             <ion-button @click="() => openBlankWithCloseButtonAndColor()">blank with floating close button and color</ion-button>
             <ion-button @click="() => openWebWithShareSubject()">web with share subject</ion-button>
@@ -45,6 +46,7 @@
             <ion-button @click="() => openWithOptions()">open with options</ion-button>
             <ion-button @click="() => openWithInspectable()">open inspectable</ion-button>
             <ion-button @click="() => openWithShowArrow()">web with just arrow</ion-button>
+            <ion-button @click="() => openFlohkids()">open flohkids.de</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -57,7 +59,7 @@
 import { InAppBrowser } from '@capgo/inappbrowser';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid, IonButtons } from '@ionic/vue';
 import { onMounted } from 'vue';
-import { ToolBarType } from '@capgo/inappbrowser';
+import { ToolBarType, BackgroundColor } from '@capgo/inappbrowser';
 
 const WEB_URL = "https://capgo.app"
 
@@ -243,6 +245,14 @@ async function openWebWithWebcam() {
   })
 }
 
+async function openWebWithTextZoom() {
+  InAppBrowser.openWebView({
+    url: WEB_URL,
+    textZoom: 150,
+    title: 'Text Zoom Test'
+  } as any)
+}
+
 async function openWebWithActivityToolbar() {
   InAppBrowser.openWebView({
     url: WEB_URL,
@@ -327,6 +337,18 @@ async function openWithShowArrow() {
     showArrow: true,
     title: 'Show Arrow Only Test'
   })
+}
+
+async function openFlohkids() {
+  const options = {
+    url: 'https://flohkids.de/',
+    isAnimated: false,
+    toolbarType: ToolBarType.BLANK,
+    isPresentAfterPageLoad: true,
+    activeNativeNavigationForWebview: true,
+    backgroundColor: BackgroundColor.WHITE,
+  };
+  await InAppBrowser.openWebView(options);
 }
 
 const scriptfloatButton = `
