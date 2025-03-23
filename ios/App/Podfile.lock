@@ -10,11 +10,11 @@ PODS:
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
-  - Capacitor (7.0.1):
+  - Capacitor (7.1.0):
     - CapacitorCordova
   - CapacitorApp (7.0.0):
     - Capacitor
-  - CapacitorCordova (7.0.1)
+  - CapacitorCordova (7.1.0)
   - CapacitorFilesystem (7.0.0):
     - Capacitor
   - CapacitorHaptics (7.0.0):
@@ -28,37 +28,37 @@ PODS:
   - CapgoCapacitorDataStorageSqlite (7.0.0):
     - Capacitor
     - SQLite.swift/SQLCipher
-  - CapgoCapacitorScreenRecorder (7.1.1):
+  - CapgoCapacitorScreenRecorder (7.1.3):
     - Capacitor
   - CapgoCapacitorShake (7.1.3):
     - Capacitor
-  - CapgoCapacitorSocialLogin (7.0.4):
-    - Alamofire
+  - CapgoCapacitorSocialLogin (7.4.7):
+    - Alamofire (~> 5.10.2)
     - Capacitor
-    - FBSDKCoreKit (= 17.1.0)
-    - FBSDKLoginKit (= 17.1.0)
+    - FBSDKCoreKit (= 17.4.0)
+    - FBSDKLoginKit (= 17.4.0)
     - GoogleSignIn (~> 8.0.0)
-  - CapgoCapacitorUpdater (7.0.17):
-    - Alamofire
+  - CapgoCapacitorUpdater (7.0.30):
+    - Alamofire (= 5.10.2)
     - Capacitor
     - SSZipArchive (= 2.4.3)
-    - Version
+    - Version (= 0.8.0)
   - CapgoCapacitorUploader (7.0.0):
     - Capacitor
-  - CapgoInappbrowser (7.2.13):
+  - CapgoInappbrowser (7.6.0):
     - Capacitor
-  - CapgoNativeAudio (7.3.0):
+  - CapgoNativeAudio (7.3.10):
     - Capacitor
   - CapgoNativePurchases (7.1.13):
     - Capacitor
-  - FBAEMKit (17.1.0):
-    - FBSDKCoreKit_Basics (= 17.1.0)
-  - FBSDKCoreKit (17.1.0):
-    - FBAEMKit (= 17.1.0)
-    - FBSDKCoreKit_Basics (= 17.1.0)
-  - FBSDKCoreKit_Basics (17.1.0)
-  - FBSDKLoginKit (17.1.0):
-    - FBSDKCoreKit (= 17.1.0)
+  - FBAEMKit (17.4.0):
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBSDKCoreKit (17.4.0):
+    - FBAEMKit (= 17.4.0)
+    - FBSDKCoreKit_Basics (= 17.4.0)
+  - FBSDKCoreKit_Basics (17.4.0)
+  - FBSDKLoginKit (17.4.0):
+    - FBSDKCoreKit (= 17.4.0)
   - GoogleSignIn (8.0.0):
     - AppAuth (< 2.0, >= 1.7.3)
     - AppCheckCore (~> 11.0)
@@ -166,27 +166,27 @@ SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   AppAuth: d4f13a8fe0baf391b2108511793e4b479691fb73
   AppCheckCore: cc8fd0a3a230ddd401f326489c99990b013f0c4f
-  Capacitor: 23fff43571a4d1e3ee7d67b5a3588c6e757c2913
+  Capacitor: 68ff8eabbcce387e69767c13b5fbcc1c5399eabc
   CapacitorApp: 45cb7cbef4aa380b9236fd6980033eb5cde6fcd2
-  CapacitorCordova: 63d476958d5022d76f197031e8b7ea3519988c64
+  CapacitorCordova: 866217f32c1d25b326c568a10ea3ed0c36b13e29
   CapacitorFilesystem: 2881ad012b5c8d0ffbfed1216aadfc2cca16d5b5
   CapacitorHaptics: 1fba3e460e7614349c6d5f868b1fccdc5c87b66d
   CapacitorKeyboard: 2c26c6fccde35023c579fc37d4cae6326d5e6343
   CapacitorStatusBar: 438e90beeeefa8276b24e6c5991cb02dd13e51bf
   CapgoCameraPreview: e3d09793af2c662dfc78d48f53e8c57e8d7bd504
   CapgoCapacitorDataStorageSqlite: 064c775f7fc5741dd06fd5323e84c3d7e0bbbc55
-  CapgoCapacitorScreenRecorder: 06148ea49f3d6ec68266f5b9d28cfa14d34aada1
+  CapgoCapacitorScreenRecorder: a0b9d286d0707625c572ab7d1bb84ac9aec70d81
   CapgoCapacitorShake: 122c19ab6b6dbac1ec704806303f8151ceca95b1
-  CapgoCapacitorSocialLogin: 8e2a9a433c5a15425f05c1aa7ea6e248f240ae18
-  CapgoCapacitorUpdater: b356837d2a0e715568ce132b40b9c6ffe70d66c1
+  CapgoCapacitorSocialLogin: 0f54b39b8a0ad5f7c42e8d712578c1d7bc09ace2
+  CapgoCapacitorUpdater: c81cf8ef60708f47467d68f45fe3804ba0134bde
   CapgoCapacitorUploader: 04d9f411164288f4e286a322c44e99590cc67fd1
-  CapgoInappbrowser: bc6dfbfeb949a85a7260e6f4d56f1c445c16da31
-  CapgoNativeAudio: 910eca2589040e4a2dd23f9305475d0f59ccde44
+  CapgoInappbrowser: 813d9481e4b39e1496d1d24ef1a1fb4d32ddb260
+  CapgoNativeAudio: 8829635e47cb65edc512b1e3f71c0c5d2c256cb1
   CapgoNativePurchases: 9e6b1ec705983d8d4eb9c090eeb70746e2799493
-  FBAEMKit: cb719c53575a3be86ea873279f30d6a2c4e15881
-  FBSDKCoreKit: ecdb980a24633ccb012700299ceb16d0235e14d2
-  FBSDKCoreKit_Basics: 045101c4a9ef10c845347424d73a29aae02c3e43
-  FBSDKLoginKit: 69eb59b2f839aba635616df6e422acd0ca88030a
+  FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
+  FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41
+  FBSDKCoreKit_Basics: 151b43db8b834d3f0e02f95d36a44ffd36265e45
+  FBSDKLoginKit: 5c1cd53c91a2282b3a4fe6e6d3dcf2b8b0d33d55
   GoogleSignIn: ce8c89bb9b37fb624b92e7514cc67335d1e277e4
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de

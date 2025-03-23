@@ -6,6 +6,9 @@ const config: CapacitorConfig = {
   webDir: 'dist',
   plugins: {
     extConfig: {},
+    EdgeToEdge: {
+      backgroundColor: '#ffffff'
+    },
     CapacitorUpdater: {
       autoUpdate: false,
       // version: '11.11.1',

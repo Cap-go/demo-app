@@ -28,6 +28,7 @@
     "@capacitor/ios": "^7.1.0",
     "@capacitor/keyboard": "^7.0.0",
     "@capacitor/status-bar": "^7.0.0",
+    "@capawesome/capacitor-android-edge-to-edge-support": "^7.1.0",
     "@capgo/camera-preview": "link:@capgo/camera-preview",
     "@capgo/capacitor-data-storage-sqlite": "link:@capgo/capacitor-data-storage-sqlite",
     "@capgo/capacitor-screen-recorder": "link:@capgo/capacitor-screen-recorder",
