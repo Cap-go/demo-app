@@ -13,13 +13,12 @@
       <ion-grid style="height: 100%">
         <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
           <ion-col size="auto" style="text-align: center;">
-            <strong>Ready to create an app?</strong>
-            <p>Start with Capgo Cloud!</p>
-
+            <strong>openWebView</strong>
             <ion-button @click="() => openWeb()">web simple open</ion-button>
             <ion-button @click="() => openWebDarkMode()">web with script dark reader</ion-button>
-            <ion-button @click="() => openWebWithPickerMaterial()">web with picker material</ion-button>
-            <ion-button @click="() => openWebWithPickerOld()">web with picker old</ion-button>
+            <ion-button v-if="isAndroid" @click="() => openWebWithPickerMaterial()">web with picker material (Android)</ion-button>
+            <ion-button v-if="isAndroid" @click="() => openWebWithPickerOld()">web with picker old (Android)</ion-button>
+            <ion-button v-if="isIOS" @click="() => openWebWithPickerOld()">web with picker</ion-button>
             <ion-button @click="() => openWebWithHeaders()">web with headers</ion-button>
             <ion-button @click="() => openWebWithCredentials()">web with credentials</ion-button>
             <ion-button @click="() => openWebWithCustomToolbar()">web with custom toolbar</ion-button>
@@ -45,6 +44,9 @@
             <ion-button @click="() => openWithShowArrow()">web with just arrow</ion-button>
             <ion-button @click="() => openFlohkids()">open flohkids.de</ion-button>
             <ion-button @click="() => openBlankWithBidirectionalCommunication()">blank with bidirectional communication</ion-button>
+          </ion-col>          
+          <ion-col size="auto" style="text-align: center;">
+            <strong>Open</strong>
             <ion-button @click="() => openSimple()">open simple</ion-button>
             <ion-button @click="() => openWithOptions()">open with options</ion-button>
             <ion-button @click="() => openWithInspectable()">open inspectable</ion-button>
@@ -59,10 +61,13 @@
 <script setup lang="ts">
 import { InAppBrowser } from '@capgo/inappbrowser';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid, IonButtons } from '@ionic/vue';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import { ToolBarType, BackgroundColor } from '@capgo/inappbrowser';
+import { Capacitor } from '@capacitor/core';
 
 const WEB_URL = "https://capgo.app"
+const isIOS = Capacitor.getPlatform() === 'ios'
+const isAndroid = Capacitor.getPlatform() === 'android'
 
 async function openWebWithPickerMaterial() {
   const picker = await InAppBrowser.openWebView({

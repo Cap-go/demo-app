@@ -10,17 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/res/xml/file_paths.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/InAppBrowserPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/InAppBrowserPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +22,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/martindonadieu/.android/avd/Medium_Phone_API_35.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=ede6be21)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
