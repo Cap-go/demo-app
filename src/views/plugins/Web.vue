@@ -110,10 +110,10 @@ async function openWebWithHeaders() {
 
 async function openWebWithCredentials() {
   InAppBrowser.openWebView({
-    url: 'https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending/',
+    url: 'https://testpages.eviltester.com/styled/auth/basic-auth-results.html',
     credentials: {
-      username: 'test-user',
-      password: 'test-pass'
+      username: 'authorized',
+      password: 'password001'
     }
   })
 }
@@ -320,15 +320,14 @@ async function openSimple() {
 async function openWithOptions() {
   InAppBrowser.open({ 
     url: WEB_URL,
-    isPresentAfterPageLoad: true,
-    preShowScript: "console.log('pre show script')"
+    isPresentAfterPageLoad: true
   } as any)
 }
 
 async function openWithInspectable() {
   InAppBrowser.open({ 
     url: WEB_URL,
-    isPresentAfterPageLoad: true
+    isInspectable: true
   } as any)
 }
 
