@@ -10,9 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/InAppBrowserPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/Options.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/WKWebViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/ios/Plugin/WKWebViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/src/definitions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +63,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../capacitor-inappbrowser" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,

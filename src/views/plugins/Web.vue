@@ -44,6 +44,8 @@
             <ion-button @click="() => openWithShowArrow()">web with just arrow</ion-button>
             <ion-button @click="() => openFlohkids()">open flohkids.de</ion-button>
             <ion-button @click="() => openBlankWithBidirectionalCommunication()">blank with bidirectional communication</ion-button>
+            <ion-button @click="() => openDeepLinkTest()">deep link test</ion-button>
+            <ion-button @click="() => openDeepLinkTestPrevent()">deep link test (prevent)</ion-button>
           </ion-col>          
           <ion-col size="auto" style="text-align: center;">
             <strong>Open</strong>
@@ -61,7 +63,7 @@
 <script setup lang="ts">
 import { InAppBrowser } from '@capgo/inappbrowser';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonCol, IonRow, IonBackButton, IonGrid, IonButtons } from '@ionic/vue';
-import { onMounted, ref } from 'vue';
+import { onMounted } from 'vue';
 import { ToolBarType, BackgroundColor } from '@capgo/inappbrowser';
 import { Capacitor } from '@capacitor/core';
 
@@ -577,6 +579,21 @@ async function openBlankWithBidirectionalCommunication() {
     });
     loadListener.remove();
   });
+}
+
+async function openDeepLinkTest() {
+  InAppBrowser.openWebView({
+    url: 'https://aasa-tester.capgo.app/',
+    title: 'Deep Link Test'
+  })
+}
+
+async function openDeepLinkTestPrevent() {
+  InAppBrowser.openWebView({
+    url: 'https://aasa-tester.capgo.app/',
+    title: 'Deep Link Test (Prevent)',
+    preventDeeplink: true
+  })
 }
 
 onMounted(async () => {
