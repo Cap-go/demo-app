@@ -26,6 +26,9 @@ project(':capgo-camera-preview').projectDir = new File('../../capacitor-camera-p
 include ':capgo-capacitor-data-storage-sqlite'
 project(':capgo-capacitor-data-storage-sqlite').projectDir = new File('../../capacitor-data-storage-sqlite/android')
 
+include ':capgo-capacitor-downloader'
+project(':capgo-capacitor-downloader').projectDir = new File('../node_modules/@capgo/capacitor-downloader/android')
+
 include ':capgo-capacitor-screen-recorder'
 project(':capgo-capacitor-screen-recorder').projectDir = new File('../../capacitor-screen-recorder/android')
 
