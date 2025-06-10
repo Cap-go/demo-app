@@ -22,6 +22,7 @@
             <ion-button router-link="/screen-recorder">Screen recorder</ion-button>
             <ion-button router-link="/auth">Auth</ion-button>
             <ion-button router-link="/inmarket">InMarket</ion-button>
+            <ion-button router-link="/local-storage">Local Storage</ion-button>
             <ion-button expand="block" router-link="/downloader">Downloader</ion-button>
             <ion-button expand="block" router-link="/audio">Audio</ion-button>
           </ion-col>

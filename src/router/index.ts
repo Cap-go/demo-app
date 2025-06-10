@@ -12,6 +12,7 @@ import Auth from '@/views/plugins/Auth.vue';
 import InMarket from '@/views/plugins/InMarket.vue';
 import Downloader from '@/views/Downloader.vue';
 import Audio from '@/views/plugins/Audio.vue';
+import LocalStorage from '@/views/plugins/LocalStorage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -77,6 +78,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/audio',
     name: 'Audio',
     component: Audio
+  },
+  {
+    path: '/local-storage',
+    name: 'Local Storage',
+    component: LocalStorage
   }
 ]
 
