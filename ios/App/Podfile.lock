@@ -35,23 +35,23 @@ PODS:
     - Capacitor
   - CapgoCapacitorShake (7.1.3):
     - Capacitor
-  - CapgoCapacitorSocialLogin (7.4.7):
+  - CapgoCapacitorSocialLogin (7.7.0):
     - Alamofire (~> 5.10.2)
     - Capacitor
     - FBSDKCoreKit (= 17.4.0)
     - FBSDKLoginKit (= 17.4.0)
     - GoogleSignIn (~> 8.0.0)
-  - CapgoCapacitorUpdater (7.0.37):
+  - CapgoCapacitorUpdater (7.2.6):
     - Alamofire (= 5.10.2)
     - BigInt (= 5.2.0)
     - Capacitor
     - SSZipArchive (= 2.4.3)
     - Version (= 0.8.0)
-  - CapgoCapacitorUploader (7.0.0):
+  - CapgoCapacitorUploader (7.1.1):
     - Capacitor
-  - CapgoInappbrowser (7.6.8):
+  - CapgoInappbrowser (7.10.1):
     - Capacitor
-  - CapgoNativeAudio (7.3.10):
+  - CapgoNativeAudio (7.3.22):
     - Capacitor
   - CapgoNativePurchases (7.1.15):
     - Capacitor
@@ -187,11 +187,11 @@ SPEC CHECKSUMS:
   CapgoCapacitorDownloader: 900e24525834e0ae56429aab95672009df19dca6
   CapgoCapacitorScreenRecorder: a0b9d286d0707625c572ab7d1bb84ac9aec70d81
   CapgoCapacitorShake: 122c19ab6b6dbac1ec704806303f8151ceca95b1
-  CapgoCapacitorSocialLogin: 0f54b39b8a0ad5f7c42e8d712578c1d7bc09ace2
-  CapgoCapacitorUpdater: a253fbb8473002f682286b136f31a12dfcae8c33
-  CapgoCapacitorUploader: 04d9f411164288f4e286a322c44e99590cc67fd1
-  CapgoInappbrowser: 461ddc45b7c11332a55652eb5bc1227204cc8923
-  CapgoNativeAudio: 8829635e47cb65edc512b1e3f71c0c5d2c256cb1
+  CapgoCapacitorSocialLogin: 6318c6c8c16fe3343eacd28b0ad21c3f6aac3e8e
+  CapgoCapacitorUpdater: a91acd03fa23e119317704319deb3932e11cf197
+  CapgoCapacitorUploader: 6da95ebd9ab5a17c67b884dffeeaa81dc7ca02aa
+  CapgoInappbrowser: b07a86b02ffc41b03bd988d7779dc37c59c5d77c
+  CapgoNativeAudio: 7afb75f16fd2038e6a433e89b52834220514504b
   CapgoNativePurchases: 35d8fac32e91da1a95c77610e14cd2e05fb68892
   FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
   FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41

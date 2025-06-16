@@ -46,6 +46,7 @@
             <ion-button @click="() => openBlankWithBidirectionalCommunication()">blank with bidirectional communication</ion-button>
             <ion-button @click="() => openDeepLinkTest()">deep link test</ion-button>
             <ion-button @click="() => openDeepLinkTestPrevent()">deep link test (prevent)</ion-button>
+            <ion-button @click="() => openBrokenUrlWithButton()">broken URL with button test</ion-button>
           </ion-col>          
           <ion-col size="auto" style="text-align: center;">
             <strong>Open</strong>
@@ -280,7 +281,7 @@ async function openWebWithNavigationToolbar() {
 async function openWebWithDefaultToolbar() {
   InAppBrowser.openWebView({
     url: WEB_URL,
-    toolbarType: ToolBarType.DEFAULT,
+    toolbarType: ToolBarType.ACTIVITY,
     title: 'Default Toolbar Test'
   })
 }
@@ -593,6 +594,35 @@ async function openDeepLinkTestPrevent() {
     url: 'https://aasa-tester.capgo.app/',
     title: 'Deep Link Test (Prevent)',
     preventDeeplink: true
+  })
+}
+
+async function openBrokenUrlWithButton() {
+  InAppBrowser.addListener('buttonNearDoneClick', async (msg) => {
+    console.log('buttonNearDoneClick on broken URL', msg)
+    // Try to navigate to a working URL to test button doesn't crash
+    await InAppBrowser.setUrl({ url: 'https://google.com' })
+  })
+  
+  InAppBrowser.addListener('pageLoadError', () => {
+    console.log('Page load error for broken URL')
+  })
+  
+  InAppBrowser.openWebView({
+    url: 'https://this-is-a-broken-url-that-does-not-exist.invalid',
+    title: 'Broken URL Test',
+    buttonNearDone: {
+      ios: {
+        iconType: 'sf-symbol',
+        icon: 'arrow.clockwise'
+      },
+      android: {
+        iconType: 'vector',
+        icon: 'ic_menu_rotate',
+        width: 24,
+        height: 24
+      }
+    }
   })
 }
 

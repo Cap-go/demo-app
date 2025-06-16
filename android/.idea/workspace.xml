@@ -10,19 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-inappbrowser/android/src/main/java/ee/forgr/capacitor_inappbrowser/WebViewDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-native-audio/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-native-audio/android/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/ScreenRecorderPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-screen-recorder/ios/Plugin/Wyler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/CapacitorUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/CapacitorUpdater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadWorkerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/DownloadWorkerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/ios/Plugin/CapacitorUpdater.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/ios/Plugin/CapacitorUpdater.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/capacitor.build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capacitor.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../capacitor.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/App/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +27,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/martindonadieu/.android/avd/Medium_Phone_API_31.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=ede6be21)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -76,22 +70,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.android [signingReport].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "Gradle.android [signingReport].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle signingReport" />
