@@ -2,7 +2,7 @@ workflows:
   ionic-capacitor-ios-workflow:
     name: Capacitor iOS Workflow
     max_build_duration: 120
-      scripts:
+    scripts:
     - name: Install npm dependencies for Ionic project
       script: | 
         npm install @capgo/capacitor-updater
