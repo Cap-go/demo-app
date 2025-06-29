@@ -13,6 +13,7 @@ dependencies {
     implementation project(':capacitor-filesystem')
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
+    implementation project(':capacitor-splash-screen')
     implementation project(':capacitor-status-bar')
     implementation project(':capawesome-capacitor-android-edge-to-edge-support')
     implementation project(':capgo-camera-preview')
@@ -26,6 +27,7 @@ dependencies {
     implementation project(':capgo-inappbrowser')
     implementation project(':capgo-native-audio')
     implementation project(':capgo-native-purchases')
+    implementation project(':capacitor-native-settings')
 
 }
 

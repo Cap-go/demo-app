@@ -9,6 +9,9 @@ const config: CapacitorConfig = {
     EdgeToEdge: {
       backgroundColor: '#ffffff'
     },
+    SplashScreen: {
+      launchAutoHide: false,
+    },
     CapacitorUpdater: {
       autoUpdate: false,
       // version: '11.11.1',

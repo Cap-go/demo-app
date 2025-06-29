@@ -9,16 +9,7 @@
         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../../capacitor-camera-preview/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-data-storage-sqlite/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-inappbrowser/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-native-audio/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-native-purchases/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-screen-recorder/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-shake/android" />
             <option value="$PROJECT_DIR$/../../capacitor-social-login/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-updater/android" />
-            <option value="$PROJECT_DIR$/../../capacitor-uploader/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/capacitor-cordova-android-plugins" />
@@ -29,7 +20,18 @@
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/keyboard/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/status-bar/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capawesome/capacitor-android-edge-to-edge-support/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/camera-preview/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-data-storage-sqlite/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-downloader/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-jw-player/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-screen-recorder/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-shake/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-updater/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-uploader/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/inappbrowser/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/native-audio/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capgo/native-purchases/android" />
+            <option value="$PROJECT_DIR$/../node_modules/capacitor-native-settings/android" />
           </set>
         </option>
       </GradleProjectSettings>
