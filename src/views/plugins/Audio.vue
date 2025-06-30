@@ -208,10 +208,10 @@ const clearAudioCache = async () => {
       <ion-grid style="height: 100%">
         <ion-row class="ion-align-items-center ion-justify-content-center" style="height: 100%;">
           <ion-col size="auto" style="text-align: center;">
-            <div class="flex flex-col items-center justify-center p-4 space-y-8">
+            <div class="flex flex-col justify-center items-center p-4 space-y-8">
               <h1 class="text-2xl font-bold">Native Audio Test</h1>
               
-              <div class="flex flex-col w-full max-w-md space-y-6">
+              <div class="flex flex-col space-y-6 w-full max-w-md">
                 <!-- Controls -->
                 <div class="space-y-4">
                   <h2 class="text-xl font-semibold">Controls</h2>

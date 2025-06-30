@@ -23,7 +23,7 @@ def capacitor_pods
   pod 'CapgoCapacitorScreenRecorder', :path => '../../node_modules/@capgo/capacitor-screen-recorder'
   pod 'CapgoCapacitorShake', :path => '../../node_modules/@capgo/capacitor-shake'
   pod 'CapgoCapacitorSocialLogin', :path => '../../../capacitor-social-login'
-  pod 'CapgoCapacitorUpdater', :path => '../../node_modules/@capgo/capacitor-updater'
+  pod 'CapgoCapacitorUpdater', :path => '../../../capacitor-updater'
   pod 'CapgoCapacitorUploader', :path => '../../node_modules/@capgo/capacitor-uploader'
   pod 'CapgoInappbrowser', :path => '../../node_modules/@capgo/inappbrowser'
   pod 'CapgoNativeAudio', :path => '../../node_modules/@capgo/native-audio'

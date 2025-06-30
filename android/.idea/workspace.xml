@@ -10,20 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/CapacitorUpdaterPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/CapacitorUpdaterPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/CapgoUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/CapgoUpdater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/ShakeDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/ShakeDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/ShakeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-updater/android/src/main/java/ee/forgr/capacitor_updater/ShakeMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capacitor-uploader/ios/Sources/UploaderPlugin/Uploader.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-uploader/ios/Sources/UploaderPlugin/Uploader.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/capacitor.build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/capacitor.settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../bun.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/App/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/App/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/App/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/App/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capacitor.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../capacitor.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +22,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/martindonadieu/.android/avd/Medium_Phone_API_31.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=ede6be21)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

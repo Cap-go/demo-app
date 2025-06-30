@@ -17,7 +17,8 @@
             <p class="mb-6"></p>
 
             <ion-button @click="() => hardrestet()">Hard reset!!</ion-button>
-            <ion-button @click="() => questionMark()">??</ion-button>
+            <ion-button @click="() => deleteAll()">Delete all</ion-button>
+            <ion-button @click="() => listChannels()">List channels</ion-button>
             <ion-button @click="() => getLatest()">Get latest</ion-button>
           </ion-col>
         </ion-row>
@@ -34,11 +35,16 @@ async function hardrestet() {
   await CapacitorUpdater.reset()
 }
 
-async function questionMark() {
+async function deleteAll() {
   const bundles = await CapacitorUpdater.list()
   for (const bundle of bundles.bundles) {
     await CapacitorUpdater.delete({id: bundle.id })
   }
+}
+
+async function listChannels() {
+  const channels = await CapacitorUpdater.listChannels()
+  console.log('channels', channels)
 }
 
 async function getLatest() {

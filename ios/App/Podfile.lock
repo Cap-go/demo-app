@@ -45,7 +45,7 @@ PODS:
     - FBSDKCoreKit (= 17.4.0)
     - FBSDKLoginKit (= 17.4.0)
     - GoogleSignIn (~> 8.0.0)
-  - CapgoCapacitorUpdater (7.2.21):
+  - CapgoCapacitorUpdater (7.6.0):
     - Alamofire (= 5.10.2)
     - BigInt (= 5.2.0)
     - Capacitor
@@ -112,7 +112,7 @@ DEPENDENCIES:
   - "CapgoCapacitorScreenRecorder (from `../../node_modules/@capgo/capacitor-screen-recorder`)"
   - "CapgoCapacitorShake (from `../../node_modules/@capgo/capacitor-shake`)"
   - CapgoCapacitorSocialLogin (from `../../../capacitor-social-login`)
-  - "CapgoCapacitorUpdater (from `../../node_modules/@capgo/capacitor-updater`)"
+  - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
   - "CapgoCapacitorUploader (from `../../node_modules/@capgo/capacitor-uploader`)"
   - "CapgoInappbrowser (from `../../node_modules/@capgo/inappbrowser`)"
   - "CapgoNativeAudio (from `../../node_modules/@capgo/native-audio`)"
@@ -170,7 +170,7 @@ EXTERNAL SOURCES:
   CapgoCapacitorSocialLogin:
     :path: "../../../capacitor-social-login"
   CapgoCapacitorUpdater:
-    :path: "../../node_modules/@capgo/capacitor-updater"
+    :path: "../../../capacitor-updater"
   CapgoCapacitorUploader:
     :path: "../../node_modules/@capgo/capacitor-uploader"
   CapgoInappbrowser:
@@ -200,7 +200,7 @@ SPEC CHECKSUMS:
   CapgoCapacitorScreenRecorder: 98041f6c7031ba07d74a1254a2b22e8247610baf
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
   CapgoCapacitorSocialLogin: 6318c6c8c16fe3343eacd28b0ad21c3f6aac3e8e
-  CapgoCapacitorUpdater: dd7a0476df5d713643c55aeda9b72db7c86ef3e5
+  CapgoCapacitorUpdater: 54b7b731e5e74fb32912f85bb5de39de0b8c68e1
   CapgoCapacitorUploader: db86eb34e823c70919e488e5ebb28a53407ea161
   CapgoInappbrowser: e0ff476064c8ec0eca68c41ed44f6ce144d95fe9
   CapgoNativeAudio: 7eca8de6f8c4ffae22f0ee4db623541b3f98a8a4
@@ -219,6 +219,6 @@ SPEC CHECKSUMS:
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: 343666e0358dc3f2ff94592dddfd6adc0a2186f6
+PODFILE CHECKSUM: 1b838ae483d5591aaa1b3eb7c7df7e459a6a426d
 
 COCOAPODS: 1.16.2
