@@ -218,15 +218,15 @@ const clearAudioCache = async () => {
                   <div class="space-y-2">
                     <div>
                       <label>Volume ({{ currentVolume }})</label>
-                      <ion-range v-model="currentVolume" min="0.1" max="1" step="0.1"></ion-range>
+                      <ion-range v-model="currentVolume" :min="0.1" :max="1" :step="0.1"></ion-range>
                     </div>
                     <div>
                       <label>Rate ({{ currentRate }})</label>
-                      <ion-range v-model="currentRate" min="0.1" max="2" step="0.1"></ion-range>
+                      <ion-range v-model="currentRate" :min="0.1" :max="2" :step="0.1"></ion-range>
                     </div>
                     <div>
                       <label>Time ({{ currentTime }}/{{ duration }})</label>
-                      <ion-range v-model="currentTime" :min="0" :max="duration" step="1"></ion-range>
+                      <ion-range v-model="currentTime" :min="0" :max="duration" :step="1"></ion-range>
                     </div>
                   </div>
                   <ion-button @click="clearAudioCache">Clear Cache</ion-button>

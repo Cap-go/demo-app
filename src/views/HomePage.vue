@@ -14,7 +14,6 @@
             <p>Click the buttons!</p>
 
             <ion-button router-link="/clicker">Clicker</ion-button>
-            <ion-button router-link="/updater">Updater</ion-button>
             <ion-button router-link="/camera">Camera</ion-button>
             <ion-button router-link="/subscriptions">Subscriptions</ion-button>
             <ion-button router-link="/web">Web</ion-button>
