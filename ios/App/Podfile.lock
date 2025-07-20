@@ -1,54 +1,53 @@
 PODS:
   - Alamofire (5.10.2)
-  - AppAuth (1.7.6):
-    - AppAuth/Core (= 1.7.6)
-    - AppAuth/ExternalUserAgent (= 1.7.6)
-  - AppAuth/Core (1.7.6)
-  - AppAuth/ExternalUserAgent (1.7.6):
+  - AppAuth (2.0.0):
+    - AppAuth/Core (= 2.0.0)
+    - AppAuth/ExternalUserAgent (= 2.0.0)
+  - AppAuth/Core (2.0.0)
+  - AppAuth/ExternalUserAgent (2.0.0):
     - AppAuth/Core
   - AppCheckCore (11.2.0):
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
-  - Capacitor (7.1.0):
+  - Capacitor (7.4.2):
     - CapacitorCordova
   - CapacitorApp (7.0.1):
     - Capacitor
-  - CapacitorCordova (7.1.0)
-  - CapacitorFilesystem (7.0.0):
+  - CapacitorCordova (7.4.2)
+  - CapacitorFilesystem (7.1.2):
     - Capacitor
-  - CapacitorHaptics (7.0.0):
+    - IONFilesystemLib (~> 1.0)
+  - CapacitorHaptics (7.0.1):
     - Capacitor
-  - CapacitorKeyboard (7.0.0):
+  - CapacitorKeyboard (7.0.1):
     - Capacitor
-  - CapacitorNativeSettings (7.0.1):
+  - CapacitorNativeSettings (7.0.2):
     - Capacitor
   - CapacitorSplashScreen (7.0.1):
     - Capacitor
-  - CapacitorStatusBar (7.0.0):
+  - CapacitorStatusBar (7.0.1):
     - Capacitor
   - CapgoCameraPreview (2.0.0):
     - Capacitor
   - CapgoCapacitorDataStorageSqlite (6.0.59):
     - Capacitor
     - SQLite.swift/SQLCipher
-  - CapgoCapacitorDownloader (7.0.2):
-    - Capacitor
   - CapgoCapacitorScreenRecorder (8.1.105):
     - Capacitor
   - CapgoCapacitorShake (6.0.46):
     - Capacitor
-  - CapgoCapacitorSocialLogin (7.7.0):
+  - CapgoCapacitorSocialLogin (7.8.3):
     - Alamofire (~> 5.10.2)
     - Capacitor
     - FBSDKCoreKit (= 17.4.0)
     - FBSDKLoginKit (= 17.4.0)
-    - GoogleSignIn (~> 8.0.0)
-  - CapgoCapacitorUploader (7.1.4):
+    - GoogleSignIn (~> 9.0.0)
+  - CapgoCapacitorUploader (7.1.8):
     - Capacitor
   - CapgoInappbrowser (7.10.8):
     - Capacitor
-  - CapgoNativeAudio (7.3.34):
+  - CapgoNativeAudio (7.3.36):
     - Capacitor
   - CapgoNativePurchases (7.1.11):
     - Capacitor
@@ -60,10 +59,10 @@ PODS:
   - FBSDKCoreKit_Basics (17.4.0)
   - FBSDKLoginKit (17.4.0):
     - FBSDKCoreKit (= 17.4.0)
-  - GoogleSignIn (8.0.0):
-    - AppAuth (< 2.0, >= 1.7.3)
+  - GoogleSignIn (9.0.0):
+    - AppAuth (~> 2.0)
     - AppCheckCore (~> 11.0)
-    - GTMAppAuth (< 5.0, >= 4.1.1)
+    - GTMAppAuth (~> 5.0)
     - GTMSessionFetcher/Core (~> 3.3)
   - GoogleUtilities/Environment (8.1.0):
     - GoogleUtilities/Privacy
@@ -74,10 +73,11 @@ PODS:
   - GoogleUtilities/UserDefaults (8.1.0):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GTMAppAuth (4.1.1):
-    - AppAuth/Core (~> 1.7)
+  - GTMAppAuth (5.0.0):
+    - AppAuth/Core (~> 2.0)
     - GTMSessionFetcher/Core (< 4.0, >= 3.3)
   - GTMSessionFetcher/Core (3.5.0)
+  - IONFilesystemLib (1.0.0)
   - PromisesObjC (2.4.0)
   - SQLCipher (4.9.0):
     - SQLCipher/standard (= 4.9.0)
@@ -99,7 +99,6 @@ DEPENDENCIES:
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
   - "CapgoCameraPreview (from `../../node_modules/@capgo/camera-preview`)"
   - "CapgoCapacitorDataStorageSqlite (from `../../node_modules/@capgo/capacitor-data-storage-sqlite`)"
-  - "CapgoCapacitorDownloader (from `../../node_modules/@capgo/capacitor-downloader`)"
   - "CapgoCapacitorScreenRecorder (from `../../node_modules/@capgo/capacitor-screen-recorder`)"
   - "CapgoCapacitorShake (from `../../node_modules/@capgo/capacitor-shake`)"
   - "CapgoCapacitorSocialLogin (from `../../node_modules/@capgo/capacitor-social-login`)"
@@ -121,6 +120,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - IONFilesystemLib
     - PromisesObjC
     - SQLCipher
     - SQLite.swift
@@ -148,8 +148,6 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capgo/camera-preview"
   CapgoCapacitorDataStorageSqlite:
     :path: "../../node_modules/@capgo/capacitor-data-storage-sqlite"
-  CapgoCapacitorDownloader:
-    :path: "../../node_modules/@capgo/capacitor-downloader"
   CapgoCapacitorScreenRecorder:
     :path: "../../node_modules/@capgo/capacitor-screen-recorder"
   CapgoCapacitorShake:
@@ -167,39 +165,39 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
-  AppAuth: d4f13a8fe0baf391b2108511793e4b479691fb73
+  AppAuth: 1c1a8afa7e12f2ec3a294d9882dfa5ab7d3cb063
   AppCheckCore: cc8fd0a3a230ddd401f326489c99990b013f0c4f
-  Capacitor: 68ff8eabbcce387e69767c13b5fbcc1c5399eabc
+  Capacitor: 156d98aba46ec01dde72c4bbb92fa626837cad29
   CapacitorApp: d63334c052278caf5d81585d80b21905c6f93f39
-  CapacitorCordova: 866217f32c1d25b326c568a10ea3ed0c36b13e29
-  CapacitorFilesystem: 2881ad012b5c8d0ffbfed1216aadfc2cca16d5b5
-  CapacitorHaptics: 1fba3e460e7614349c6d5f868b1fccdc5c87b66d
-  CapacitorKeyboard: 2c26c6fccde35023c579fc37d4cae6326d5e6343
-  CapacitorNativeSettings: 03d126571fc0e12f89ffeb1516788bf371b528bc
+  CapacitorCordova: 5e58d04631bc5094894ac106e2bf1da18a9e6151
+  CapacitorFilesystem: 7b7e9bf177ce09657a667d935ca6f0eadbcfda54
+  CapacitorHaptics: 70e47470fa1a6bd6338cd102552e3846b7f9a1b3
+  CapacitorKeyboard: 969647d0ca2e5c737d7300088e2517aa832434e2
+  CapacitorNativeSettings: f5511eb94cb5700ac4edf54f992d2c0dda1857d6
   CapacitorSplashScreen: 19cd3573e57507e02d6f34597a8c421e00931487
-  CapacitorStatusBar: 438e90beeeefa8276b24e6c5991cb02dd13e51bf
+  CapacitorStatusBar: 275cbf2f4dfc00388f519ef80c7ec22edda342c9
   CapgoCameraPreview: e3d09793af2c662dfc78d48f53e8c57e8d7bd504
   CapgoCapacitorDataStorageSqlite: 582d111ddfea683bbfbff9ea29effd1814e7ec01
-  CapgoCapacitorDownloader: 811a0f984abd1a13c4d9768a439c86b59ab7f16a
   CapgoCapacitorScreenRecorder: 98041f6c7031ba07d74a1254a2b22e8247610baf
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
-  CapgoCapacitorSocialLogin: 6318c6c8c16fe3343eacd28b0ad21c3f6aac3e8e
-  CapgoCapacitorUploader: db86eb34e823c70919e488e5ebb28a53407ea161
+  CapgoCapacitorSocialLogin: e97bd122b6d66ef6c3f1cfd736df958c05a390ae
+  CapgoCapacitorUploader: c4b897d5729228556a15867e95463a49f0d952ac
   CapgoInappbrowser: e0ff476064c8ec0eca68c41ed44f6ce144d95fe9
-  CapgoNativeAudio: 7eca8de6f8c4ffae22f0ee4db623541b3f98a8a4
+  CapgoNativeAudio: 5219294a3c65283f1488c587eb06591058edcac6
   CapgoNativePurchases: e059f1b6d9558891061aec7f97f184061198fcae
   FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
   FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41
   FBSDKCoreKit_Basics: 151b43db8b834d3f0e02f95d36a44ffd36265e45
   FBSDKLoginKit: 5c1cd53c91a2282b3a4fe6e6d3dcf2b8b0d33d55
-  GoogleSignIn: ce8c89bb9b37fb624b92e7514cc67335d1e277e4
+  GoogleSignIn: c7f09cfbc85a1abf69187be091997c317cc33b77
   GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
-  GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
+  GTMAppAuth: 217a876b249c3c585a54fd6f73e6b58c4f5c4238
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
+  IONFilesystemLib: ceacae793975039530458eabab0c495c70515a0d
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   SQLCipher: 31878d8ebd27e5c96db0b7cb695c96e9f8ad77da
   SQLite.swift: a107c734115fea616a4ad31371d39f1637e8de56
 
-PODFILE CHECKSUM: d5d1552bda654c2e1d50a820629b98300b0a06c5
+PODFILE CHECKSUM: c098bb3ece3d5b7d9f5cb2283db4e43168ccf5ff
 
 COCOAPODS: 1.16.2
