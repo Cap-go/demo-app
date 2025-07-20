@@ -10,7 +10,6 @@ PODS:
     - GoogleUtilities/Environment (~> 8.0)
     - GoogleUtilities/UserDefaults (~> 8.0)
     - PromisesObjC (~> 2.4)
-  - BigInt (5.2.0)
   - Capacitor (7.1.0):
     - CapacitorCordova
   - CapacitorApp (7.0.1):
@@ -45,12 +44,6 @@ PODS:
     - FBSDKCoreKit (= 17.4.0)
     - FBSDKLoginKit (= 17.4.0)
     - GoogleSignIn (~> 8.0.0)
-  - CapgoCapacitorUpdater (7.6.0):
-    - Alamofire (= 5.10.2)
-    - BigInt (= 5.2.0)
-    - Capacitor
-    - SSZipArchive (= 2.4.3)
-    - Version (= 0.8.0)
   - CapgoCapacitorUploader (7.1.4):
     - Capacitor
   - CapgoInappbrowser (7.10.8):
@@ -93,8 +86,6 @@ PODS:
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.15.4):
     - SQLCipher (>= 4.0.0)
-  - SSZipArchive (2.4.3)
-  - Version (0.8.0)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -111,8 +102,7 @@ DEPENDENCIES:
   - "CapgoCapacitorDownloader (from `../../node_modules/@capgo/capacitor-downloader`)"
   - "CapgoCapacitorScreenRecorder (from `../../node_modules/@capgo/capacitor-screen-recorder`)"
   - "CapgoCapacitorShake (from `../../node_modules/@capgo/capacitor-shake`)"
-  - CapgoCapacitorSocialLogin (from `../../../capacitor-social-login`)
-  - CapgoCapacitorUpdater (from `../../../capacitor-updater`)
+  - "CapgoCapacitorSocialLogin (from `../../node_modules/@capgo/capacitor-social-login`)"
   - "CapgoCapacitorUploader (from `../../node_modules/@capgo/capacitor-uploader`)"
   - "CapgoInappbrowser (from `../../node_modules/@capgo/inappbrowser`)"
   - "CapgoNativeAudio (from `../../node_modules/@capgo/native-audio`)"
@@ -123,7 +113,6 @@ SPEC REPOS:
     - Alamofire
     - AppAuth
     - AppCheckCore
-    - BigInt
     - FBAEMKit
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
@@ -135,8 +124,6 @@ SPEC REPOS:
     - PromisesObjC
     - SQLCipher
     - SQLite.swift
-    - SSZipArchive
-    - Version
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -168,9 +155,7 @@ EXTERNAL SOURCES:
   CapgoCapacitorShake:
     :path: "../../node_modules/@capgo/capacitor-shake"
   CapgoCapacitorSocialLogin:
-    :path: "../../../capacitor-social-login"
-  CapgoCapacitorUpdater:
-    :path: "../../../capacitor-updater"
+    :path: "../../node_modules/@capgo/capacitor-social-login"
   CapgoCapacitorUploader:
     :path: "../../node_modules/@capgo/capacitor-uploader"
   CapgoInappbrowser:
@@ -184,7 +169,6 @@ SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   AppAuth: d4f13a8fe0baf391b2108511793e4b479691fb73
   AppCheckCore: cc8fd0a3a230ddd401f326489c99990b013f0c4f
-  BigInt: f668a80089607f521586bbe29513d708491ef2f7
   Capacitor: 68ff8eabbcce387e69767c13b5fbcc1c5399eabc
   CapacitorApp: d63334c052278caf5d81585d80b21905c6f93f39
   CapacitorCordova: 866217f32c1d25b326c568a10ea3ed0c36b13e29
@@ -200,7 +184,6 @@ SPEC CHECKSUMS:
   CapgoCapacitorScreenRecorder: 98041f6c7031ba07d74a1254a2b22e8247610baf
   CapgoCapacitorShake: c9f69fbbf99c5dbfe36fc39b294709cbd901e94f
   CapgoCapacitorSocialLogin: 6318c6c8c16fe3343eacd28b0ad21c3f6aac3e8e
-  CapgoCapacitorUpdater: 54b7b731e5e74fb32912f85bb5de39de0b8c68e1
   CapgoCapacitorUploader: db86eb34e823c70919e488e5ebb28a53407ea161
   CapgoInappbrowser: e0ff476064c8ec0eca68c41ed44f6ce144d95fe9
   CapgoNativeAudio: 7eca8de6f8c4ffae22f0ee4db623541b3f98a8a4
@@ -216,9 +199,7 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   SQLCipher: 31878d8ebd27e5c96db0b7cb695c96e9f8ad77da
   SQLite.swift: a107c734115fea616a4ad31371d39f1637e8de56
-  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
-  Version: de5907f2c5d0f3cf21708db7801d1d5401139486
 
-PODFILE CHECKSUM: 1b838ae483d5591aaa1b3eb7c7df7e459a6a426d
+PODFILE CHECKSUM: d5d1552bda654c2e1d50a820629b98300b0a06c5
 
 COCOAPODS: 1.16.2
