@@ -12,6 +12,5 @@
     <mapping directory="$PROJECT_DIR$/../../capacitor-updater" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../capacitor-uploader" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../node_modules/@capgo/capacitor-updater" vcs="Git" />
   </component>
 </project>
