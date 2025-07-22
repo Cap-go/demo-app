@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../capacitor-uploader/ios/Sources/UploaderPlugin/Uploader.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-uploader/ios/Sources/UploaderPlugin/Uploader.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
