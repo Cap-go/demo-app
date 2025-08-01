@@ -11,6 +11,7 @@ import Auth from '@/views/plugins/Auth.vue';
 import InMarket from '@/views/plugins/InMarket.vue';
 import Audio from '@/views/plugins/Audio.vue';
 import LocalStorage from '@/views/plugins/LocalStorage.vue';
+import DeviceInfo from '@/views/plugins/DeviceInfo.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -71,6 +72,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/local-storage',
     name: 'Local Storage',
     component: LocalStorage
+  },
+  {
+    path: '/device-info',
+    name: 'Device Info',
+    component: DeviceInfo
   }
 ]
 
