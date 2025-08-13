@@ -9,7 +9,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="" />
+    <list default="true" id="1d28a448-3c59-405f-aaca-bddb43b33678" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../capacitor-camera-preview/android/src/main/java/com/ahm/capacitor/camera/preview/CameraPreview.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-camera-preview/android/src/main/java/com/ahm/capacitor/camera/preview/CameraPreview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-camera-preview/android/src/main/java/com/ahm/capacitor/camera/preview/CameraXView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-camera-preview/android/src/main/java/com/ahm/capacitor/camera/preview/CameraXView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-camera-preview/ios/Sources/CapgoCameraPreview/CameraController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-camera-preview/ios/Sources/CapgoCameraPreview/CameraController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-camera-preview/ios/Sources/CapgoCameraPreview/Plugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-camera-preview/ios/Sources/CapgoCameraPreview/Plugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-camera-preview/src/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-camera-preview/src/definitions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-camera-preview/src/web.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-camera-preview/src/web.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capacitor-uploader/ios/Sources/UploaderPlugin/Uploader.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../capacitor-uploader/ios/Sources/UploaderPlugin/Uploader.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +28,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=4A151JEBF19614)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/martindonadieu/.android/avd/Medium_Phone_API_31.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -50,7 +60,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../capacitor-updater" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -72,9 +82,9 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;demo&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RunAnythingCache">

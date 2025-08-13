@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/capacitor-cordova-android-plugins" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/android/capacitor" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/app/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@capacitor/device/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/filesystem/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/haptics/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capacitor/keyboard/android" />
@@ -22,7 +23,6 @@
             <option value="$PROJECT_DIR$/../node_modules/@capawesome/capacitor-android-edge-to-edge-support/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/camera-preview/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-data-storage-sqlite/android" />
-            <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-downloader/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-screen-recorder/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-shake/android" />
             <option value="$PROJECT_DIR$/../node_modules/@capgo/capacitor-social-login/android" />
