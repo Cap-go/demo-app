@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Checkout CLI repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: Cap-go/CLI
           path: cli
