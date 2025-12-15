@@ -5,9 +5,6 @@ const config: CapacitorConfig = {
   appName: 'capgoTestVueApp',
   webDir: 'dist',
   plugins: {
-    EdgeToEdge: {
-      backgroundColor: '#ffffff'
-    },
     SplashScreen: {
       launchAutoHide: true,
     },
