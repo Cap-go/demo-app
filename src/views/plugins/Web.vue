@@ -666,7 +666,7 @@ onMounted(async () => {
     }
   })
   InAppBrowser.addListener('buttonNearDoneClick', async (msg) => {
-    await InAppBrowser.setUrl({ url: 'https://web.capgo.app/login' })
+    await InAppBrowser.setUrl({ url: 'https://console.capgo.app/login' })
   })
 
   InAppBrowser.addListener('urlChangeEvent', (event) => {
