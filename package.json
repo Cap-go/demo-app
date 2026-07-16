@@ -36,6 +36,7 @@
     "@capgo/capacitor-screen-recorder": "^8.2.2",
     "@capgo/capacitor-shake": "^8.0.1",
     "@capgo/capacitor-social-login": "^8.1.0",
+    "@capgo/capacitor-updater": "^8.0.0",
     "@capgo/capacitor-uploader": "^8.0.1",
     "@capgo/inappbrowser": "^8.0.1",
     "@capgo/native-audio": "^8.1.0",

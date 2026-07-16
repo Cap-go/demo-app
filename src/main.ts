@@ -35,6 +35,10 @@ import '@ionic/vue/css/palettes/dark.system.css';
 import './theme/variables.css';
 import './theme/tailwind.css'
 import { createPinia } from 'pinia';
+import { CapacitorUpdater } from '@capgo/capacitor-updater';
+
+CapacitorUpdater.notifyAppReady();
+
 
 const pinia = createPinia();
 

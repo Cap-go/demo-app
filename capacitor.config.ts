@@ -6,8 +6,13 @@ const config: CapacitorConfig = {
   webDir: 'dist',
   plugins: {
     SplashScreen: {
-      launchAutoHide: true,
+      launchAutoHide: true
     },
+    CapacitorUpdater: {
+      version: '0.0.1-beta1',
+      appId: 'com.demo.capgo.new',
+      autoUpdate: true
+    }
   }
 };
 
